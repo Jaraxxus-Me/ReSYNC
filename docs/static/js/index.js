@@ -1,78 +1,148 @@
-window.HELP_IMPROVE_VIDEOJS = false;
+document.addEventListener('DOMContentLoaded', () => {
+  const burger = document.querySelector('.navbar-burger');
+  const menu = document.querySelector('.navbar-menu');
 
-var INTERP_BASE = "https://homes.cs.washington.edu/~kpar/nerfies/interpolation/stacked";
-var NUM_INTERP_FRAMES = 240;
+  if (burger && menu) {
+    burger.addEventListener('click', () => {
+      const isOpen = burger.classList.toggle('is-active');
+      menu.classList.toggle('is-active', isOpen);
+      burger.setAttribute('aria-expanded', String(isOpen));
+    });
 
-var interp_images = [];
-function preloadInterpolationImages() {
-  for (var i = 0; i < NUM_INTERP_FRAMES; i++) {
-    var path = INTERP_BASE + '/' + String(i).padStart(6, '0') + '.jpg';
-    interp_images[i] = new Image();
-    interp_images[i].src = path;
+    menu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        burger.classList.remove('is-active');
+        menu.classList.remove('is-active');
+        burger.setAttribute('aria-expanded', 'false');
+      });
+    });
   }
-}
 
-function setInterpolationImage(i) {
-  var image = interp_images[i];
-  image.ondragstart = function() { return false; };
-  image.oncontextmenu = function() { return false; };
-  $('#interpolation-image-wrapper').empty().append(image);
-}
+  const story = document.querySelector('[data-story-carousel]');
+  if (story) {
+    const panels = [...story.querySelectorAll('[data-story-panel]')];
+    const selectors = [...story.querySelectorAll('[data-story-index]')];
+    let currentIndex = 0;
+    let storyIsVisible = false;
 
+    const pauseStoryVideos = () => {
+      story.querySelectorAll('[data-story-video]').forEach((video) => video.pause());
+    };
 
-$(document).ready(function() {
-    // Check for click events on the navbar burger icon
-    $(".navbar-burger").click(function() {
-      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-      $(".navbar-burger").toggleClass("is-active");
-      $(".navbar-menu").toggleClass("is-active");
+    const playCurrentStory = (restart = true) => {
+      const panel = panels[currentIndex];
+      if (!panel || !storyIsVisible) return;
+      panel.querySelectorAll('[data-story-video]').forEach((video) => {
+        if (restart) video.currentTime = 0;
+        video.play().catch(() => {});
+      });
+    };
 
+    const showStory = (nextIndex, restart = true) => {
+      currentIndex = (nextIndex + panels.length) % panels.length;
+      pauseStoryVideos();
+
+      panels.forEach((panel, index) => {
+        const active = index === currentIndex;
+        panel.hidden = !active;
+        panel.classList.toggle('is-active', active);
+      });
+
+      selectors.forEach((selector) => {
+        const active = Number(selector.dataset.storyIndex) === currentIndex;
+        selector.classList.toggle('is-active', active);
+        if (selector.getAttribute('role') === 'tab') selector.setAttribute('aria-selected', String(active));
+      });
+
+      playCurrentStory(restart);
+    };
+
+    selectors.forEach((selector) => selector.addEventListener('click', () => showStory(Number(selector.dataset.storyIndex))));
+    story.querySelector('[data-story-prev]')?.addEventListener('click', () => showStory(currentIndex - 1));
+    story.querySelector('[data-story-next]')?.addEventListener('click', () => showStory(currentIndex + 1));
+    story.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowLeft') showStory(currentIndex - 1);
+      if (event.key === 'ArrowRight') showStory(currentIndex + 1);
     });
 
-    var options = {
-			slidesToScroll: 1,
-			slidesToShow: 3,
-			loop: true,
-			infinite: true,
-			autoplay: false,
-			autoplaySpeed: 3000,
-    }
+    let touchStartX = 0;
+    story.addEventListener('touchstart', (event) => { touchStartX = event.changedTouches[0].clientX; }, { passive: true });
+    story.addEventListener('touchend', (event) => {
+      const distance = event.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(distance) > 55) showStory(currentIndex + (distance < 0 ? 1 : -1));
+    }, { passive: true });
 
-		// Initialize all div with carousel class
-    var carousels = bulmaCarousel.attach('.carousel', options);
+    const storyObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        storyIsVisible = entry.isIntersecting;
+        if (storyIsVisible) playCurrentStory(true);
+        else pauseStoryVideos();
+      });
+    }, { threshold: 0.35 });
+    storyObserver.observe(story);
+    showStory(0, false);
+  }
 
-    // Loop on each carousel initialized
-    for(var i = 0; i < carousels.length; i++) {
-    	// Add listener to  event
-    	carousels[i].on('before:show', state => {
-    		console.log(state);
-    	});
-    }
-
-    // Access to bulmaCarousel instance of an element
-    var element = document.querySelector('#my-element');
-    if (element && element.bulmaCarousel) {
-    	// bulmaCarousel instance is available as element.bulmaCarousel
-    	element.bulmaCarousel.on('before-show', function(state) {
-    		console.log(state);
-    	});
-    }
-
-    /*var player = document.getElementById('interpolation-video');
-    player.addEventListener('loadedmetadata', function() {
-      $('#interpolation-slider').on('input', function(event) {
-        console.log(this.value, player.duration);
-        player.currentTime = player.duration / 100 * this.value;
-      })
-    }, false);*/
-    preloadInterpolationImages();
-
-    $('#interpolation-slider').on('input', function(event) {
-      setInterpolationImage(this.value);
+  const domainRows = [...document.querySelectorAll('[data-domain-row]')];
+  const stopDomain = (row, reset = true) => {
+    row.classList.remove('is-playing');
+    row.querySelectorAll('video').forEach((video) => {
+      video.pause();
+      if (reset) video.currentTime = 0;
     });
-    setInterpolationImage(0);
-    $('#interpolation-slider').prop('max', NUM_INTERP_FRAMES - 1);
+  };
+  const stopAllDomains = (except = null) => domainRows.forEach((row) => {
+    if (row !== except) stopDomain(row);
+  });
+  const playDomain = (row) => {
+    stopAllDomains(row);
+    row.classList.add('is-playing');
+    row.querySelectorAll('video').forEach((video) => {
+      video.currentTime = 0;
+      video.play().catch(() => {});
+    });
+  };
 
-    bulmaSlider.attach();
+  domainRows.forEach((row) => {
+    row.addEventListener('mouseenter', () => playDomain(row));
+    row.addEventListener('mouseleave', () => stopDomain(row));
+    row.addEventListener('focusin', () => playDomain(row));
+    row.addEventListener('focusout', (event) => {
+      if (!row.contains(event.relatedTarget)) stopDomain(row);
+    });
+    row.addEventListener('click', (event) => {
+      event.stopPropagation();
+      playDomain(row);
+    });
+    row.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        row.classList.contains('is-playing') ? stopDomain(row) : playDomain(row);
+      }
+    });
+  });
+  document.addEventListener('click', () => stopAllDomains());
 
-})
+  if (domainRows.length) {
+    const galleryObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => { if (!entry.isIntersecting) stopDomain(entry.target); });
+    }, { threshold: 0.05 });
+    domainRows.forEach((row) => galleryObserver.observe(row));
+  }
+
+  const viewportVideos = document.querySelectorAll('[data-viewport-video]');
+  if (viewportVideos.length) {
+    const videoObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const video = entry.target;
+        if (entry.isIntersecting) {
+          video.currentTime = 0;
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+      });
+    }, { threshold: 0.45 });
+    viewportVideos.forEach((video) => videoObserver.observe(video));
+  }
+});

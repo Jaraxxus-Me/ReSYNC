@@ -1,338 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="Recover, Discover, Plan: Learning Skills and Concepts from Robot Failures">
+  <meta name="description" content="ReSYNC turns robot failures into reusable skills and concepts for proactive abstract planning.">
   <meta name="keywords" content="Recovery Learning, Skill and Concept Learning, Abstract Planning, Robotics">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Recover, Discover, Plan: Learning Skills and Concepts from Robot Failures</title>
-
-  <link rel="icon" type="image/png" href="./static/images/airlab.png"> 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
-
+  <meta name="theme-color" content="#f7f5ef">
+  <title>ReSYNC — Recover, Discover, Plan</title>
+  <link rel="icon" type="image/png" href="./static/images/airlab.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,600,700|Noto+Sans:400,500,600,700" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/airlab.png">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
+  <script defer src="./static/js/index.js"></script>
 </head>
 <body>
-
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://jaraxxus-me.github.io/">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://jaraxxus-me.github.io/LogiCity/">
-            LogiCity - NeurIPS 2024
-          </a>
-          <a class="navbar-item" href="https://jaraxxus-me.github.io/ECCV2022_AirDet">
-            AirDet - ECCV 2022
-          </a>
-          <a class="navbar-item" href="https://jaraxxus-me.github.io/ICCV2023_PVTpp">
-            PVT++ - ICCV 2023
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</nav>
-
-
-<section class="hero">
-  <div class="hero-body">
+  <nav class="navbar site-nav" role="navigation" aria-label="Main navigation">
     <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-2 publication-title">Recover, Discover, Plan: Learning Skills and Concepts from Robot Failures</h1>
-          <div class="column is-full_width">
-            <h2 class="title is-3">In Submission</h2>
-          </div>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://jaraxxus-me.github.io/">Bowen Li</a><sup>1,2</sup>,</span>
-            <span class="author-block">
-              Mayank Mishra<sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://yil42.github.io/">Y. Isabel Liu</a><sup>3</sup>,</span>
-            <span class="author-block">
-              <a href="https://stonet2000.github.io/">Stone Tao</a><sup>4</sup>,</span>
-            <span class="author-block">
-              Nishanth Kumar<sup>5</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=yZDEX68AAAAJ&hl=en">Alexander Gray</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              Ruwan Wickramarachchi<sup>6</sup>,</span>
-            <span class="author-block">
-              <a href="https://researcher.watson.ibm.com/researcher/view.php?person=us-jwj">Jonathan Francis</a><sup>1,6</sup>,</span>
-            <span class="author-block">
-              <a href="http://theairlab.org/team/sebastian/">Sebastian Scherer</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://tomsilver.github.io/">Tom Silver</a><sup>3</sup></span>
-          </div>
+      <div class="navbar-brand">
+        <a class="navbar-item brand-mark" href="#top" aria-label="ReSYNC home">Re<span>SYNC</span></a>
+        <button class="navbar-burger" aria-label="Open navigation" aria-expanded="false" type="button">
+          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="navbar-menu"><div class="navbar-end">
+        <a class="navbar-item" href="#story">Story</a><a class="navbar-item" href="#gallery">Domains</a>
+        <a class="navbar-item" href="#comparison">Comparison</a><a class="navbar-item" href="#results">Results</a>
+      </div></div>
+    </div>
+  </nav>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Carnegie Mellon University</span>,
-            <span class="author-block"><sup>2</sup>Centaur AI Institute</span>,
-            <span class="author-block"><sup>3</sup>Princeton University</span>,
-            <span class="author-block"><sup>4</sup>AI2</span>,
-            <span class="author-block"><sup>5</sup>MIT</span>,
-            <span class="author-block"><sup>6</sup>Bosch Center for AI</span>
-          </div>
+  <main id="top">
+    <section class="hero project-hero"><div class="hero-body"><div class="container is-max-desktop has-text-centered">
+      <p class="eyebrow">CoRL 2026 · In submission</p>
+      <h1 class="title publication-title">Recover, Discover, Plan:<br><span>Learning Skills and Concepts from Robot Failures</span></h1>
+      <div class="publication-authors">
+        <span><a href="https://jaraxxus-me.github.io/">Bowen Li</a><sup>1,2</sup></span><span>Mayank Mishra<sup>1</sup></span>
+        <span><a href="https://yil42.github.io/">Y. Isabel Liu</a><sup>3</sup></span><span><a href="https://stonet2000.github.io/">Stone Tao</a><sup>4</sup></span>
+        <span>Nishanth Kumar<sup>5</sup></span><span><a href="https://scholar.google.com/citations?user=yZDEX68AAAAJ&amp;hl=en">Alexander Gray</a><sup>2</sup></span>
+        <span>Ruwan Wickramarachchi<sup>6</sup></span><span><a href="https://researcher.watson.ibm.com/researcher/view.php?person=us-jwj">Jonathan Francis</a><sup>1,6</sup></span>
+        <span><a href="http://theairlab.org/team/sebastian/">Sebastian Scherer</a><sup>1</sup></span><span><a href="https://tomsilver.github.io/">Tom Silver</a><sup>3</sup></span>
+      </div>
+      <div class="publication-affiliations"><span><sup>1</sup>CMU</span><span><sup>2</sup>Centaur AI</span><span><sup>3</sup>Princeton</span><span><sup>4</sup>AI2</span><span><sup>5</sup>MIT</span><span><sup>6</sup>Bosch Center for AI</span></div>
+      <div class="publication-links">
+        <a href="https://arxiv.org/abs/2606.18328" class="paper-button"><i class="ai ai-arxiv" aria-hidden="true"></i><span>Paper</span></a>
+        <a href="#story" class="outline-button"><i class="fas fa-play" aria-hidden="true"></i><span>See how it works</span></a>
+      </div>
+    </div></div></section>
 
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2606.18328"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-            </div>
-          </div>
+    <section class="teaser-section" aria-labelledby="teaser-title"><div class="container is-max-desktop">
+      <div class="teaser-frame"><video id="teaser1" autoplay muted loop playsinline controls preload="metadata"><source src="./static/images/teaser.mp4" type="video/mp4"></video></div>
+      <h2 id="teaser-title" class="teaser-copy">ReSYNC turns a recovery learned from <strong>one failure</strong> into an abstract skill the robot can <strong>plan with anywhere</strong>.</h2>
+    </div></section>
+
+    <section class="section-block story-section" id="story" aria-labelledby="story-title"><div class="container is-max-desktop">
+      <div class="section-heading"><p class="eyebrow">One failure. A reusable idea.</p><h2 id="story-title">From failure to foresight</h2><p>Follow the four moments that turn a brittle robot into a planner that learns.</p></div>
+      <div class="story-shell" data-story-carousel>
+        <div class="story-tabs" role="tablist" aria-label="ReSYNC story steps">
+          <button class="story-tab is-active" role="tab" aria-selected="true" data-story-index="0"><span class="tab-number">01</span><span><b>Fail</b><small>Meet the edge case</small></span></button>
+          <button class="story-tab" role="tab" aria-selected="false" data-story-index="1"><span class="tab-number">02</span><span><b>Recover</b><small>Learn in simulation</small></span></button>
+          <button class="story-tab" role="tab" aria-selected="false" data-story-index="2"><span class="tab-number">03</span><span><b>Discover</b><small>Refactor the model</small></span></button>
+          <button class="story-tab" role="tab" aria-selected="false" data-story-index="3"><span class="tab-number">04</span><span><b>Plan</b><small>Reuse before failure</small></span></button>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-      <video id="teaser1" autoplay muted controls style="flex: 50%; max-width: 100%;">
-        <source src="./static/images/teaser.mp4" type="video/mp4">
-      </video>
-    <br>
-    <br>
-    <h2 class="subtitle has-text-centered">
-      <strong>ReSYNC</strong> can automatically <b>invent neural abstractions (predicates)</b> for <b>generalizable</b> long-horizon planning tasks with <b>continuous and high-dimensional states</b>.
-    </h2>
-    <br>
-    <br>
-  </div>
-</section>
-
-<!-- <section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <style>
-            .courier-abs {
-              font-family: "Courier New", Courier, monospace;
-              font-weight: bold;
-            }
-          </style>
-          <p>
-            A robot that learns from demonstrations should not just imitate what it sees---it should <b>understand the high-level concepts</b> that are being demonstrated and generalize them to new tasks. 
-            Bilevel planning is a hierarchical model-based approach where predicates (relational state abstractions) can be leveraged to achieve compositional generalization.
-          </p>
-          <p>
-            However, previous bilevel planning approaches depend on predicates that are either hand-engineered or restricted to very simple forms, limiting their scalability to sophisticated, high-dimensional state spaces. 
-            To address this limitation, we present IVNTR, the first bilevel planning approach capable of <strong>learning neural predicates directly from demonstrations</strong>. 
-            Our key innovation is a neuro-symbolic <strong>bilevel learning framework</strong> that mirrors the structure of bilevel planning. 
-            In IVNTR, symbolic learning of the predicate "effects" and neural learning of the predicate "classifiers" alternate, with each providing guidance for the other.
-          </p>
-          <p>
-            We evaluate IVNTR in six diverse robot planning domains, demonstrating its effectiveness in abstracting various continuous and high-dimensional states. 
-            While most existing approaches struggle to generalize (with less than 35% success rate), our IVNTR achieves an average success rate of 77% on unseen tasks.
-            Additionally, we showcase IVNTR on a mobile manipulator, where it learns to perform real-world mobile manipulation tasks and generalizes to unseen test scenarios that feature new objects, new states, and longer task horizons. 
-            Our findings underscore the promise of <strong>learning and planning with abstractions</strong> as a path towards high-level generalization.
-          </p>
+        <div class="story-stage">
+          <article class="story-panel is-active" data-story-panel="0" role="tabpanel">
+            <div class="story-copy"><span class="story-kicker danger"><i class="fas fa-exclamation-triangle"></i> Deployment</span><h3>Initial skills meet a hard corner.</h3><p>The robot knows <code>Pick</code> and <code>Insert</code>. A block against the wall makes <code>Pick</code> fail.</p><div class="skill-chain"><span>Pick(block)</span><i class="fas fa-arrow-right"></i><span>Insert(block, block)</span><b class="chain-fail">×</b></div></div>
+            <div class="story-media failure-media"><video muted playsinline preload="metadata" data-story-video><source src="./static/videos/story-failure.mp4" type="video/mp4"></video><div class="media-badge failure-badge"><i class="fas fa-times"></i> Pick failed</div></div>
+          </article>
+          <article class="story-panel" data-story-panel="1" role="tabpanel" hidden>
+            <div class="story-copy"><span class="story-kicker recover"><i class="fas fa-sync-alt"></i> Recovery learning</span><h3>Spawn worlds. Learn one way out.</h3><p>Parallel simulation starts at the failure. PPO learns a relational <code>Poke</code> policy; success means planning can resume.</p><div class="policy-meter" aria-label="Recovery policy learning animation"><span></span><b>π<sub>poke</sub></b></div></div>
+            <div class="story-media sim-media"><img src="./static/images/story/gpu-sim.png" alt="Many robot simulations running in parallel"><video muted playsinline preload="metadata" data-story-video><source src="./static/videos/story-recovery.mp4" type="video/mp4"></video><div class="media-badge sim-badge"><i class="fas fa-microchip"></i> GPU parallel simulation</div></div>
+          </article>
+          <article class="story-panel" data-story-panel="2" role="tabpanel" hidden>
+            <div class="story-copy"><span class="story-kicker discover"><i class="fas fa-lightbulb"></i> Concept learning</span><h3>Recovery reveals what planning was missing.</h3><p>Counterfactual dreaming separates the useful relation from accidental details, then updates the planning model.</p><div class="dream-chips"><span>new objects</span><span>new states</span><span>new goals</span></div></div>
+            <div class="story-media concept-stage" aria-label="Animation showing a new predicate and updated operators"><div class="trajectory-card before"><small>before Poke</small><b>¬ TopUp(block)</b></div><div class="concept-arrow"><span>π<sub>poke</sub></span><i class="fas fa-arrow-right"></i></div><div class="trajectory-card after"><small>after Poke</small><b>TopUp(block)</b></div><div class="concept-card"><small>new concept</small><strong>TopUp(?block)</strong></div><div class="operator-row"><div><b>Poke</b><small>effect: TopUp</small></div><div><b>Insert</b><small>pre: TopUp</small></div></div></div>
+          </article>
+          <article class="story-panel" data-story-panel="3" role="tabpanel" hidden>
+            <div class="story-copy"><span class="story-kicker plan"><i class="fas fa-route"></i> Abstract planning</span><h3>A new task. The right skill, earlier.</h3><p>The goal changes. ReSYNC reasons backward from <code>Insert</code>, schedules <code>Poke</code> first, and avoids failure altogether.</p><div class="skill-chain success"><span>Poke</span><i class="fas fa-arrow-right"></i><span>Pick</span><i class="fas fa-arrow-right"></i><span>Insert</span><b>✓</b></div></div>
+            <div class="story-media success-media"><video muted playsinline preload="metadata" data-story-video><source src="./static/videos/story-generalize.mp4" type="video/mp4"></video><div class="media-badge success-badge"><i class="fas fa-check"></i> Replanned before failure</div></div>
+          </article>
         </div>
+        <div class="story-controls"><button type="button" class="story-arrow" data-story-prev aria-label="Previous story step"><i class="fas fa-arrow-left"></i></button><div class="story-dots" aria-label="Story position"><button class="is-active" data-story-index="0" aria-label="Story step 1"></button><button data-story-index="1" aria-label="Story step 2"></button><button data-story-index="2" aria-label="Story step 3"></button><button data-story-index="3" aria-label="Story step 4"></button></div><button type="button" class="story-arrow" data-story-next aria-label="Next story step"><i class="fas fa-arrow-right"></i></button></div>
       </div>
-    </div>
-  </div>
-</section> -->
+    </div></section>
 
-<!-- <section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Contributions</h2>
-        <div class="content has-text-justified">
-          <li>
-            We propose a novel <strong>bilevel-learning</strong> system (IVNTR) that can invent <b>neural predicates</b> for bilevel planning.
-          <li>
-            We evaluate IVNTR in six diverse robot planning domains, demonstrating its effectiveness in <strong>abstracting various continuous and high-dimensional states</strong>.
-          </li>
-          <li>
-            We showcase IVNTR on a mobile manipulator, where it learns to perform real-world mobile manipulation tasks and generalizes to unseen test scenarios.
-          </li>
-        </div>
+    <section class="section-block gallery-section" id="gallery" aria-labelledby="gallery-title"><div class="container is-max-widescreen">
+      <div class="section-heading"><p class="eyebrow">One framework, many physical worlds</p><h2 id="gallery-title">Skills emerge where plans break</h2><p>Hover over a domain—or tap it—to replay its learned behaviors.</p></div>
+      <div class="domain-gallery">
+        <article class="domain-row" tabindex="0" data-domain-row><header><span class="domain-index">01</span><div><h3>Icy Transport</h3><p>Drive through unknown ice and mud.</p></div><span class="domain-tag">2D transport</span></header><div class="domain-videos"><video muted loop playsinline preload="metadata"><source src="./static/videos/domain-icy-1.mp4" type="video/mp4"></video><video muted loop playsinline preload="metadata"><source src="./static/videos/domain-icy-2.mp4" type="video/mp4"></video><video muted loop playsinline preload="metadata"><source src="./static/videos/domain-icy-3.mp4" type="video/mp4"></video><div class="touch-overlay"><i class="fas fa-hand-pointer"></i><span>Touch to play</span></div></div></article>
+        <article class="domain-row" tabindex="0" data-domain-row><header><span class="domain-index">02</span><div><h3>Blocked Stacking</h3><p>Punch, wiggle, and fiddle around obstructions.</p></div><span class="domain-tag">2D manipulation</span></header><div class="domain-videos"><video muted loop playsinline preload="metadata"><source src="./static/videos/domain-blocked-1.mp4" type="video/mp4"></video><video muted loop playsinline preload="metadata"><source src="./static/videos/domain-blocked-2.mp4" type="video/mp4"></video><video muted loop playsinline preload="metadata"><source src="./static/videos/domain-blocked-3.mp4" type="video/mp4"></video><div class="touch-overlay"><i class="fas fa-hand-pointer"></i><span>Touch to play</span></div></div></article>
+        <article class="domain-row" tabindex="0" data-domain-row><header><span class="domain-index">03</span><div><h3>Cluttered Drawer</h3><p>Open articulated furniture and clear clutter.</p></div><span class="domain-tag">3D mobile manipulation</span></header><div class="domain-videos"><video muted loop playsinline preload="metadata"><source src="./static/videos/domain-drawer-1.mp4" type="video/mp4"></video><video muted loop playsinline preload="metadata"><source src="./static/videos/domain-drawer-2.mp4" type="video/mp4"></video><video muted loop playsinline preload="metadata"><source src="./static/videos/domain-drawer-3.mp4" type="video/mp4"></video><div class="touch-overlay"><i class="fas fa-hand-pointer"></i><span>Touch to play</span></div></div></article>
+        <article class="domain-row" tabindex="0" data-domain-row><header><span class="domain-index">04</span><div><h3>Rearrange</h3><p>Reuse tools to clear obstructed goals.</p></div><span class="domain-tag">3D long horizon</span></header><div class="domain-videos"><video muted loop playsinline preload="metadata"><source src="./static/videos/domain-rearrange-1.mp4" type="video/mp4"></video><video muted loop playsinline preload="metadata"><source src="./static/videos/domain-rearrange-2.mp4" type="video/mp4"></video><video muted loop playsinline preload="metadata"><source src="./static/videos/domain-rearrange-3.mp4" type="video/mp4"></video><div class="touch-overlay"><i class="fas fa-hand-pointer"></i><span>Touch to play</span></div></div></article>
       </div>
-    </div>
-  </div>
-</section> -->
+    </div></section>
 
-<!-- <section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-full_width">
-        <hr>
-        <h2 class="title is-3">Overall Method</h2>
-        <br>
-        <img src="static\images\Main.svg" class="center"/>
-        <div class="content has-text-justified">
-          <br>  
-          <p>
-            Bilevel-learning during training and bilevel planning during inference.
-          </p>
-          <p>
-            (a) During training, IVNTR leverages bilevel learning to invent neural predicates, neural samplers, and symbolic operators
-          </p>
-          <p>
-            (b) During inference, IVNTR leverages bilevel planning. The planner first uses neural predicates to abstract the high-dimensional states into discrete symbols, and then alternates between search and sampling to find a plan that achieves the goal.
-          </p>
-          </p>
-        </div>
+    <section class="section-block comparison-section" id="comparison" aria-labelledby="comparison-title"><div class="container is-max-desktop"><div class="comparison-grid">
+      <div class="comparison-video"><video muted loop playsinline controls preload="metadata" data-viewport-video><source src="./static/videos/reactive-failure.mp4" type="video/mp4"></video><span class="comparison-label"><i class="fas fa-times"></i> Reactive recovery</span></div>
+      <div class="comparison-copy"><p class="eyebrow">Why recovery alone is not enough</p><h2 id="comparison-title">Too late is a different state.</h2><p>A reactive policy waits for insertion to fail. By then another block is involved, the scene is out-of-distribution, and recovery cannot restore a solvable state.</p><div class="comparison-flow"><span>Insert fails</span><i class="fas fa-arrow-right"></i><span>Recover late</span><i class="fas fa-arrow-right"></i><span class="bad-state">OOD state</span></div><div class="proactive-note"><i class="fas fa-lightbulb"></i><span><b>ReSYNC plans Poke first.</b><br>It reuses recovery while the state is still recoverable.</span></div></div>
+    </div></div></section>
+
+    <section class="section-block results-section" id="results" aria-labelledby="results-title"><div class="container is-max-widescreen">
+      <div class="results-heading"><div class="section-heading left"><p class="eyebrow">Empirical results</p><h2 id="results-title">Generalization is the test.</h2><p>Success rate across four simulated domains. Gray columns are held-out, compositionally novel tasks.</p></div><div class="headline-stat"><strong>70%</strong><span>average success<br>on novel tasks</span></div></div>
+      <div class="table-card">
+        <div class="table-scroll"><table class="results-table"><thead><tr><th rowspan="2">Method</th><th colspan="5">Icy Transport</th><th colspan="5">Cluttered Drawer</th></tr><tr><th>T₁ train</th><th class="heldout">T₁ test</th><th>T₂ train</th><th class="heldout">T₂ test</th><th>T₁</th><th>T₁ train</th><th class="heldout">T₁ test</th><th>T₂ train</th><th class="heldout">T₂ test</th><th>T₁</th></tr></thead><tbody>
+          <tr><th>GNN</th><td>.98±.03</td><td class="heldout">.01±.01</td><td>.18±.13</td><td class="heldout">.18±.13</td><td>.38±.18</td><td>.86±.04</td><td class="heldout">.00±.00</td><td>.69±.07</td><td class="heldout">.48±.10</td><td>.00±.00</td></tr>
+          <tr><th>TF</th><td>.98±.03</td><td class="heldout">.00±.00</td><td>.26±.14</td><td class="heldout">.17±.12</td><td>.52±.16</td><td>.11±.07</td><td class="heldout">.00±.00</td><td>.03±.03</td><td class="heldout">.02±.02</td><td>.00±.00</td></tr>
+          <tr><th>VLM-OS</th><td>.39±.13</td><td class="heldout">.00±.00</td><td>.30±.14</td><td class="heldout">.00±.00</td><td>.24±.12</td><td>.68±.06</td><td class="heldout">.29±.03</td><td>.18±.04</td><td class="heldout">.25±.06</td><td>.50±.10</td></tr>
+          <tr><th>DSG-S</th><td>.67±.12</td><td class="heldout">.00±.00</td><td>.24±.07</td><td class="heldout">.02±.02</td><td>.44±.08</td><td>.73±.03</td><td class="heldout">.04±.01</td><td>.67±.04</td><td class="heldout">.04±.01</td><td>.38±.02</td></tr>
+          <tr><th>DSG-M</th><td>.61±.04</td><td class="heldout">.33±.04</td><td>.15±.07</td><td class="heldout">.01±.02</td><td>.21±.05</td><td>.13±.02</td><td class="heldout">.03±.01</td><td>.00±.00</td><td class="heldout">.00±.00</td><td>.09±.04</td></tr>
+          <tr><th>RC</th><td>.71±.11</td><td class="heldout">.00±.00</td><td>.34±.16</td><td class="heldout">.00±.00</td><td>.50±.18</td><td>.68±.03</td><td class="heldout">.01±.01</td><td>.62±.04</td><td class="heldout">.14±.02</td><td>.35±.15</td></tr>
+          <tr><th>RC+IVNTR</th><td>.50±.20</td><td class="heldout">.44±.18</td><td>.18±.12</td><td class="heldout">.08±.08</td><td>.66±.16</td><td>.69±.03</td><td class="heldout">.59±.15</td><td>.64±.03</td><td class="heldout">.27±.18</td><td>.58±.14</td></tr>
+          <tr class="resync-row"><th>ReSYNC</th><td>.92±.05</td><td class="heldout">.76±.16</td><td>.85±.09</td><td class="heldout">.68±.13</td><td>.87±.09</td><td>.95±.01</td><td class="heldout">.96±.02</td><td>.64±.02</td><td class="heldout">.72±.03</td><td>.76±.03</td></tr>
+        </tbody></table></div>
+        <div class="table-scroll second-table"><table class="results-table"><thead><tr><th rowspan="2">Method</th><th colspan="8">Blocked Stacking</th><th colspan="2">Rearrange</th></tr><tr><th>T₁ train</th><th class="heldout">T₁ test</th><th>T₂ train</th><th class="heldout">T₂ test</th><th>T₁</th><th>T₃ train</th><th class="heldout">T₃ test</th><th>T₁,₂</th><th>T₁ train</th><th class="heldout">T₁ test</th></tr></thead><tbody>
+          <tr><th>GNN</th><td>.74±.03</td><td class="heldout">.08±.06</td><td>.55±.11</td><td class="heldout">.12±.10</td><td>.00±.00</td><td>.56±.15</td><td class="heldout">.07±.06</td><td>.03±.02</td><td>.39±.12</td><td class="heldout">.00±.00</td></tr>
+          <tr><th>TF</th><td>.74±.03</td><td class="heldout">.05±.10</td><td>.66±.05</td><td class="heldout">.11±.12</td><td>.68±.02</td><td>.72±.05</td><td class="heldout">.08±.06</td><td>.35±.16</td><td>.15±.14</td><td class="heldout">.00±.00</td></tr>
+          <tr><th>VLM-OS</th><td>.74±.01</td><td class="heldout">.04±.03</td><td>.19±.15</td><td class="heldout">.02±.01</td><td>.21±.10</td><td>.00±.00</td><td class="heldout">.09±.08</td><td>.23±.14</td><td>.26±.02</td><td class="heldout">.00±.00</td></tr>
+          <tr><th>DSG-S</th><td>.66±.05</td><td class="heldout">.04±.03</td><td>.52±.14</td><td class="heldout">.01±.02</td><td>.35±.19</td><td>.68±.04</td><td class="heldout">.00±.00</td><td>.17±.07</td><td>.35±.03</td><td class="heldout">.00±.00</td></tr>
+          <tr><th>DSG-M</th><td>.38±.06</td><td class="heldout">.05±.03</td><td>.01±.02</td><td class="heldout">.01±.01</td><td>.07±.10</td><td>.00±.00</td><td class="heldout">.05±.03</td><td>.05±.02</td><td>.18±.03</td><td class="heldout">.15±.00</td></tr>
+          <tr><th>RC</th><td>.75±.03</td><td class="heldout">.04±.04</td><td>.61±.11</td><td class="heldout">.24±.18</td><td>.39±.17</td><td>.10±.03</td><td class="heldout">.16±.12</td><td>.17±.14</td><td>.00±.00</td><td class="heldout">.00±.00</td></tr>
+          <tr><th>RC+IVNTR</th><td>.74±.02</td><td class="heldout">.70±.03</td><td>.64±.04</td><td class="heldout">.17±.13</td><td>.72±.02</td><td>.64±.04</td><td class="heldout">.37±.17</td><td>.09±.10</td><td>.47±.12</td><td class="heldout">.48±.12</td></tr>
+          <tr class="resync-row"><th>ReSYNC</th><td>.73±.04</td><td class="heldout">.76±.05</td><td>.67±.10</td><td class="heldout">.84±.06</td><td>.76±.02</td><td>.69±.05</td><td class="heldout">.72±.08</td><td>.80±.06</td><td>.59±.03</td><td class="heldout">.57±.03</td></tr>
+        </tbody></table></div>
+        <p class="table-caption"><b>Table 1.</b> Success rates in four simulated domains, averaged over five random seeds (± standard deviation), 50 tasks per scenario. ReSYNC is competitive in seen tasks and consistently strongest on unseen compositions while retaining earlier skills.</p>
       </div>
-    </div>
-</div>
-</section> -->
+    </div></section>
 
-<!-- <section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-full_width">
-        <hr>
-        <h2 class="title is-3">Bilevel Learning: Neural Classifier Learning</h2>
-        <br>
-        <img src="static\images\Neural.jpg" class="center"/>
-      </div>
-    </div>
-  </div>
-</section> -->
+    <section class="section-block acknowledgement-section" id="acknowledgements" aria-labelledby="acknowledgements-title"><div class="container is-max-desktop"><div class="ack-card"><i class="fas fa-hands-helping" aria-hidden="true"></i><div><p class="eyebrow">Acknowledgements</p><h2 id="acknowledgements-title">Built with generous support.</h2><p>This work was supported by AFRL and DARPA (FA8750-23-2-1015), DSTA, the ACCESS program, and a Princeton SEAS Innovation grant. We thank Patrick Yin for support on the real-robot and sim-to-real experiments, and Jiayuan Mao for valuable early feedback.</p></div></div></div></section>
+  </main>
 
-<!-- <section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-full_width">
-        <hr>
-        <h2 class="title is-3">Bilevel Learning: Symbolic Effect Learning</h2>
-        <br>
-        <img src="static\images\Symbolic.jpg" class="center"/>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<!-- <section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-full_width">
-        <hr>
-        <h2 class="title is-3">Domains & Quantative Results</h2>
-        <div style="text-align:center;">
-          <img src="static\images\quantative.png" style="width:100%; height:auto;">
-        </div>
-        <br>
-        <p>
-          We evaluate IVNTR in six diverse robot planning domains, demonstrating its effectiveness in abstracting various continuous and high-dimensional states. 
-          While most existing approaches struggle to generalize (with less than 35% success rate), our IVNTR achieves an average success rate of 77% on unseen tasks.
-        </p>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<!-- <section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@inproceedings{Li2026CoRL,
-      author    = {Li, Bowen and Mishra, Mayank and Liu, Y. Isabel and Tao, Stone and Kumar, Nishanth and Gray, Alexander and Wickramarachchi, Ruwan and Francis, Jonathan and Scherer, Sebastian and Silver, Tom},
-      title     = {{Recover, Discover, Plan: Learning Skills and Concepts from Robot Failures}},
-      booktitle = {Proceedings of the Conference on Robot Learning (CoRL)},
-      year      = {2026}
-  }</code></pre>
-  </div>
-</section> -->
-
-
-<!-- <section class="section" id="Acknowledgements">
-  <div class="container is-max-desktop content">
-    <h2 class="title">Acknowledgements</h2>
-    The work was partly done when Bowen Li was an intern at the Centaur AI Institute. Our code is largely based on 
-    <a href="https://github.com/Learning-and-Intelligent-Systems/predicators">predicators@MIT-LIS-Group</a>, we would 
-    like to express our gratitude to the developers for their open-source code and helpful discussions.
-  </div>
-</section> -->
-
-<script>
-  function toggleRule() {
-    var shortRule = document.getElementById("short-rule");
-    var fullRule = document.getElementById("full-rule");
-    var toggleButton = document.getElementById("toggle-button");
-    
-    if (fullRule.style.display === "none") {
-      fullRule.style.display = "block";
-      shortRule.style.display = "none";
-      toggleButton.textContent = "Collapse Rule";
-    } else {
-      fullRule.style.display = "none";
-      shortRule.style.display = "block";
-      toggleButton.textContent = "Extend Rule";
-    }
-  }
-</script>
-
-
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-            This webpage template is from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. 
-            We sincerely thank <a href="https://keunhong.com/">Keunhong Park</a> for developing and open-sourcing this template.
-          </p>
-        </div>
-      </div>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
+  <footer class="footer site-footer"><div class="container is-max-desktop"><div><b>ReSYNC</b><span>Recover · Discover · Plan</span></div><p>This website is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Template adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.</p></div></footer>
 </body>
 </html>

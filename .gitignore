@@ -16,6 +16,8 @@ pylint_recursive.py
 results
 eval_trajectories
 videos
+!docs/static/videos/
+!docs/static/videos/*.mp4
 saved_approaches
 saved_datasets
 scripts/results
