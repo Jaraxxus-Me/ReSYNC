@@ -42,6 +42,9 @@ code { padding: .13em .36em; color: #075c4c; background: var(--green-soft); bord
 .eyebrow { margin: 0 0 .7rem; color: var(--green); font-family: "Google Sans", sans-serif; font-size: .75rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
 .publication-title { max-width: 950px; margin: 0 auto 1.5rem !important; color: var(--ink); font-family: "Google Sans", sans-serif; font-size: clamp(2.4rem, 5vw, 4.4rem) !important; line-height: 1.02 !important; letter-spacing: -.055em; }
 .publication-title span { color: #40514c; font-size: .62em; letter-spacing: -.035em; }
+.publication-venue { display: inline-block; margin: 0 0 1.5rem; padding: .6rem 1.1rem; color: var(--green); background: var(--green-soft); border: 1px solid #b4dace; border-radius: 999px; font-family: "Google Sans", sans-serif; font-size: clamp(1rem, 2.5vw, 1.3rem); }
+.publication-venue strong { color: inherit; }
+.publication-authors > span { white-space: nowrap; }
 .publication-authors { display: flex; flex-wrap: wrap; justify-content: center; gap: .25rem 1rem; max-width: 980px; margin: 0 auto; font-family: "Google Sans", sans-serif; font-size: 1.02rem; }
 .publication-authors a { color: var(--ink); border-bottom: 1px solid #a4b3ae; }
 .publication-authors a:hover { color: var(--green); border-color: var(--green); }
