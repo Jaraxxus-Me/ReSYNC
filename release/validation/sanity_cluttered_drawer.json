@@ -1,0 +1,235 @@
+{
+  "environment": "cluttered_drawer",
+  "seed": 0,
+  "source_commit": "49f8d12a072166e89ef45a0eacc1d20adc8bdefa",
+  "policy": "trained_policies/cluttered_drawer/skill_1231_sc1_seed0/best_ppo_ckpt.pt",
+  "predicates": "c_drawer_sc1_pred_nets_seed0",
+  "config": "config/lifelong_learning/cluttered_drawer_sc1.yaml",
+  "max_env_steps": 900,
+  "torch": "2.11.0+cu130",
+  "gpu": "NVIDIA GeForce RTX 3090 Ti",
+  "loaded_operators": [
+    "BodyReachToGrasp",
+    "BodyReachToPlace",
+    "Grasp",
+    "HandReachToGrasp",
+    "HandReachToGrasp_Pull",
+    "HandReachToPlace",
+    "Place",
+    "Pull"
+  ],
+  "loaded_predicate_count": 15,
+  "configurations": {
+    "1_b": {
+      "successes": 4,
+      "episodes": 5,
+      "success_rate": 0.8,
+      "operator_step_counts": {
+        "BodyReachToGrasp": 734,
+        "HandReachToGrasp_Pull": 264,
+        "Pull": 105,
+        "HandReachToGrasp": 274,
+        "Grasp": 80,
+        "BodyReachToPlace": 441,
+        "HandReachToPlace": 216,
+        "Place": 5
+      },
+      "rollouts": [
+        {
+          "episode": 0,
+          "reset_seed": 0,
+          "success": true,
+          "steps": 470,
+          "operators": [
+            "BodyReachToGrasp",
+            "HandReachToGrasp_Pull",
+            "Pull",
+            "BodyReachToGrasp",
+            "HandReachToGrasp",
+            "Grasp",
+            "BodyReachToPlace",
+            "HandReachToPlace",
+            "Place"
+          ],
+          "planning_failure": null
+        },
+        {
+          "episode": 1,
+          "reset_seed": 10,
+          "success": true,
+          "steps": 552,
+          "operators": [
+            "BodyReachToGrasp",
+            "HandReachToGrasp_Pull",
+            "Pull",
+            "BodyReachToGrasp",
+            "HandReachToGrasp",
+            "Grasp",
+            "BodyReachToPlace",
+            "HandReachToPlace",
+            "Place"
+          ],
+          "planning_failure": null
+        },
+        {
+          "episode": 2,
+          "reset_seed": 20,
+          "success": true,
+          "steps": 491,
+          "operators": [
+            "BodyReachToGrasp",
+            "HandReachToGrasp_Pull",
+            "Pull",
+            "BodyReachToGrasp",
+            "HandReachToGrasp",
+            "Grasp",
+            "BodyReachToPlace",
+            "HandReachToPlace",
+            "Place"
+          ],
+          "planning_failure": null
+        },
+        {
+          "episode": 3,
+          "reset_seed": 30,
+          "success": false,
+          "steps": 153,
+          "operators": [
+            "BodyReachToGrasp",
+            "HandReachToGrasp_Pull",
+            "Pull",
+            "BodyReachToGrasp",
+            "HandReachToGrasp"
+          ],
+          "planning_failure": null
+        },
+        {
+          "episode": 4,
+          "reset_seed": 40,
+          "success": true,
+          "steps": 453,
+          "operators": [
+            "BodyReachToGrasp",
+            "HandReachToGrasp_Pull",
+            "Pull",
+            "BodyReachToGrasp",
+            "HandReachToGrasp",
+            "Grasp",
+            "BodyReachToPlace",
+            "HandReachToPlace",
+            "Place"
+          ],
+          "planning_failure": null
+        }
+      ]
+    },
+    "1_g": {
+      "successes": 5,
+      "episodes": 5,
+      "success_rate": 1.0,
+      "operator_step_counts": {
+        "BodyReachToGrasp": 730,
+        "HandReachToGrasp_Pull": 255,
+        "Pull": 105,
+        "HandReachToGrasp": 295,
+        "Grasp": 99,
+        "BodyReachToPlace": 882,
+        "HandReachToPlace": 351,
+        "Place": 9
+      },
+      "rollouts": [
+        {
+          "episode": 0,
+          "reset_seed": 0,
+          "success": true,
+          "steps": 435,
+          "operators": [
+            "BodyReachToGrasp",
+            "HandReachToGrasp_Pull",
+            "Pull",
+            "BodyReachToGrasp",
+            "HandReachToGrasp",
+            "Grasp",
+            "BodyReachToPlace",
+            "HandReachToPlace",
+            "Place"
+          ],
+          "planning_failure": null
+        },
+        {
+          "episode": 1,
+          "reset_seed": 10,
+          "success": true,
+          "steps": 589,
+          "operators": [
+            "BodyReachToGrasp",
+            "HandReachToGrasp_Pull",
+            "Pull",
+            "BodyReachToGrasp",
+            "HandReachToGrasp",
+            "Grasp",
+            "BodyReachToPlace",
+            "HandReachToPlace",
+            "Place"
+          ],
+          "planning_failure": null
+        },
+        {
+          "episode": 2,
+          "reset_seed": 20,
+          "success": true,
+          "steps": 589,
+          "operators": [
+            "BodyReachToGrasp",
+            "HandReachToGrasp_Pull",
+            "Pull",
+            "BodyReachToGrasp",
+            "HandReachToGrasp",
+            "Grasp",
+            "BodyReachToPlace",
+            "HandReachToPlace",
+            "Place"
+          ],
+          "planning_failure": null
+        },
+        {
+          "episode": 3,
+          "reset_seed": 30,
+          "success": true,
+          "steps": 581,
+          "operators": [
+            "BodyReachToGrasp",
+            "HandReachToGrasp_Pull",
+            "Pull",
+            "BodyReachToGrasp",
+            "HandReachToGrasp",
+            "Grasp",
+            "BodyReachToPlace",
+            "HandReachToPlace",
+            "Place"
+          ],
+          "planning_failure": null
+        },
+        {
+          "episode": 4,
+          "reset_seed": 40,
+          "success": true,
+          "steps": 532,
+          "operators": [
+            "BodyReachToGrasp",
+            "HandReachToGrasp_Pull",
+            "Pull",
+            "BodyReachToGrasp",
+            "HandReachToGrasp",
+            "Grasp",
+            "BodyReachToPlace",
+            "HandReachToPlace",
+            "Place"
+          ],
+          "planning_failure": null
+        }
+      ]
+    }
+  },
+  "elapsed_seconds": 232.23492860794067
+}

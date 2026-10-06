@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-05",
+  "python": "3.11.15",
+  "environment": ".release-cache/verification-venv",
+  "installation": [
+    "uv venv --python 3.11 .release-cache/verification-venv",
+    "source .release-cache/verification-venv/bin/activate",
+    "uv pip install -r release/requirements-linux.lock",
+    "uv pip install --no-deps -e . -e third-party/prpl-mono/prpl-utils -e third-party/prpl-mono/prbench -e third-party/prpl-mono/relational-structs -e third-party/prpl-mono/toms-geoms-2d",
+    "uv pip check"
+  ],
+  "installed_packages": 195,
+  "dependency_check": "passed",
+  "source_files_verified": 1381,
+  "asset_download_authentication": "none; gdown use_cookies=False",
+  "asset_files_verified": 2856,
+  "asset_archives_anonymously_downloaded": 5
+}

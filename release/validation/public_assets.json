@@ -1,0 +1,71 @@
+{
+  "verified_date": "2026-10-05",
+  "parts": [
+    {
+      "filename": "resync_blocked_stacking_seed0.zip.part001",
+      "bytes": 94371840,
+      "drive_file_id": "1c-jZVJv4Jsi0ysybW9Lj9sutRXYy36ki",
+      "public_reader": true
+    },
+    {
+      "filename": "resync_blocked_stacking_seed0.zip.part002",
+      "bytes": 94371840,
+      "drive_file_id": "1cMSBelo5x8BGRnb_cdh5PplkvVmJXirh",
+      "public_reader": true
+    },
+    {
+      "filename": "resync_blocked_stacking_seed0.zip.part003",
+      "bytes": 27559933,
+      "drive_file_id": "11BJDK0fplac9twJliqCprRNgvBXwBvxk",
+      "public_reader": true
+    },
+    {
+      "filename": "resync_cluttered_drawer_seed0.zip.part001",
+      "bytes": 94371840,
+      "drive_file_id": "1y4S7qpPC9dXO3yExqW-L0eLM6ZW5srNA",
+      "public_reader": true
+    },
+    {
+      "filename": "resync_cluttered_drawer_seed0.zip.part002",
+      "bytes": 94371840,
+      "drive_file_id": "19r_xAl86rxiTX5woFfvmwXjXdlBSOw3r",
+      "public_reader": true
+    },
+    {
+      "filename": "resync_cluttered_drawer_seed0.zip.part003",
+      "bytes": 94371840,
+      "drive_file_id": "1mNaGCw1P8jGo-Zy4KYbTiiFVtg3zxHTQ",
+      "public_reader": true
+    },
+    {
+      "filename": "resync_cluttered_drawer_seed0.zip.part004",
+      "bytes": 49302869,
+      "drive_file_id": "1xD0p7qx-qI-HwO2FzeFPKlGx8ZXuGKKi",
+      "public_reader": true
+    },
+    {
+      "filename": "resync_icy_transport_seed0.zip.part001",
+      "bytes": 94371840,
+      "drive_file_id": "1bqrqQzn-c0zuf-ONpqO5cBUUsj6_qJd4",
+      "public_reader": true
+    },
+    {
+      "filename": "resync_icy_transport_seed0.zip.part002",
+      "bytes": 2211132,
+      "drive_file_id": "1mCWZngXGog8UgG66xOi9IBYRhJpyRcI4",
+      "public_reader": true
+    },
+    {
+      "filename": "resync_cluttered_room_seed0.zip.part001",
+      "bytes": 29815413,
+      "drive_file_id": "1dDjZcF0gNJa77b7btrgVhBiFlLdjqxlw",
+      "public_reader": true
+    },
+    {
+      "filename": "resync_simulation_assets.zip.part001",
+      "bytes": 94314077,
+      "drive_file_id": "1CrfbO5hw_amJfeBSwp_QMkFgk42chX5t",
+      "public_reader": true
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+predicates:
+  - name: "u_p1"
+    types: ["robot"]
+    ae_generator:
+      name: "fixed"
+      kwargs:
+        ae_vectors: [[-1, 1, 0, 0], [0, 0, 1, 0]]
+        ae_var_ids: [[0], [0]]
+    nn_archi: 
+      type: "PoseMLP"
+      input_dim: 8
+      layer_size: 128
+      initializer: "xavier"
+    optimizer:
+      type: "AdamW"
+      kwargs:
+        lr: 0.001
+    lr_scheduler:
+      type: "StepLR"
+      kwargs:
+        step_size: 40
+        gamma: 0.1
+    batch_size: 128
+    num_epochs: 80
+    val_loss_thresh: 0.05
+    cls_threshold: 0.5
+    val_freq: 10
+    skip: True
+
+  - name: "b_p1"
+    types: ["robot", "entity"]
+    ae_generator:
+      name: "fixed"
+      kwargs:
+        ae_vectors: [[1, -1, 0, 0], [-1, 0, 1, 0]]
+        ae_var_ids: [[0, 0], [0, 0]]
+    nn_archi: 
+      type: "PoseMLP"
+      input_dim: 8
+      layer_size: 128
+      initializer: "xavier"
+    optimizer:
+      type: "AdamW"
+      kwargs:
+        lr: 0.001
+    lr_scheduler:
+      type: "StepLR"
+      kwargs:
+        step_size: 40
+        gamma: 0.1
+    batch_size: 128
+    num_epochs: 100
+    val_loss_thresh: 0.05
+    cls_threshold: 0.5
+    val_freq: 10
+    skip: True
+
+  - name: "b_p2"
+    types: ["robot", "entity"]
+    ae_generator:
+      name: "fixed"
+      kwargs:
+        ae_vectors: [[0, 0, 0, 1]]
+        ae_var_ids: [[0, 1]]
+    nn_archi: 
+      type: "PoseMLP"
+      input_dim: 8
+      layer_size: 128
+      initializer: "xavier"
+    optimizer:
+      type: "AdamW"
+      kwargs:
+        lr: 0.001
+    lr_scheduler:
+      type: "StepLR"
+      kwargs:
+        step_size: 40
+        gamma: 0.1
+    batch_size: 128
+    num_epochs: 100
+    val_loss_thresh: 0.05
+    cls_threshold: 0.5
+    val_freq: 10
+    skip: True
+
+  - name: "b_p3"
+    types: ["robot", "obstacle"]
+    ae_generator:
+      name: "fixed"
+      kwargs:
+        ae_vectors: [[0, 0, 1, 0]]
+        ae_var_ids: [[0, 0]]
+    nn_archi: 
+      type: "PoseMLP"
+      input_dim: 8
+      layer_size: 128
+      initializer: "xavier"
+    optimizer:
+      type: "AdamW"
+      kwargs:
+        lr: 0.001
+    lr_scheduler:
+      type: "StepLR"
+      kwargs:
+        step_size: 40
+        gamma: 0.1
+    batch_size: 128
+    num_epochs: 100
+    val_loss_thresh: 0.05
+    cls_threshold: 0.5
+    val_freq: 10
+    skip: True

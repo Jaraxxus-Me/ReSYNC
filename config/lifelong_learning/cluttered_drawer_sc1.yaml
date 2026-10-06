@@ -1,0 +1,49 @@
+scenarios:
+  1:
+    trained: False
+    tgt_skill: "Pull(robot,hammer,drawer)"
+    failed_skill: "HandReachToGrasp"
+    failed_objects: "robot,grasp_hammer"
+    basic_type: "hammer"
+    max_rl_steps: 16
+    rl_static_steps: 3
+    max_skill_steps: 250
+    max_env_steps: 700
+    train_objects: "robot,grasp_hammer,drawer"
+    basic_objects: "grasp_hammer"
+    skill_learning_cfg_settings:
+      scenario: "1"
+      dreaming_noise_base_var: 0.0
+      rl_config: "config/pure_rl/cluttered_drawer_ppoc_sc1.yaml"
+      specified_task_path: "config/specified_tasks/cluttered_drawer"
+      rl_dataset_path: "training_data/cluttered_drawer/RL_data/scenario_1"
+      dreaming_noise_base_var: 0.0
+      planner_eval: True
+      partial_planner_eval: True
+      max_env_steps: 550
+      num_train_episodes_rl: 50
+      num_envs: 4096
+      num_eval_envs: 16
+      drawer_blocking_grasp: True
+      drawer_blocking_stacking: False
+    planner_learning_cfg_settings:
+      num_envs: 16
+      scenario: "1"
+      middle_state_method: "naive_init"
+      real_scenario_name: "sc1_pre_n1"
+      num_middle_states: 20
+      specified_task_path: "config/specified_tasks/cluttered_drawer"
+      predicate_config: "config/predicates/cluttered_drawer_confined_enu_sc1.yaml"
+      rl_config: "config/pure_rl/cluttered_drawer_ppoc_sc1.yaml"
+      dreaming_noise_base_var: 0.0
+      drawer_blocking_grasp: True
+      drawer_blocking_stacking: False
+      force_skip_pred_learning: True
+      num_train_episodes_planner: 1280
+      num_failed_episodes_planner: 40
+      num_train_episodes_planner_before_dreaming: 320
+      pred_search_operator_learning_out_of_sample_penalty: 0.0
+      pred_search_num_trajectories: 100
+      max_env_steps: 900
+      planner_dataset_path: "training_data/cluttered_drawer/Planner_data/scenario1"
+      planner_num_traj: 5

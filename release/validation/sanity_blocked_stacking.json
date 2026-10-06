@@ -1,0 +1,203 @@
+{
+  "environment": "blocked_stacking",
+  "seed": 0,
+  "source_commit": "49f8d12a072166e89ef45a0eacc1d20adc8bdefa",
+  "policy": "trained_policies/b_stacking/skill_1127_sc1_seed0/best_ppo_ckpt.pt",
+  "predicates": "skill_1127_sc1_pred_nets_seed0",
+  "config": "config/lifelong_learning/blocked_stacking_sc1.yaml",
+  "max_env_steps": 300,
+  "torch": "2.11.0+cu130",
+  "gpu": "NVIDIA GeForce RTX 3090 Ti",
+  "loaded_operators": [
+    "Grasp",
+    "Place",
+    "Punch",
+    "ReachToGrasp",
+    "ReachToGrasp_Punch",
+    "ReachToPlace"
+  ],
+  "loaded_predicate_count": 11,
+  "configurations": {
+    "1_b": {
+      "successes": 4,
+      "episodes": 5,
+      "success_rate": 0.8,
+      "operator_step_counts": {
+        "ReachToGrasp_Punch": 210,
+        "Punch": 75,
+        "ReachToGrasp": 307,
+        "Grasp": 13,
+        "ReachToPlace": 293,
+        "Place": 278
+      },
+      "rollouts": [
+        {
+          "episode": 0,
+          "reset_seed": 0,
+          "success": true,
+          "steps": 234,
+          "operators": [
+            "ReachToGrasp_Punch",
+            "Punch",
+            "ReachToGrasp",
+            "Grasp",
+            "ReachToPlace",
+            "Place"
+          ],
+          "planning_failure": null
+        },
+        {
+          "episode": 1,
+          "reset_seed": 10,
+          "success": true,
+          "steps": 241,
+          "operators": [
+            "ReachToGrasp_Punch",
+            "Punch",
+            "ReachToGrasp",
+            "Grasp",
+            "ReachToPlace",
+            "Place"
+          ],
+          "planning_failure": null
+        },
+        {
+          "episode": 2,
+          "reset_seed": 20,
+          "success": false,
+          "steps": 301,
+          "operators": [
+            "ReachToGrasp_Punch",
+            "Punch",
+            "ReachToGrasp",
+            "Grasp",
+            "ReachToPlace",
+            "Place"
+          ],
+          "planning_failure": null
+        },
+        {
+          "episode": 3,
+          "reset_seed": 30,
+          "success": true,
+          "steps": 204,
+          "operators": [
+            "ReachToGrasp_Punch",
+            "Punch",
+            "ReachToGrasp",
+            "Grasp",
+            "ReachToPlace",
+            "Place"
+          ],
+          "planning_failure": null
+        },
+        {
+          "episode": 4,
+          "reset_seed": 40,
+          "success": true,
+          "steps": 196,
+          "operators": [
+            "ReachToGrasp_Punch",
+            "Punch",
+            "ReachToGrasp",
+            "Grasp",
+            "ReachToPlace",
+            "Place"
+          ],
+          "planning_failure": null
+        }
+      ]
+    },
+    "1_g": {
+      "successes": 2,
+      "episodes": 5,
+      "success_rate": 0.4,
+      "operator_step_counts": {
+        "ReachToGrasp_Punch": 283,
+        "Punch": 75,
+        "ReachToGrasp": 59,
+        "Grasp": 8,
+        "ReachToPlace": 140,
+        "Place": 640
+      },
+      "rollouts": [
+        {
+          "episode": 0,
+          "reset_seed": 0,
+          "success": true,
+          "steps": 143,
+          "operators": [
+            "ReachToGrasp_Punch",
+            "Punch",
+            "ReachToGrasp",
+            "Grasp",
+            "ReachToPlace",
+            "Place"
+          ],
+          "planning_failure": null
+        },
+        {
+          "episode": 1,
+          "reset_seed": 10,
+          "success": true,
+          "steps": 159,
+          "operators": [
+            "ReachToGrasp_Punch",
+            "Punch",
+            "ReachToGrasp",
+            "Grasp",
+            "ReachToPlace",
+            "Place"
+          ],
+          "planning_failure": null
+        },
+        {
+          "episode": 2,
+          "reset_seed": 20,
+          "success": false,
+          "steps": 301,
+          "operators": [
+            "ReachToGrasp_Punch",
+            "Punch",
+            "ReachToGrasp",
+            "Grasp",
+            "ReachToPlace",
+            "Place"
+          ],
+          "planning_failure": null
+        },
+        {
+          "episode": 3,
+          "reset_seed": 30,
+          "success": false,
+          "steps": 301,
+          "operators": [
+            "ReachToGrasp_Punch",
+            "Punch",
+            "ReachToGrasp",
+            "Grasp",
+            "ReachToPlace",
+            "Place"
+          ],
+          "planning_failure": null
+        },
+        {
+          "episode": 4,
+          "reset_seed": 40,
+          "success": false,
+          "steps": 301,
+          "operators": [
+            "ReachToGrasp_Punch",
+            "Punch",
+            "ReachToGrasp",
+            "Grasp",
+            "ReachToPlace",
+            "Place"
+          ],
+          "planning_failure": null
+        }
+      ]
+    }
+  },
+  "elapsed_seconds": 29.517789840698242
+}

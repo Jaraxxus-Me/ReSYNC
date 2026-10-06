@@ -1,0 +1,115 @@
+name: CI Checks
+
+on: [push]
+
+jobs:
+  autoformat:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: Run black to test code linting
+        uses: psf/black@stable
+        with:
+          options: "--check --verbose"
+          jupyter: true
+      - name: Run isort to organize imports
+        uses: isort/isort-action@master
+  linting:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11"]
+    steps:
+    - name: Install LAPACK BLAS, and OSMESA
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y liblapack-dev libblas-dev libosmesa6-dev libgl1 libglx-mesa0
+    - uses: actions/checkout@v4
+      with:
+        submodules: recursive
+        fetch-depth: 0
+    - name: Install uv
+      uses: astral-sh/setup-uv@v3
+      with:
+        enable-cache: true
+        cache-dependency-glob: "pyproject.toml"
+    - name: Set up Python ${{ matrix.python-version }}
+      run: uv python install ${{ matrix.python-version }}    
+    - name: Install the project
+      run: |
+        uv sync --all-extras --dev
+        uv pip install third-party/prpl-mono/prbench
+        uv pip install third-party/prpl-mono/relational-structs
+        uv pip install third-party/prpl-mono/toms-geoms-2d
+        uv pip install third-party/prpl-mono/prpl-utils
+    - name: Lint
+      run: |
+        uv run pytest . --pylint -m pylint --pylint-rcfile=.pylintrc
+  static-type-checking:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11"]
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        submodules: recursive
+        fetch-depth: 0
+    - name: Install uv
+      uses: astral-sh/setup-uv@v3
+      with:
+        enable-cache: true
+        cache-dependency-glob: "pyproject.toml"
+    - name: Set up Python ${{ matrix.python-version }}
+      run: uv python install ${{ matrix.python-version }}
+    - name: Install the project
+      run: |
+        uv sync --all-extras --dev
+        uv pip install third-party/prpl-mono/prbench
+        uv pip install third-party/prpl-mono/relational-structs
+        uv pip install third-party/prpl-mono/toms-geoms-2d
+        uv pip install third-party/prpl-mono/prpl-utils
+    - name: Mypy
+      run: |
+        uv run mypy .
+  unit-tests:
+    strategy:
+      fail-fast: false
+      matrix:
+        # NOTE: macos is disabled until we can figure out headless rendering in mujoco
+        os: [ubuntu-latest]
+        python-version: ["3.11"]
+    runs-on: ${{ matrix.os }}
+    permissions:
+      pull-requests: write
+      contents: write
+    steps:
+      - name: Install LAPACK, BLAS, OSMesa (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y liblapack-dev libblas-dev libosmesa6-dev libgl1 libglx-mesa0
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+          cache-dependency-glob: "pyproject.toml"
+      - name: Set up Python ${{ matrix.python-version }}
+        run: uv python install ${{ matrix.python-version }}    
+      - name: Install the project
+        run: |
+          uv sync --all-extras --dev
+          uv pip install third-party/prpl-mono/prbench
+          uv pip install third-party/prpl-mono/relational-structs
+          uv pip install third-party/prpl-mono/toms-geoms-2d
+          uv pip install third-party/prpl-mono/prpl-utils
+      - name: Pytest
+        run: |
+          uv run pytest tests/blocked_stacking

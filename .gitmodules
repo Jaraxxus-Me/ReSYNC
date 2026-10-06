@@ -1,0 +1,3 @@
+[submodule "third-party/prpl-mono"]
+	path = third-party/prpl-mono
+	url = https://github.com/Jaraxxus-Me/prpl-mono.git

@@ -1,0 +1,41 @@
+# Failure detector neural network configuration for IcyTransport scenario 1
+# This detector predicts when the GoToPickObject skill will collide with the icy region
+
+failure_detector:
+  name: "collision_detector_gotopickobject"
+  # Object types involved in failure detection: robot, transport_obj1, icy_region
+  types: ["robot", "transport_obj", "icy_region"]
+
+  # Neural network architecture
+  nn_archi:
+    type: "MLP"
+    input_dim: 15  # Feature dimension from state_to_vec output
+    layer_size: 128
+    initializer: "xavier"
+
+  # Optimizer configuration
+  optimizer:
+    type: "AdamW"
+    kwargs:
+      lr: 0.001
+      weight_decay: 0.0001
+
+  # Learning rate scheduler
+  lr_scheduler:
+    type: "StepLR"
+    kwargs:
+      step_size: 30
+      gamma: 0.5
+
+  # Training hyperparameters
+  batch_size: 1024
+  num_epochs: 100
+  val_split: 0.2  # Use 20% of data for validation
+  early_stopping_patience: 15  # Stop if no improvement for 15 epochs
+
+  # Classification threshold (probability >= threshold means collision predicted)
+  cls_threshold: 0.5
+
+  # Validation settings
+  val_loss_thresh: 0.1  # Target validation loss
+  val_freq: 5  # Validate every 5 epochs

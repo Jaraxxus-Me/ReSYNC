@@ -1,0 +1,42 @@
+scenarios:
+  3:
+    trained: False
+    tgt_skill: "Fiddle(robot,block,obstruction_thi)"
+    failed_skill: "ReachToGrasp"
+    failed_objects: "robot,grasp_block"
+    basic_type: "block"
+    max_rl_steps: 10
+    rl_static_steps: 3
+    max_skill_steps: 100
+    train_objects: "robot,grasp_block,obstruction_thi"
+    skill_learning_cfg_settings:
+      scenario: "3"
+      rl_config: "config/pure_rl/blocked_stacking_ppoc_sc3.yaml"
+      rl_dataset_path: "training_data/blocked_stacking/RL_data/scenario_3"
+      pre_trained_policy_path: ""
+      max_env_steps: 250
+      num_train_episodes_rl: 100
+      num_envs: 32
+      num_eval_envs: 32
+      obstruction3_blocking_grasp: True
+      obstruction3_blocking_stacking: False
+    planner_learning_cfg_settings:
+      num_envs: 1
+      scenario: "3"
+      middle_state_method: "naive_init"
+      num_middle_states: 20
+      rl_config: "config/pure_rl/blocked_stacking_ppoc_sc3.yaml"
+      pre_trained_policy_path: "trained_policies/runs/skill_1112_sc3/best_ppo_ckpt.pt"
+      predicate_config: "config/predicates/blocked_stacking_confined_enu_sc3.yaml"
+      obstruction3_blocking_grasp: True
+      obstruction3_blocking_stacking: False
+      blocked2d_reach_drift_trans: 0.01
+      blocked2d_reach_drift_rot: 0.003
+      pred_net_save_dir: "skill_1111_sc3_pred_nets"
+      force_skip_pred_learning: True
+      num_train_episodes_planner: 1000
+      num_train_episodes_planner_before_dreaming: 100
+      pred_search_num_trajectories: 100
+      max_env_steps: 240
+      planner_dataset_path: "training_data/blocked_stacking/Planner_data/scenario3"
+      planner_num_traj: 5

@@ -1,0 +1,84 @@
+scenarios:
+  2:
+    trained: True
+    tgt_skill: "Wiggle(robot,block,obstruction_tra)"
+    failed_skill: "ReachToGrasp"
+    failed_objects: "robot,grasp_block"
+    basic_type: "block"
+    max_rl_steps: 8
+    rl_static_steps: 3
+    max_skill_steps: 100
+    train_objects: "robot,grasp_block,obstruction_tra"
+    skill_learning_cfg_settings:
+      scenario: "2"
+      rl_config: "config/pure_rl/blocked_stacking_ppoc_sc2.yaml"
+      pre_trained_policy_path: ""
+      max_env_steps: 210
+      num_train_episodes_rl: 100
+      num_envs: 32
+      num_eval_envs: 32
+      obstruction2_blocking_grasp: True
+      obstruction2_blocking_stacking: False
+    planner_learning_cfg_settings:
+      num_envs: 1
+      scenario: "2"
+      middle_state_method: "naive_init"
+      num_middle_states: 20
+      rl_config: "config/pure_rl/blocked_stacking_ppoc_sc2.yaml"
+      pre_trained_policy_path: "skill_1105_sc2/best_ppo_ckpt.pt"
+      predicate_config: "config/predicates/blocked_stacking_confined_enu_sc2.yaml"
+      obstruction2_blocking_grasp: True
+      obstruction2_blocking_stacking: False
+      pred_net_save_dir: "skill_1108_sc21_1_pred_nets"
+      force_skip_pred_learning: True
+      num_train_episodes_planner: 1000
+      num_train_episodes_planner_before_dreaming: 100
+      pred_search_num_trajectories: 100
+      max_env_steps: 240
+      planner_dataset_path: "training_data/blocked_stacking/Planner_data/scenario2"
+      planner_num_traj: 5
+  1:
+    trained: False
+    tgt_skill: "Punch(robot,block,obstruction_rec)"
+    failed_skill: "ReachToGrasp"
+    failed_objects: "robot,grasp_block,obstruction_tra"
+    basic_type: "block"
+    max_rl_steps: 20
+    rl_static_steps: 3
+    max_skill_steps: 200
+    train_objects: "robot,grasp_block,obstruction_rec"
+    skill_learning_cfg_settings:
+      scenario: "1,2"
+      rl_config: "config/pure_rl/blocked_stacking_ppoc_sc21_1.yaml"
+      rl_dataset_path: "training_data/blocked_stacking/RL_data/scenario21_1"
+      rl_policy_save_dir: "trained_policies"
+      max_env_steps: 240
+      num_train_episodes_rl: 100
+      num_envs: 32
+      num_eval_envs: 32
+      obstruction1_blocking_grasp: True
+      obstruction1_blocking_stacking: False
+      obstruction2_blocking_grasp: True
+      obstruction2_blocking_stacking: False
+    planner_learning_cfg_settings:
+      num_envs: 1
+      scenario: "1,2"
+      middle_state_method: "naive_init"
+      num_middle_states: 20
+      rl_config: "config/pure_rl/blocked_stacking_ppoc_sc21_1.yaml"
+      pre_trained_policy_path: "trained_policies/runs/skill_1106_sc21_1/best_ppo_ckpt.pt"
+      predicate_config: "config/predicates/blocked_stacking_confined_enu_sc21_1.yaml"
+      obstruction1_blocking_grasp: True
+      obstruction1_blocking_stacking: False
+      obstruction2_blocking_grasp: True
+      obstruction2_blocking_stacking: False
+      blocked2d_reach_drift_trans: 0.01
+      blocked2d_reach_drift_rot: 0.003
+      pred_net_save_dir: "skill_1108_sc21_1_pred_nets"
+      force_skip_pred_learning: False
+      num_train_episodes_planner: 2000
+      num_train_episodes_planner_before_dreaming: 100
+      pred_search_num_trajectories: 100
+      max_env_steps: 240
+      planner_dataset_path: "training_data/blocked_stacking/Planner_data/scenario21_1"
+      planner_num_traj: 5

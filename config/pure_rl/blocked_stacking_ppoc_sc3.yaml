@@ -1,0 +1,12 @@
+policy_type: "PPO"
+num_envs: 32
+update_epochs: 8
+num_minibatches: 20
+total_timesteps: 1000000
+num_steps: 10
+num_eval_envs: 8
+finite_horizon_gae: True
+trivial_classifier: True
+anneal_lr: False
+clip_coef: 0.1
+resume_ppo: ""

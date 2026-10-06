@@ -1,18 +1,13 @@
 .DS_Store
 .python-version
-.vscode
-
-# Training artifacts
-videos/
-trained_policies/
-tf_logs/
-logs/
-training_data/
-results/
-plots/
-*.slurm
-*.out
-*.err
+MUJOCO_LOG.TXT
+**/auto_*.xml
+uv.lock
+logs
+llm_cache.db
+vlm_cache
+unit_test_videos
+prbench-vlm-planning/outputs
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -21,7 +16,6 @@ __pycache__/
 
 # C extensions
 *.so
-*.a
 
 # Distribution / packaging
 .Python
@@ -76,6 +70,7 @@ cover/
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
+_*.db
 
 # Flask stuff:
 instance/
@@ -138,9 +133,7 @@ celerybeat.pid
 # Environments
 .env
 .venv
-env/
 venv/
-ENV/
 env.bak/
 venv.bak/
 
@@ -175,27 +168,18 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-# Unit test data
-tests/data
-*pred_nets*/
-skill*_sc*/
-unit_test*
-debug/
+# VSCode
+.vscode
+*.png
+debug
+videos
+runs
+outputs
+cleanrl
+CLAUDE.md
 
-# dataset requires download
-src/skill_refactor/assets/partnet_mobility/partnet_mobility_cabinet
-train_dir/
-src/skill_refactor/assets/maniskill_assets/*
-.claude
+# videos
+base_motion_planning.mp4
 
-# ReSYNC release downloads and generated reports
-.release-cache/
-no_dreaming_predicates/
-training_data_wake/
-ablation_assets/
-release/asset_contents/
-!docs/static/videos/
-!docs/static/videos/*.mp4
-
-# Simulation assets are distributed through the release downloader
-/src/skill_refactor/assets/
+# datasets
+datasets

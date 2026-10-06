@@ -1,0 +1,57 @@
+scenarios:
+  1:
+    trained: False
+    tgt_skill: "Push(robot,goal,can)"
+    failed_skill: "PlaceBox"
+    failed_objects: "robot,box,box_goal"
+    basic_type: "goal"
+    max_rl_steps: 16
+    rl_static_steps: 3
+    max_skill_steps: 2200
+    max_env_steps: 3500
+    train_objects: "robot,box_goal,can"
+    basic_objects: "box_goal"
+    real_scenario_name: "sc1_pre_n4"
+    known_invalid_sc: "sc1_pre_n3"
+    specified_task_path: "config/specified_tasks/cluttered_room"
+    rl_config: "config/pure_rl/cluttered_room_ppoc_sc1.yaml"
+    rl_dataset_path: "training_data/cluttered_room/RL_data/scenario_1"
+    failure_learning_cfg_settings:
+      num_envs: 16
+      scenario: "1"
+      middle_state_method: "naive_init"
+      specified_task_path: "config/specified_tasks/cluttered_room"
+      rl_config: "config/pure_rl/cluttered_room_ppoc_sc1.yaml"
+      failured_det_nn_path: ""
+      failure_nn_config: "config/predicates/cluttered_room_failure_det_sc1.yaml"
+      can_blocking_target1: False
+      can_blocking_target2: True
+      num_train_episodes_planner: 50
+      num_train_episodes_planner_before_dreaming: 50
+      max_env_steps: 4000
+      planner_dataset_path: "training_data/cluttered_room/Planner_data/scenario1"
+      failured_det_operator_objects:
+        GoToPickBowl:
+          - 0
+          - 1
+        PickBowl:
+          - 0
+          - 1
+        GoToPlaceBowl:
+          - 0
+          - 2
+        PlaceBowl:
+          - 0
+          - 2
+        GoToPickBox:
+          - 0
+          - 1
+        PickBox:
+          - 0
+          - 1
+        GoToPlaceBox:
+          - 0
+          - 2
+        PlaceBox:
+          - 0
+          - 2

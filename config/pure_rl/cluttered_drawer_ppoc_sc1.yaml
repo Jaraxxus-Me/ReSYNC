@@ -1,0 +1,9 @@
+policy_type: "PPO"
+num_envs: 4096
+update_epochs: 4
+num_minibatches: 32
+total_timesteps: 10000000
+num_steps: 4
+gamma: 0.99
+arm_action_only: True
+trivial_classifier: True
