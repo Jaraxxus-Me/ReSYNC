@@ -385,7 +385,7 @@ class BasePredicateLearner(abc.ABC):
             else:
                 predicate_net.load_state_dict(model_state_dict)
             # Create a callable interpretation function
-            device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+            device = torch.device(CFG.device)
             interpretation_fn = create_terminal_neural_predicate_interpreter(
                 model=predicate_net,
                 predicate=target_predicate,

@@ -1,0 +1,612 @@
+[
+  {
+    "path": "inference_assets/cluttered_room/datasets/stage1/lifted_operator_plans.pkl",
+    "bytes": 10542,
+    "sha256": "9024c83783d9a937f070546ba754c88e5545ab05b2ff17bbc89cd877beee5b0a"
+  },
+  {
+    "path": "inference_assets/cluttered_room/datasets/stage1/meta.json",
+    "bytes": 30,
+    "sha256": "ad371f6e87ec366c28f9202b25899c1dc048dbd6390e281a23879ea1a1deb661"
+  },
+  {
+    "path": "inference_assets/cluttered_room/datasets/stage1/training_scenario_indices.pkl",
+    "bytes": 651,
+    "sha256": "33b26b7c87b25a598923f35fce54f99b5ca80d6f75642c76a24cbf6e5f4fa573"
+  },
+  {
+    "path": "inference_assets/cluttered_room/datasets/stage1/trajectories.pkl",
+    "bytes": 18187175,
+    "sha256": "847bcc7592c26bcb822b5acf1f3ad8ff5142037253880c20be8ec5463509bf87"
+  },
+  {
+    "path": "inference_assets/cluttered_room/policies/stage1.pt",
+    "bytes": 1160762,
+    "sha256": "53ebdc93d15ca83682322faddff81e7e839f05c5ea4b90e9031232d072224460"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_0_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "1dad5afd16512ec83009c50f2acc8e8ccfce60c4536806666744b5babaa9f3ee"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_0_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "94bda2b58ff5f2316ff7b7d34565afe26eaab1658b8f057a4781b558707683e0"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_0_model.pth",
+    "bytes": 549146,
+    "sha256": "3f597d7a5c3fa45ce5cc127c3101ef58c401ffe27e2914d0918f18aa0c5c4134"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_0_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "e6e657360fa58e36420680eae03eee68ccba0d12cab8bbc71481346abb83adca"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_10_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "df9722150c8d6b45241c0b98f0f0ad534192d7c50203975cf1909bee290d7f7f"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_10_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "07669a97f369683734f332caa168e63a88851e9751e4faaa7a68369443b3f4cf"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_10_model.pth",
+    "bytes": 549179,
+    "sha256": "35191a61d722312e5153c3d9f4715b07cfa7922cddf9250869d126b642a56346"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_10_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "6f749daa12045f798b377dc7fef014d40550445ea1464ad5e0ddf34294164662"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_11_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "3a9e252cfbfa9f9471a066f09a764db7bbbeb175acdd0b6e0b310d81e0cd29fb"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_11_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "667330e2a9a7cf10c905b81f2ad2c3093031bd877dec881e148542dd439be011"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_11_model.pth",
+    "bytes": 549179,
+    "sha256": "49ee455740fda17869460a92555840e480f2ab797de5dfee63a4c54f7833ca41"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_11_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "f4c9875a9fef4839f5eeeb23a6a58a1bdad5769baedb55ee72bd288ae1b1f63b"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_12_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "8aaab8cbadff0972bea4bf15cb8a6a5f27ae62729ffc244056d688a1c8c5c314"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_12_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "b16330bddcb689e5c088bf924ccecd831017b59ecdd705f61e2287db2e624699"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_12_model.pth",
+    "bytes": 549179,
+    "sha256": "404a2f3c9cb19f99a0694b9e6634ee6c880cdc155b2829381e1890494b08d027"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_12_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "7cc5683a89db0af46ce31222014081d09356fd0f26e06de99a4f2abdae485e94"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_13_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "93f459f43e47c9f0c58dad6124f6e5eecbc33143d33e7a23d28080f0b06bca22"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_13_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "fdd4bbb7dec38f3c637bb47683c9823873fa44e8bdf2b8feb55a797862e975ae"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_13_model.pth",
+    "bytes": 549179,
+    "sha256": "b2635fb8dd506b84e013890264b8ac657f548817676c5756941a8457de857b25"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_13_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "e66547f3f1ada589b019a5c99933207b7d6c606b0e4ab9d99e6f19bfdbb97930"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_14_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "cffff40356cc409b1d6892f2f260db885a5912484966cff44f1fcc1a6573c731"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_14_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "3e1ae163570c5deb67f682098a0c9c6d21be4329ed58345e54f26b1c2610eb4a"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_14_model.pth",
+    "bytes": 549179,
+    "sha256": "89620d08d8d25b3f61c15770576ab1b162760fc84f7423c8cc9746cf63176710"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_14_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "54d11066c2ce808141026e5b3e26c0a869488122fe3708eb2d1c8806bfc43c77"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_15_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "c8893d4c70c74b0d92f79bb3e9ed908f7b2f3ab74d864cd7a5b0a22ed41012b3"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_15_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "ccebdddbbbc53d7c317482c2cf3829a1727404d469a21d8508ae28ab5bae92b3"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_15_model.pth",
+    "bytes": 549179,
+    "sha256": "bf18413a2d5e64e991b770794cb53b8cdacf9a8c705f4fc29eb10a570643ae82"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_15_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "b8123334ecb00ed037342058089bdaef8ab16784b22a515a7541aa2ec172acfd"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_16_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "bbb708bcd152114d12fcd2f5d645c9b87f9de7c43cc54a7ccfdf6947a4fdb5f5"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_16_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "ab76ac076aef1e2ab837db9ab8be8d48ec08879a9e5f90feb04b5fcf9c7847a7"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_16_model.pth",
+    "bytes": 549179,
+    "sha256": "12adc942860c55795bba3fe696b1c1b6c0c3b5e931ad94a1607a2fa9a12c6dc3"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_16_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "694b61b66f0a01755efbd760dca18865871a07a28875ef6a6feda6e2164af85b"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_17_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "1e2b3cfc2e81572b467eb7903bbbd45190d1cd0fe598064fa839bbfc0bfd9327"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_17_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "e8519fa471dff79198f9390d91382b723ed385550631b28b134ed53023f0f2db"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_17_model.pth",
+    "bytes": 549179,
+    "sha256": "2eafab3cd7c56babf056d33878e2b59ea75e92c14bc9cfd6e6e9c447e686c126"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_17_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "337d764d0738c7d374dd8119c936feb913cbdd104d468f665090e43f63558980"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_18_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "12498b49075cd054256f6a04606a3704f7a1f2794c87fb7cb4ff8de90d0f3ffe"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_18_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "4a4ceec726c11097b9c99d979fec381d4e4532a3e3be9268284001708454a3b4"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_18_model.pth",
+    "bytes": 549179,
+    "sha256": "2180eb5f3f2624fb7d973484bf40de332daf0b09729f75955cedc50bfde8fd73"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_18_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "a929723738e1e0f0d16661a66cd9987e4990c640281f0a562ae7bc050a4b1b93"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_19_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "dbf7eec55fdd1a961f1014599b9e58ae084eec5b735abdbe996fe510b8d748bd"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_19_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "09ee2cf6f8d0e8af77013ae60587456fdbdee55fb8ac7b632665ad5df4d35fcb"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_19_model.pth",
+    "bytes": 549179,
+    "sha256": "ce6296202f7199d2d3dfc2af4c3af0d1c171c19144f52312b15fe5c985cb9905"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_19_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "06d2111083ee5028766d0f8e53becbea0c20157d2f654dfabe3392dd8b2de10c"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_1_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "cef72c14637273b18b7e9d5e4f2eb84a75b12e17f902addc7ca704051aaacdb9"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_1_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "c285ec83971ec2d5cb631f0258d01d08ff4343d2dacc0f489a16d5e88ffd3cfd"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_1_model.pth",
+    "bytes": 549146,
+    "sha256": "80d96878a244bc1c9c39dd3f121478a6dc9c5da9752ec76a7495d5649b782548"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_1_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "aa05eac720c40475534a912e852547f698940719165f04adf935413c05ee3b43"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_2_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "3c545cb9628a6eb32e896db1f99a5b198173ebf1282f0a97cb39635aa3e7ffdc"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_2_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "4be2f3b48fa03e2ee6948aab0e4c02c4220a9ba935d416014dfe96c449b0325a"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_2_model.pth",
+    "bytes": 549146,
+    "sha256": "b07981c3bd74bcc1e8820fe81c76164d066732e9fa74dcea7053631ec22a2d4e"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_2_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "45ebbd67dfffd981e8d9e9a0adde76fa1ddf96bb84683a6d22ea8767038773af"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_3_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "262d20588766e2f46c20fd233b90170408a29ae91fbc3e2e8721a2cdc402980a"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_3_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "cf8d2da032ff280b96e35c23665f4753c386cabc9474012369c2b43d210afbbb"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_3_model.pth",
+    "bytes": 549146,
+    "sha256": "9a295a2dd7a2f7d36351b05e563229ed4de0bd6a06ed61dd112994f4020ce5cb"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_3_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "80d77d18e3b3d31b1cce0faacae16f1fa94f5040d3cacf31e97d19284eed061e"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_4_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "99ec9d834d4053866246af7ac8c5f214e4d3dee6b612ac8b480f06e2b9e32b73"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_4_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "745fb1b79cd11fb95d7120a16548f8511134ce3f50b63f347e0118ab52236113"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_4_model.pth",
+    "bytes": 549146,
+    "sha256": "cbd1966a4c44553b5c7d82851a4e8149ca6b18be0a12ade74f3243488f2e9e3e"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_4_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "3e55cb46e6d365a850b44ff5a77c96559a867941b399e22e3143122f23718a32"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_5_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "de5617dbdaef8ebf76406f4bd3b394dcc648213f64b8e5c2025c2ebdf03f19a3"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_5_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "6c2048cb7b7994ae7c3b3b94419c1617a25ef328bd85d907b73cf64406257411"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_5_model.pth",
+    "bytes": 549146,
+    "sha256": "67b7a959135d0cf3ad24dbe4b3aea3bcd71a9dbe42c5f43f29e478a3a9f926fe"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_5_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "e89f55f3fe4faa9ee4e2c72f4388a55d584fa15d273d65f7dac11913ed4f3c51"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_6_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "223417fd99fef06539d84282c608cac1ec90809516fec29f05f908feeebb7a20"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_6_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "4d62d303d53a3ca05f770fc2b710bcb2604b7e3899b5101cc48f1fb9e07029ab"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_6_model.pth",
+    "bytes": 549146,
+    "sha256": "bedcdc88c123d20725ca71aace940874eb9bff2b8c585e2ad20f57b2f21901e1"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_6_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "e22e6d63ce9b3c4f14f30b684d4e5ff547a5cbede96c9ccffd5601d5b04372b9"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_7_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "f64c8f2f44e40529d0bd0c324c704106d653bcdf21df0e9fe0c402ef5327f10e"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_7_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "3b9b913e13b04af82710a4760d9b8263f9115c17291a9f1a083076c712bda65d"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_7_model.pth",
+    "bytes": 549146,
+    "sha256": "b138df9ed1d8da80de1563e5173a4a0413189edd20ce31dac91119949afe1f6d"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_7_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "57338b8210bb755b9743b9884f70cfb37e3023f282ba3d0956fe311226d08f86"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_8_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "bb4a04a7341043996fb58f4cd719f6fc4b2ae0fd916c6efcc3c7dd9eca230afa"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_8_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "60816b825dfa7f26135089fa19f72b68c9d9c4ad269c973faf18e2a8810d69e1"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_8_model.pth",
+    "bytes": 549146,
+    "sha256": "13eef60dee8b1c3a8c96d829e75ded0544239f67cdf0ad4424190796f41c9a62"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_8_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "45929d54c5dc47a8fbe84dea849c58f693d0c69734fe48d7cb593a19624333e2"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_9_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "1d8b821dc6ea195b3db040882e91019d7f9ea53d178b1be9358be6ee37aefa4e"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_9_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "6df622b563bf2022fc6c3e27f625a8296f7ae4d34aecbf46619af0502db939a7"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_9_model.pth",
+    "bytes": 549146,
+    "sha256": "35d52133277f251bafaa2ec43e23c6e2505a7bb21e3d727e450eb5cb0ac0109e"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p1_9_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "34d197961720bbf9c8fc1b15eefb72ea8e7e9333b45a97862b1aafe8a3befdba"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_0_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "e6cec17a61ba897059709ed63207d8374b59571a4e3fd992d6f5d3f690085084"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_0_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "84fcba8b48a30cc679207b973fbd6f0e7c6387b6ed59bbbdce5a30adfa70daa1"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_0_model.pth",
+    "bytes": 549146,
+    "sha256": "3ca9118334779bfa70a208aa063d6e574969b53bc753f6ed9f8df8acf76b6cf7"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_0_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "46793dd41d0904c27450a2ae9152ac3cb6179d25daffd9535b781cab661a14a3"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_1_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "f8f97fa4d5b1df93f0df9da10e10b56808f88b38f53054d5b983abdb87455dee"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_1_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "f5e59b23a113ccf6496123b2a655cf0b25b387824e680c51ef265461eaa4af6c"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_1_model.pth",
+    "bytes": 549146,
+    "sha256": "23612247a95841e474d8597457101c87638802195cc5eccb80a328cf28377d46"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_1_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "311ee3dc50dc1133479080592e3bf4f6b67c1149a7ccd52c5aa4bafdec538d14"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_2_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "b7c97579f04d4a3f0c342907e48fd21b87f4dea51f7ddac01a56c453da2ead15"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_2_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "1b9837575f6932b4d317935563db3edcde2b6dedfb79f90197d2aa4382f1cd59"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_2_model.pth",
+    "bytes": 549146,
+    "sha256": "c0289896ee43543e613fc7879feaec02ebb066bc49360329760addf283b470c4"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_2_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "24c61a3ebfaf89ebf2d22ea95cc37ee87db5609041d01016e8c45d42f1ffad2b"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_3_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "f5156a0a30a586d30b442fc2348a82c8d9214bfdf6a6fb0a87867130babd84e6"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_3_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "46527eabd9908f573f2ac7b79b20347949db31e4142ec91026ac98f112666fd0"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_3_model.pth",
+    "bytes": 549146,
+    "sha256": "dca955f012711c3bf4ba5497a1df519d7df24f7d2c02c73eb2969fc7f7821e76"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_3_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "13a2c9aa16fc6da76173109350fef08690e8d855f74b4d2d4cc6f11bb78c70de"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_4_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "b3064c8d49a71a28c391844757926d3507bdbb669d9a98e7ba8199e752724177"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_4_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "1c04e1d4b582cb4dbb8c23a500842efcdc6ebdf89a32469659670f86f15517c3"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_4_model.pth",
+    "bytes": 549146,
+    "sha256": "b80d7b85a3efb2f614b56a1755f7a3466e1d387c820e74869e9917baabb4fcc2"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_4_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "22db1a0e08f17c21e59655d79f23d3b73d8e7aedcc25af453a405ef650cf26fc"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_5_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "957934f0dd68632f5180c0f87f634aab08b4dac3df11113988359f7b28815720"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_5_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "745a66e3a9ebe3dde5fe67641be50d3ff42a11786cae3b0bf49d488097181151"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_5_model.pth",
+    "bytes": 549146,
+    "sha256": "90aebea36f3f38b6cfec0fad69ce51a987773778bb1ebbaee40dce598c92de01"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_5_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "59ed2254a41820d04ad203b676f3f614bbb2ad30fbdce76818f50363a51d91f7"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_6_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "d57f35232854f36cf2a9907e79319e457dee76c8383da31f581544c47fb74573"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_6_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "69dc5dd4829fed4c441487299c982e24d5c7a726878674b9d120a8937aafa45b"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_6_model.pth",
+    "bytes": 549146,
+    "sha256": "257de092a6dc7e826e9089a6d6fc938e55c803dea023da48cb41baecd1faf00a"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_6_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "081fd28e5d5152be72056c6842027d76442b55b29d95a02308c215d178b88932"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_7_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "e5f7d3690b40f9dbee6a89042553e5b74fb24760b1cd8f44d29d3e7854793584"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_7_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "218a9dc68fdae1bc68f3378e72c5bb79fe7f9b72fca8acda5e51027656039f12"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_7_model.pth",
+    "bytes": 549146,
+    "sha256": "4d8755231c6b2dbd4fda21da1fbe99953d30cffdc110f0e2afbf304966c2e206"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/b_sc1p2_7_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "ddc10b7e31b6837c9aa9f87b743dfe40d0bbf29ca4addedd3a8790f78e3563d0"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/invented_predicates_operators_sc1.json",
+    "bytes": 13469,
+    "sha256": "d403506b738c50880cd4d86cc41af561290d1f7aad1428842a8f70a8478e5244"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/terminal_placebox_push_0_ae_vector.pth",
+    "bytes": 1958,
+    "sha256": "5873044a33faa0ae2c03aa740d415c6420df78eb6f92ae67fc1a5228ac83f9b5"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/terminal_placebox_push_0_learned_ae_vector.pth",
+    "bytes": 2142,
+    "sha256": "c4f211fac2377508350028a5f963d05b96747103f4bf137f52a410e9acdc9f0c"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/terminal_placebox_push_0_model.pth",
+    "bytes": 558921,
+    "sha256": "27a03a19b0a3e3d60e57f7e89d56927a5ccdf2f84eb921094c28161ca933125d"
+  },
+  {
+    "path": "inference_assets/cluttered_room/predicates/stage1/terminal_placebox_push_0_var_bind_idx.pth",
+    "bytes": 1851,
+    "sha256": "2c8be4fc6b573bc31cb0a5f31a6be4fdc2ada7069013af17eb45ab6c12050715"
+  }
+]

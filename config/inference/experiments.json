@@ -1,0 +1,599 @@
+{
+  "blocked_stacking_stage1": {
+    "environment": "blocked_stacking",
+    "stage": 1,
+    "cases": [
+      {
+        "name": "1_g",
+        "settings": {
+          "scenario": "1",
+          "obstruction1_blocking_grasp": true,
+          "obstruction1_blocking_stacking": false
+        }
+      },
+      {
+        "name": "1_b",
+        "settings": {
+          "scenario": "1",
+          "obstruction1_blocking_grasp": false,
+          "obstruction1_blocking_stacking": true
+        }
+      }
+    ]
+  },
+  "blocked_stacking_stage2": {
+    "environment": "blocked_stacking",
+    "stage": 2,
+    "cases": [
+      {
+        "name": "1_g_2_g",
+        "settings": {
+          "scenario": "1,2",
+          "obstruction1_blocking_grasp": true,
+          "obstruction1_blocking_stacking": false,
+          "obstruction2_blocking_grasp": true,
+          "obstruction2_blocking_stacking": false
+        }
+      },
+      {
+        "name": "1_g",
+        "settings": {
+          "scenario": "1",
+          "obstruction1_blocking_grasp": true,
+          "obstruction1_blocking_stacking": false,
+          "obstruction2_blocking_grasp": false,
+          "obstruction2_blocking_stacking": false
+        }
+      },
+      {
+        "name": "1_b",
+        "settings": {
+          "scenario": "1",
+          "obstruction1_blocking_grasp": false,
+          "obstruction1_blocking_stacking": true,
+          "obstruction2_blocking_grasp": false,
+          "obstruction2_blocking_stacking": false
+        }
+      },
+      {
+        "name": "1_g_2_b",
+        "settings": {
+          "scenario": "1,2",
+          "obstruction1_blocking_grasp": true,
+          "obstruction1_blocking_stacking": false,
+          "obstruction2_blocking_grasp": false,
+          "obstruction2_blocking_stacking": true
+        }
+      },
+      {
+        "name": "1_b_2_g",
+        "settings": {
+          "scenario": "1,2",
+          "obstruction1_blocking_grasp": false,
+          "obstruction1_blocking_stacking": true,
+          "obstruction2_blocking_grasp": true,
+          "obstruction2_blocking_stacking": false
+        }
+      },
+      {
+        "name": "1_b_2_b",
+        "settings": {
+          "scenario": "1,2",
+          "obstruction1_blocking_grasp": false,
+          "obstruction1_blocking_stacking": true,
+          "obstruction2_blocking_grasp": false,
+          "obstruction2_blocking_stacking": true
+        }
+      },
+      {
+        "name": "2_g",
+        "settings": {
+          "scenario": "2",
+          "obstruction1_blocking_grasp": false,
+          "obstruction1_blocking_stacking": false,
+          "obstruction2_blocking_grasp": true,
+          "obstruction2_blocking_stacking": false
+        }
+      },
+      {
+        "name": "2_b",
+        "settings": {
+          "scenario": "2",
+          "obstruction1_blocking_grasp": false,
+          "obstruction1_blocking_stacking": false,
+          "obstruction2_blocking_grasp": false,
+          "obstruction2_blocking_stacking": true
+        }
+      }
+    ]
+  },
+  "blocked_stacking_stage3": {
+    "environment": "blocked_stacking",
+    "stage": 3,
+    "cases": [
+      {
+        "name": "1_b_2_b_3_g",
+        "settings": {
+          "scenario": "1,2,3",
+          "obstruction1_blocking_grasp": false,
+          "obstruction1_blocking_stacking": true,
+          "obstruction2_blocking_grasp": false,
+          "obstruction2_blocking_stacking": true,
+          "obstruction3_blocking_grasp": true,
+          "obstruction3_blocking_stacking": false
+        }
+      },
+      {
+        "name": "1_g_2_g",
+        "settings": {
+          "scenario": "1,2",
+          "obstruction1_blocking_grasp": true,
+          "obstruction1_blocking_stacking": false,
+          "obstruction2_blocking_grasp": true,
+          "obstruction2_blocking_stacking": false,
+          "obstruction3_blocking_grasp": false,
+          "obstruction3_blocking_stacking": true
+        }
+      },
+      {
+        "name": "1_g",
+        "settings": {
+          "scenario": "1",
+          "obstruction1_blocking_grasp": true,
+          "obstruction1_blocking_stacking": false,
+          "obstruction2_blocking_grasp": true,
+          "obstruction2_blocking_stacking": false,
+          "obstruction3_blocking_grasp": true,
+          "obstruction3_blocking_stacking": false
+        }
+      },
+      {
+        "name": "1_b",
+        "settings": {
+          "scenario": "1",
+          "obstruction1_blocking_grasp": false,
+          "obstruction1_blocking_stacking": true,
+          "obstruction2_blocking_grasp": true,
+          "obstruction2_blocking_stacking": false,
+          "obstruction3_blocking_grasp": true,
+          "obstruction3_blocking_stacking": false
+        }
+      },
+      {
+        "name": "1_g_2_b",
+        "settings": {
+          "scenario": "1,2",
+          "obstruction1_blocking_grasp": true,
+          "obstruction1_blocking_stacking": false,
+          "obstruction2_blocking_grasp": false,
+          "obstruction2_blocking_stacking": true,
+          "obstruction3_blocking_grasp": false,
+          "obstruction3_blocking_stacking": true
+        }
+      },
+      {
+        "name": "1_b_2_g",
+        "settings": {
+          "scenario": "1,2",
+          "obstruction1_blocking_grasp": false,
+          "obstruction1_blocking_stacking": true,
+          "obstruction2_blocking_grasp": true,
+          "obstruction2_blocking_stacking": false,
+          "obstruction3_blocking_grasp": false,
+          "obstruction3_blocking_stacking": true
+        }
+      },
+      {
+        "name": "1_b_2_b",
+        "settings": {
+          "scenario": "1,2",
+          "obstruction1_blocking_grasp": false,
+          "obstruction1_blocking_stacking": true,
+          "obstruction2_blocking_grasp": false,
+          "obstruction2_blocking_stacking": true,
+          "obstruction3_blocking_grasp": false,
+          "obstruction3_blocking_stacking": true
+        }
+      },
+      {
+        "name": "2_g",
+        "settings": {
+          "scenario": "2",
+          "obstruction1_blocking_grasp": false,
+          "obstruction1_blocking_stacking": true,
+          "obstruction2_blocking_grasp": true,
+          "obstruction2_blocking_stacking": false,
+          "obstruction3_blocking_grasp": true,
+          "obstruction3_blocking_stacking": false
+        }
+      },
+      {
+        "name": "2_b",
+        "settings": {
+          "scenario": "2",
+          "obstruction1_blocking_grasp": false,
+          "obstruction1_blocking_stacking": true,
+          "obstruction2_blocking_grasp": false,
+          "obstruction2_blocking_stacking": true,
+          "obstruction3_blocking_grasp": true,
+          "obstruction3_blocking_stacking": false
+        }
+      },
+      {
+        "name": "1_g_2_g_3_b",
+        "settings": {
+          "scenario": "1,2,3",
+          "obstruction1_blocking_grasp": true,
+          "obstruction1_blocking_stacking": false,
+          "obstruction2_blocking_grasp": true,
+          "obstruction2_blocking_stacking": false,
+          "obstruction3_blocking_grasp": false,
+          "obstruction3_blocking_stacking": true
+        }
+      },
+      {
+        "name": "1_b_3_g",
+        "settings": {
+          "scenario": "1,3",
+          "obstruction1_blocking_grasp": false,
+          "obstruction1_blocking_stacking": true,
+          "obstruction2_blocking_grasp": true,
+          "obstruction2_blocking_stacking": false,
+          "obstruction3_blocking_grasp": true,
+          "obstruction3_blocking_stacking": false
+        }
+      },
+      {
+        "name": "1_g_3_b",
+        "settings": {
+          "scenario": "1,3",
+          "obstruction1_blocking_grasp": true,
+          "obstruction1_blocking_stacking": false,
+          "obstruction2_blocking_grasp": true,
+          "obstruction2_blocking_stacking": false,
+          "obstruction3_blocking_grasp": false,
+          "obstruction3_blocking_stacking": true
+        }
+      },
+      {
+        "name": "2_b_3_g",
+        "settings": {
+          "scenario": "2,3",
+          "obstruction1_blocking_grasp": true,
+          "obstruction1_blocking_stacking": false,
+          "obstruction2_blocking_grasp": false,
+          "obstruction2_blocking_stacking": true,
+          "obstruction3_blocking_grasp": true,
+          "obstruction3_blocking_stacking": false
+        }
+      },
+      {
+        "name": "2_g_3_b",
+        "settings": {
+          "scenario": "2,3",
+          "obstruction1_blocking_grasp": true,
+          "obstruction1_blocking_stacking": false,
+          "obstruction2_blocking_grasp": true,
+          "obstruction2_blocking_stacking": false,
+          "obstruction3_blocking_grasp": false,
+          "obstruction3_blocking_stacking": true
+        }
+      },
+      {
+        "name": "3_b",
+        "settings": {
+          "scenario": "3",
+          "obstruction1_blocking_grasp": false,
+          "obstruction1_blocking_stacking": true,
+          "obstruction2_blocking_grasp": true,
+          "obstruction2_blocking_stacking": false,
+          "obstruction3_blocking_grasp": false,
+          "obstruction3_blocking_stacking": true
+        }
+      },
+      {
+        "name": "3_g",
+        "settings": {
+          "scenario": "3",
+          "obstruction1_blocking_grasp": false,
+          "obstruction1_blocking_stacking": true,
+          "obstruction2_blocking_grasp": true,
+          "obstruction2_blocking_stacking": false,
+          "obstruction3_blocking_grasp": true,
+          "obstruction3_blocking_stacking": false
+        }
+      }
+    ]
+  },
+  "cluttered_drawer_stage1": {
+    "environment": "cluttered_drawer",
+    "stage": 1,
+    "cases": [
+      {
+        "name": "1_g",
+        "settings": {
+          "scenario": "1",
+          "drawer_blocking_grasp": true,
+          "drawer_blocking_stacking": false
+        }
+      },
+      {
+        "name": "1_b",
+        "settings": {
+          "scenario": "1",
+          "drawer_blocking_grasp": false,
+          "drawer_blocking_stacking": true
+        }
+      }
+    ]
+  },
+  "cluttered_drawer_stage2": {
+    "environment": "cluttered_drawer",
+    "stage": 2,
+    "cases": [
+      {
+        "name": "1_g_2_g",
+        "settings": {
+          "scenario": "1,2",
+          "drawer_blocking_grasp": true,
+          "drawer_blocking_stacking": false,
+          "block_blocking_grasp": true,
+          "block_blocking_stacking": false
+        }
+      },
+      {
+        "name": "1_g",
+        "settings": {
+          "scenario": "1",
+          "drawer_blocking_grasp": true,
+          "drawer_blocking_stacking": false,
+          "block_blocking_grasp": false,
+          "block_blocking_stacking": true
+        }
+      },
+      {
+        "name": "1_b",
+        "settings": {
+          "scenario": "1",
+          "drawer_blocking_grasp": false,
+          "drawer_blocking_stacking": true,
+          "block_blocking_grasp": false,
+          "block_blocking_stacking": true
+        }
+      },
+      {
+        "name": "1_g_2_b",
+        "settings": {
+          "scenario": "1,2",
+          "drawer_blocking_grasp": true,
+          "drawer_blocking_stacking": false,
+          "block_blocking_grasp": false,
+          "block_blocking_stacking": true
+        }
+      },
+      {
+        "name": "1_b_2_g",
+        "settings": {
+          "scenario": "1,2",
+          "drawer_blocking_grasp": false,
+          "drawer_blocking_stacking": true,
+          "block_blocking_grasp": true,
+          "block_blocking_stacking": false
+        }
+      },
+      {
+        "name": "1_b_2_b",
+        "settings": {
+          "scenario": "1,2",
+          "drawer_blocking_grasp": false,
+          "drawer_blocking_stacking": true,
+          "block_blocking_grasp": false,
+          "block_blocking_stacking": true
+        }
+      }
+    ]
+  },
+  "icy_transport_stage1": {
+    "environment": "icy_transport",
+    "stage": 1,
+    "cases": [
+      {
+        "name": "1_g1",
+        "settings": {
+          "scenario": "1",
+          "icy_infront_of_transport1": true,
+          "icy_infront_of_transport2": false,
+          "icy_infront_of_target": false
+        }
+      },
+      {
+        "name": "1_b",
+        "settings": {
+          "scenario": "1",
+          "icy_infront_of_transport1": false,
+          "icy_infront_of_transport2": false,
+          "icy_infront_of_target": true
+        }
+      },
+      {
+        "name": "1_g2",
+        "settings": {
+          "scenario": "1",
+          "icy_infront_of_transport1": false,
+          "icy_infront_of_transport2": true,
+          "icy_infront_of_target": false
+        }
+      }
+    ]
+  },
+  "icy_transport_stage2": {
+    "environment": "icy_transport",
+    "stage": 2,
+    "cases": [
+      {
+        "name": "1_g1",
+        "settings": {
+          "scenario": "1",
+          "icy_infront_of_transport1": true,
+          "icy_infront_of_transport2": false,
+          "icy_infront_of_target": false,
+          "muddy_infront_of_transport1": true,
+          "muddy_infront_of_transport2": false,
+          "muddy_infront_of_target": false
+        }
+      },
+      {
+        "name": "1_b",
+        "settings": {
+          "scenario": "1",
+          "icy_infront_of_transport1": false,
+          "icy_infront_of_transport2": false,
+          "icy_infront_of_target": true,
+          "muddy_infront_of_transport1": true,
+          "muddy_infront_of_transport2": false,
+          "muddy_infront_of_target": false
+        }
+      },
+      {
+        "name": "1_g2",
+        "settings": {
+          "scenario": "1",
+          "icy_infront_of_transport1": false,
+          "icy_infront_of_transport2": true,
+          "icy_infront_of_target": false,
+          "muddy_infront_of_transport1": true,
+          "muddy_infront_of_transport2": false,
+          "muddy_infront_of_target": false
+        }
+      },
+      {
+        "name": "2_g1",
+        "settings": {
+          "scenario": "2",
+          "icy_infront_of_transport1": true,
+          "icy_infront_of_transport2": false,
+          "icy_infront_of_target": false,
+          "muddy_infront_of_transport1": true,
+          "muddy_infront_of_transport2": false,
+          "muddy_infront_of_target": false
+        }
+      },
+      {
+        "name": "2_b",
+        "settings": {
+          "scenario": "2",
+          "icy_infront_of_transport1": false,
+          "icy_infront_of_transport2": false,
+          "icy_infront_of_target": true,
+          "muddy_infront_of_transport1": false,
+          "muddy_infront_of_transport2": false,
+          "muddy_infront_of_target": true
+        }
+      },
+      {
+        "name": "2_g2",
+        "settings": {
+          "scenario": "2",
+          "icy_infront_of_transport1": false,
+          "icy_infront_of_transport2": true,
+          "icy_infront_of_target": false,
+          "muddy_infront_of_transport1": false,
+          "muddy_infront_of_transport2": true,
+          "muddy_infront_of_target": false
+        }
+      },
+      {
+        "name": "1_g1_2_b",
+        "settings": {
+          "scenario": "1,2",
+          "icy_infront_of_transport1": true,
+          "icy_infront_of_transport2": false,
+          "icy_infront_of_target": false,
+          "muddy_infront_of_transport1": false,
+          "muddy_infront_of_transport2": false,
+          "muddy_infront_of_target": true
+        }
+      },
+      {
+        "name": "1_b_2_g1",
+        "settings": {
+          "scenario": "1,2",
+          "icy_infront_of_transport1": false,
+          "icy_infront_of_transport2": false,
+          "icy_infront_of_target": true,
+          "muddy_infront_of_transport1": true,
+          "muddy_infront_of_transport2": false,
+          "muddy_infront_of_target": false
+        }
+      },
+      {
+        "name": "1_b_2_g2",
+        "settings": {
+          "scenario": "1,2",
+          "icy_infront_of_transport1": false,
+          "icy_infront_of_transport2": false,
+          "icy_infront_of_target": true,
+          "muddy_infront_of_transport1": false,
+          "muddy_infront_of_transport2": true,
+          "muddy_infront_of_target": false
+        }
+      },
+      {
+        "name": "1_g2_2_g1",
+        "settings": {
+          "scenario": "1,2",
+          "icy_infront_of_transport1": false,
+          "icy_infront_of_transport2": true,
+          "icy_infront_of_target": false,
+          "muddy_infront_of_transport1": true,
+          "muddy_infront_of_transport2": false,
+          "muddy_infront_of_target": false
+        }
+      },
+      {
+        "name": "1_g2_2_b",
+        "settings": {
+          "scenario": "1,2",
+          "icy_infront_of_transport1": false,
+          "icy_infront_of_transport2": true,
+          "icy_infront_of_target": false,
+          "muddy_infront_of_transport1": false,
+          "muddy_infront_of_transport2": false,
+          "muddy_infront_of_target": true
+        }
+      },
+      {
+        "name": "1_g1_2_g2",
+        "settings": {
+          "scenario": "1,2",
+          "icy_infront_of_transport1": true,
+          "icy_infront_of_transport2": false,
+          "icy_infront_of_target": false,
+          "muddy_infront_of_transport1": false,
+          "muddy_infront_of_transport2": true,
+          "muddy_infront_of_target": false
+        }
+      }
+    ]
+  },
+  "cluttered_room_stage1": {
+    "environment": "cluttered_room",
+    "stage": 1,
+    "cases": [
+      {
+        "name": "1_g",
+        "settings": {
+          "can_blocking_target1": false,
+          "can_blocking_target2": true
+        }
+      },
+      {
+        "name": "1_b",
+        "settings": {
+          "can_blocking_target1": true,
+          "can_blocking_target2": false
+        }
+      }
+    ]
+  }
+}

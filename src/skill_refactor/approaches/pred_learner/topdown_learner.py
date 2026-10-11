@@ -460,7 +460,7 @@ class TopDownPredicateLearner(BasePredicateLearner):
                     individual_predicate_net.load_state_dict(torch.load(model_path))
 
                 # Create a callable interpretation function
-                device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+                device = torch.device(CFG.device)
                 predicate_ins = Predicate(
                     name=target_predicate.name + f"_{i}",
                     types=target_predicate.types,

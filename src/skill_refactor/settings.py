@@ -60,6 +60,8 @@ class GlobalSettings:
     pre_trained_policy_path: str = ""
     force_collect: bool = False
     pre_rl_stabilize_steps: int = 2
+    # Use the same delay before and after policy execution.
+    blocked_stacking_legacy_skill_timing: bool = False
 
     # rl-training parameters
     rl_algo: str = "PPO"
@@ -70,6 +72,7 @@ class GlobalSettings:
     render_planner_collection_img: str = ""
     predicate_config: str = ""
     planner_dataset_path: str = ""
+    inference_dataset_path: str = ""
     planner_num_traj: int = -1
     max_consecutive_failures: int = 5
     known_invalid_sc: str = ""
@@ -133,6 +136,9 @@ class GlobalSettings:
         2.1  # distance from center to region center along the wall normal
     )
     icy_inhand_fy_penalty: float = -1.5  # additional fy penalty when holding an object
+    # Historical evaluation compatibility, enabled by the reproduction runner.
+    icy_legacy_plan_order: bool = False
+    icy_reset_collision_history: bool = True
     i_trans_icy_region_feature: tuple[float, float, float, float, float] = (
         0.0,
         0.0,
@@ -297,6 +303,8 @@ class GlobalSettings:
     )
     c_drawer_spawn_center: tuple[float, float, float] = (1.2, 0.38, 0.7)
     c_drawer_spawn_scale: float = 1.4
+    # Use free-root obstacle physics and the original collision masks.
+    c_drawer_legacy_physics: bool = False
     c_drawer_close_frac: float = 0.35
     nail_drawer_offset_x: float = 0.78
     c_drawer_sensor_cam_eye_pos: list[float] = [0.3, 0.0, 0.6]

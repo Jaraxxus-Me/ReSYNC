@@ -1,0 +1,34 @@
+scenarios:
+  1:
+    trained: false
+    tgt_skill: Punch(robot,block,obstruction_rec)
+    failed_skill: ReachToGrasp
+    failed_objects: robot,grasp_block
+    basic_type: block
+    max_rl_steps: 10
+    rl_static_steps: 3
+    max_skill_steps: 200
+    train_objects: robot,grasp_block,obstruction_rec
+    basic_objects: grasp_block
+    planner_learning_cfg_settings:
+      num_envs: 1
+      scenario: '1'
+      middle_state_method: naive_init
+      real_scenario_name: sc1_pre_n1
+      num_middle_states: 20
+      rl_config: config/pure_rl/blocked_stacking_ppoc_sc1.yaml
+      predicate_config: config/predicates/blocked_stacking_confined_enu_sc1.yaml
+      obstruction1_blocking_grasp: true
+      obstruction1_blocking_stacking: false
+      blocked2d_reach_drift_trans: 0.01
+      blocked2d_reach_drift_rot: 0.003
+      num_train_episodes_planner: 1000
+      num_failed_episodes_planner: 40
+      num_train_episodes_planner_before_dreaming: 100
+      pred_search_num_trajectories: 100
+      max_env_steps: 300
+      planner_num_traj: 5
+      pre_trained_policy_path: inference_assets/blocked_stacking/policies/stage1.pt
+      pred_net_save_dir: inference_assets/blocked_stacking/predicates/stage1
+      inference_dataset_path: inference_assets/blocked_stacking/datasets/stage1
+      force_skip_pred_learning: true

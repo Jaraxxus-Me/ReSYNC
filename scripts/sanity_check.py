@@ -1,4 +1,4 @@
-"""Run stage-1 inference using the unchanged main-branch implementation.
+"""Run stage-1 inference using the configured assets.
 
 The configurations, episode seeds, action conversion, and stopping conditions
 follow tests/{domain}/approaches/test_lifelong_ref.py. This entry point exposes
@@ -47,7 +47,7 @@ def main() -> None:
 
     if not torch.cuda.is_available():
         raise SystemExit(
-            "The released configurations require an NVIDIA GPU and CUDA-enabled PyTorch."
+            "The simulator requires an NVIDIA GPU and CUDA-enabled PyTorch."
         )
     torch.set_num_threads(4)
     drawer = args.env == "cluttered_drawer"
@@ -57,10 +57,6 @@ def main() -> None:
         )
 
         system_cls = ClutteredDrawerRLTAMPSystem
-        predicate_dir = "c_drawer_sc1_pred_nets_seed0"
-        policy_path = (
-            "trained_policies/cluttered_drawer/skill_1231_sc1_seed0/best_ppo_ckpt.pt"
-        )
         blocking_prefix = "drawer"
         recovery_name = "Pull"
     else:
@@ -69,18 +65,24 @@ def main() -> None:
         )
 
         system_cls = BlockedStackingRLTAMPSystem
-        predicate_dir = "skill_1127_sc1_pred_nets_seed0"
-        policy_path = (
-            "trained_policies/b_stacking/skill_1127_sc1_seed0/best_ppo_ckpt.pt"
-        )
         blocking_prefix = "obstruction1"
         recovery_name = "Punch"
 
-    config_path = f"config/lifelong_learning/{args.env}_sc1.yaml"
-    stage = yaml.safe_load(Path(config_path).read_text())["scenarios"][1]
-    dataset = (
-        Path(stage["planner_learning_cfg_settings"]["planner_dataset_path"]) / "seed_0"
+    compatibility_settings = (
+        {
+            "c_drawer_legacy_physics": True,
+            "c_drawer_place_height_tol": 0.09,
+            "c_drawer_block_dz": 0.04,
+        }
+        if drawer
+        else {"blocked_stacking_legacy_skill_timing": True}
     )
+    config_path = f"config/inference/{args.env}_stage1.yaml"
+    stage = yaml.safe_load(Path(config_path).read_text())["scenarios"][1]
+    settings = stage["planner_learning_cfg_settings"]
+    predicate_dir = settings["pred_net_save_dir"]
+    policy_path = settings["pre_trained_policy_path"]
+    dataset = Path(settings["inference_dataset_path"])
     operator_path = Path(predicate_dir) / "invented_predicates_operators_sc1.json"
     required = [
         Path(policy_path),
@@ -88,6 +90,8 @@ def main() -> None:
         dataset / "trajectories.pkl",
         dataset / "lifted_operator_plans.pkl",
     ]
+    if drawer:
+        required.append(Path("src/skill_refactor/assets/obstacle_legacy.urdf"))
     missing = [str(p) for p in required if not p.is_file()]
     if missing:
         raise SystemExit(
@@ -113,7 +117,8 @@ def main() -> None:
     )
     register_all_environments()
     update_config(stage["planner_learning_cfg_settings"])
-    # Explicitly keep the original trained models selected above.
+    update_config(compatibility_settings)
+    # Keep the configured inference assets selected.
     update_config(
         {
             "force_skip_pred_learning": True,
@@ -135,11 +140,11 @@ def main() -> None:
         raise RuntimeError(f"Learned recovery operator {recovery_name} was not loaded")
     report = {
         "environment": args.env,
-        "seed": 0,
-        "source_commit": "49f8d12a072166e89ef45a0eacc1d20adc8bdefa",
+        "evaluation_seed": 0,
         "policy": policy_path,
         "predicates": predicate_dir,
         "config": config_path,
+        "compatibility_settings": compatibility_settings,
         "max_env_steps": CFG.max_env_steps,
         "torch": torch.__version__,
         "gpu": torch.cuda.get_device_name(),

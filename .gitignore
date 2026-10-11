@@ -138,6 +138,7 @@ celerybeat.pid
 # Environments
 .env
 .venv
+/.venv-icy/
 env/
 venv/
 ENV/
@@ -193,9 +194,23 @@ src/skill_refactor/assets/maniskill_assets/*
 no_dreaming_predicates/
 training_data_wake/
 ablation_assets/
-release/asset_contents/
 !docs/static/videos/
 !docs/static/videos/*.mp4
 
 # Simulation assets are distributed through the release downloader
 /src/skill_refactor/assets/
+
+/inference_assets/
+/release/*
+!/release/assets_manifest.json
+!/release/requirements-linux.lock
+!/release/requirements-icy-transport.lock
+!/release/external_assets_manifest.json
+!/release/asset_contents/
+/release/asset_contents/*
+!/release/asset_contents/simulation_assets.json
+!/release/asset_contents/simulation_compatibility.json
+!/release/asset_contents/blocked_stacking.json
+!/release/asset_contents/cluttered_drawer.json
+!/release/asset_contents/icy_transport.json
+!/release/asset_contents/cluttered_room.json

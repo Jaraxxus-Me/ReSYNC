@@ -1,0 +1,1812 @@
+[
+  {
+    "path": "inference_assets/cluttered_drawer/datasets/stage1/lifted_operator_plans.pkl",
+    "bytes": 6834,
+    "sha256": "a2056b5191f65620e374b44357e511915fbceb6572096102645e1be699078276"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/datasets/stage1/meta.json",
+    "bytes": 30,
+    "sha256": "ad371f6e87ec366c28f9202b25899c1dc048dbd6390e281a23879ea1a1deb661"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/datasets/stage1/training_scenario_indices.pkl",
+    "bytes": 1969,
+    "sha256": "4e80fc7a673e7a8bfac959bea140d9c8a1c54480dbe7f695d6947d025f3cfaf6"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/datasets/stage1/trajectories.pkl",
+    "bytes": 509943351,
+    "sha256": "50ec2de12284c28a6c956695b0c9f66fa8fe30a7e9c1e719f89beed111e1b927"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/datasets/stage2/lifted_operator_plans.pkl",
+    "bytes": 21285,
+    "sha256": "b9e719b326e241d42faf80af41c82e97569115d3151136eae86f4c4d2c1bd618"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/datasets/stage2/meta.json",
+    "bytes": 30,
+    "sha256": "ad371f6e87ec366c28f9202b25899c1dc048dbd6390e281a23879ea1a1deb661"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/datasets/stage2/training_scenario_indices.pkl",
+    "bytes": 1875,
+    "sha256": "b60b6ce121ec18e1302cca5918f0bb26c184cbbe10d91aae2860f713f41b45fd"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/datasets/stage2/trajectories.pkl",
+    "bytes": 518949656,
+    "sha256": "27a4782c7a52c86a3ca15f24a28031a47d37096a123fa4b9dfb54194212f070b"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/policies/stage1.pt",
+    "bytes": 1173050,
+    "sha256": "e71f2c07b435ae18b6c56eb82b37cafc49bebe2ff41a56438c663e96b5617a10"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/policies/stage2.pt",
+    "bytes": 1173050,
+    "sha256": "11c7dee880c08371286e6f8d83b2bb3c6c3b9a16f9e9163ed83a5520fb1259f9"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_0_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "2a0cbe4f5c908b675eba06db173de210dd80e02e022fc40ecc695312943e0052"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_0_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "8f1723e7bc7212c463e83ec5d7531d1ed8e8f45c8143fb4efd0695bfe880531d"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_0_model.pth",
+    "bytes": 552218,
+    "sha256": "8a5155174f6036609bce2ea2ba1369053a32a88f4b95de0040d3c6662b3ca9d2"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_0_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "e6e657360fa58e36420680eae03eee68ccba0d12cab8bbc71481346abb83adca"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_10_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "67c0998916707a8f09ef098a55e49f317499404b339cf47c04c7039a92fa3e03"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_10_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "a0bd5e9a179b0498135ccc6be2fb3f82fba9f26709ae9c73d586a71edb7c8afb"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_10_model.pth",
+    "bytes": 552251,
+    "sha256": "9bb8a6edb5d352503637a5cfef2d952da668bd3179b6200406b1eb2a02850893"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_10_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "6f749daa12045f798b377dc7fef014d40550445ea1464ad5e0ddf34294164662"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_11_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "04fe80ad85ffbffdabb3ff721d0d157640c470d0ca4d7083ff7205c1baa5fe32"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_11_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "4495b708c028482b372cbb022f5746471e2981815d66a1d48b74ad3f15e6fe1b"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_11_model.pth",
+    "bytes": 552251,
+    "sha256": "769ecc17dde1395e642945fcecc4a273d4fdfcbf29a6c3dbdec83c091a079819"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_11_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "f4c9875a9fef4839f5eeeb23a6a58a1bdad5769baedb55ee72bd288ae1b1f63b"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_12_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "b4d616d3044ff1712066a7a220c99ecd12a5785be5727c2e554a24436fd8009a"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_12_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "1a7082150bb05d338b30b7908fe8e547256627d13bb2cf2452383f69e72d81aa"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_12_model.pth",
+    "bytes": 552251,
+    "sha256": "cfbb1991ca55abf8748dbe2ffac051ebe44fb1cb3a0c39a941d8ea2ce730a047"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_12_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "7cc5683a89db0af46ce31222014081d09356fd0f26e06de99a4f2abdae485e94"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_13_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "99974a67229d9954a2bb49dd2ec23c190b09f06758fa055196944de04d73a63c"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_13_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "b554154aecd295605a5dbde4bebee86de529cf6da3d2ce18c3afc89c29df4fa4"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_13_model.pth",
+    "bytes": 552251,
+    "sha256": "4ed2d1c3b3108d065ef90c76339ec13f31e57ba6b578837cc9f3133f67926d39"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_13_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "e66547f3f1ada589b019a5c99933207b7d6c606b0e4ab9d99e6f19bfdbb97930"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_14_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "e22366eb3a41638e1b85df3ff727a97557cb3e39d9e5ff50b8c22b247bee486d"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_14_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "0b724ba17c0090048b24984b7396c48ad4967bf82e53d540876613d357b17a88"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_14_model.pth",
+    "bytes": 552251,
+    "sha256": "8d63986b7c3959202f51c72a6bd08686ad516979608823d9c0ef91fc1d4aa36e"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_14_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "54d11066c2ce808141026e5b3e26c0a869488122fe3708eb2d1c8806bfc43c77"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_15_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "6c5e46e99c19b0aeae73dd555980f40aa00bf88fd1f2b44bbcc42c682c7e1f42"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_15_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "54000a62cf83e137dfbd2b0ae56980453ed7e3ba54272d3bc6b84ce8ffee008e"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_15_model.pth",
+    "bytes": 552251,
+    "sha256": "2d9bb7c7e2bc2cffe115cefc8d6e64f9158b0322a28918ca198a326bfd000f1e"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_15_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "b8123334ecb00ed037342058089bdaef8ab16784b22a515a7541aa2ec172acfd"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_16_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "bfc5b7194e0f419d1ba08f8279fa82b47f47a1f2e8dc17836b64cd9bbf507da4"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_16_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "3493028269e2b95e9c428b3a7f7a17d87680039d1f52e0e97026d80d46346c75"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_16_model.pth",
+    "bytes": 552251,
+    "sha256": "41bd32a17cf1b93a47a4040c2bd791c85a81adba3bb4b02ed341abddaa7b97ad"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_16_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "694b61b66f0a01755efbd760dca18865871a07a28875ef6a6feda6e2164af85b"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_17_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "6f57de611521858744aab0601733a3dfacadd80d73deb5f0bf9776ef4cf1f5cd"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_17_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "a663472fdf3cf44c34667fc8404511a4f9e1f39bf7828030a3854353f4d706fa"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_17_model.pth",
+    "bytes": 552251,
+    "sha256": "ff4038e947b91b6af7cbf8b57739878cf9fbaa4f04340af9804b63b4cedabb11"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_17_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "337d764d0738c7d374dd8119c936feb913cbdd104d468f665090e43f63558980"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_18_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "4ce98fc0768f8f0e21fd3ddff6bd5eb5dcc6818fb1241bc3e6eac33974d9aae1"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_18_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "31e71ccbce150138645bc7607d97ddf48062f04361be30a1ef17db3f9f839746"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_18_model.pth",
+    "bytes": 552251,
+    "sha256": "f8a2ede65eb289b5f2037bab9f7dec1c79f6b38a13e24f87d48e84fee65524df"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_18_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "a929723738e1e0f0d16661a66cd9987e4990c640281f0a562ae7bc050a4b1b93"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_19_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "850e819e41de0d295f31c003fb8934acae727670e222553929d7fb0f6f8d5eb0"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_19_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "fcea2df5bd10a76a008a79ff02ec7ecf182f7e1448ea44e70a131d96380072be"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_19_model.pth",
+    "bytes": 552251,
+    "sha256": "9ad2c50256863ef286e80485e40f59851bc7eacd71c8a31ebb445a65ed0a0967"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_19_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "06d2111083ee5028766d0f8e53becbea0c20157d2f654dfabe3392dd8b2de10c"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_1_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "2b66b509e7d49199ddf376269ac719586d7d6c72c53bf8a5fc8f3f77a3c494a9"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_1_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "f6a7a991ca36e325ba9e747bd4e43035908cbe1fde959cfaa9186e8fb0b486b8"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_1_model.pth",
+    "bytes": 552218,
+    "sha256": "fa9e6d3200f0676ed5558e6b4af441148583542f488ac2278ec6369861c6ca77"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_1_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "aa05eac720c40475534a912e852547f698940719165f04adf935413c05ee3b43"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_2_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "4710cbb7630cc3971e0df2f2ffb8773f41df5542c7340aa3c198bc699f2bb44c"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_2_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "688787d8dc99470ce6b51601e777da89742b84a7661892eac0797de7e2067161"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_2_model.pth",
+    "bytes": 552218,
+    "sha256": "1c2900045b56832d96401153ffef9e209ff99c623fb9b6e42a93c586f6a670b7"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_2_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "45ebbd67dfffd981e8d9e9a0adde76fa1ddf96bb84683a6d22ea8767038773af"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_3_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "39e912449f0ba49b04f86b525ad07b52d87da127827ac32b31e7c685f0896bec"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_3_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "98e2e19e9fd206652a7b3106a2275d3c02129e180aa729c61400469b1d836e44"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_3_model.pth",
+    "bytes": 552218,
+    "sha256": "71f88ec50c285eaf172a447e3217aea8499d9f62ef29f376b2857c8267c7f0e7"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_3_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "80d77d18e3b3d31b1cce0faacae16f1fa94f5040d3cacf31e97d19284eed061e"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_4_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "a6942f7e33ce16aad319fb897c3197058d8ee8774218774542168f43a13c988a"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_4_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "8ebb8972e34d765b52026ae7652c19d252ca2eb4cad3caafdd63636a45c4efbe"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_4_model.pth",
+    "bytes": 552218,
+    "sha256": "a0cc5528a9f4482cd99c26ecdacf882f6b5405fe8db10ebad3e68bb36642915c"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_4_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "3e55cb46e6d365a850b44ff5a77c96559a867941b399e22e3143122f23718a32"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_5_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "23bb41809f8f540e2632c6e2c948b1cc0889d3b5ca7ad75874b10c8601196993"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_5_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "4e3bf208b0e73d725ea40d5f825ee0b0f654b63363faa3e966db906d52b24a5c"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_5_model.pth",
+    "bytes": 552218,
+    "sha256": "b763e4fde5c90859e1fa1d49276e366b6522896831ca64d8d9a4e7a973ee341b"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_5_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "e89f55f3fe4faa9ee4e2c72f4388a55d584fa15d273d65f7dac11913ed4f3c51"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_6_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "d0196b95bcc6a3de0addd36fe6002d9b2a9ff667b883a1f6fc2bfdd7da8607b9"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_6_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "c3bfedfdda0a71bd68412e08af83139668b30ebb754283d8f2df859b11851467"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_6_model.pth",
+    "bytes": 552218,
+    "sha256": "93aad3c253280593647f7d04afe43ad61527bd6cbc4619351755851400f52590"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_6_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "e22e6d63ce9b3c4f14f30b684d4e5ff547a5cbede96c9ccffd5601d5b04372b9"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_7_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "111cafa0acd0f92355bcb03f7c7ef0f07b85c237e830d64ea44c8ceb2f679d49"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_7_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "48115d8f9faa1a757908aa6765520d29d8ef6faf362d08c21c077dbda25ac67f"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_7_model.pth",
+    "bytes": 552218,
+    "sha256": "94a4a23c65977fe9857fdf588770b6f0c370906dacff8f2d5fdc65abc52408b4"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_7_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "57338b8210bb755b9743b9884f70cfb37e3023f282ba3d0956fe311226d08f86"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_8_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "db61eeee66731e3db342a8a01675dbf604833eaa6bd18eb6a6c72cc2a2a3e6b3"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_8_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "9cb514b7a1ac0274d784ff4900660357b3ce58ab275451ec79a062796629dd30"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_8_model.pth",
+    "bytes": 552218,
+    "sha256": "29bf7fadead2cd82f953addb1a8826ad5f2a090a9974e1f42e944b4a50601a86"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_8_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "45929d54c5dc47a8fbe84dea849c58f693d0c69734fe48d7cb593a19624333e2"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_9_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "ffca14d81f558d3aa3a6c47cf4e4976372f58c674e40378adf0c3842f987aba9"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_9_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "48573f94c65d41d3ce6789044dbe47150a658e7fcb6ad909f72cb9130abad21c"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_9_model.pth",
+    "bytes": 552218,
+    "sha256": "3f6618f6b76d8cdaf097097099b769df92590a5e4c51f660d756e548beae42eb"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p1_9_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "34d197961720bbf9c8fc1b15eefb72ea8e7e9333b45a97862b1aafe8a3befdba"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_0_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "0378bfc1ca72a29adf1a4b04fa0a0c30088fef6f3b1b652b131192a14461277d"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_0_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "858c5492ac4f432f24e37f3263930992b905cd57e7513695814f1d8f36475b46"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_0_model.pth",
+    "bytes": 552218,
+    "sha256": "7fd45b5b62ae290282812fbed95f44b7ce3c0f5da3818469780e3d0c4ce3b91c"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_0_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "46793dd41d0904c27450a2ae9152ac3cb6179d25daffd9535b781cab661a14a3"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_1_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "60e05f26eb2643bceb7fdab1123a542c6d4b674549e031c65f8ef930751acff2"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_1_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "40a69315374a04932b696f9e60c50cb875088c60bc0efe37dee05509a2843b5f"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_1_model.pth",
+    "bytes": 552218,
+    "sha256": "78ce039e489082613238be8f9dfc974579cd2e064365e9b388ca8b14fe33f346"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_1_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "311ee3dc50dc1133479080592e3bf4f6b67c1149a7ccd52c5aa4bafdec538d14"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_2_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "5f00956c15d3f73a30a019c4c057de2433500aa5a884c3e4c45bf8e12e34bb5b"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_2_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "ae010d48e1263f4020f5fcd64ee7b95d9072daa0a58b8b861c62fe2d5dc37cd1"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_2_model.pth",
+    "bytes": 552218,
+    "sha256": "ca4ee61b2e46219eb64fb1f1e4313a5f4e80cdb606ba24052de2dcb45a28cb00"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_2_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "24c61a3ebfaf89ebf2d22ea95cc37ee87db5609041d01016e8c45d42f1ffad2b"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_3_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "7b89954f3266a4cc1bad03a85c00b8743cd03a034b65600cf0c189417d2ebc1f"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_3_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "9473eae15587bae76cd3419bf806f5c22adab17b1e83c3622fa471eacd2684f1"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_3_model.pth",
+    "bytes": 552218,
+    "sha256": "40cab94c0669f683d499338c53792e09902fee6d6d98a67193948980943ce592"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_3_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "13a2c9aa16fc6da76173109350fef08690e8d855f74b4d2d4cc6f11bb78c70de"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_4_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "ceb5c31b637d524778379ee5efba711396110bb55abd792c13b6f96626816386"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_4_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "06dcd0f023dfbbc02356d42165a98b66ed6f973604fc1f882d3b5f34d8c698a5"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_4_model.pth",
+    "bytes": 552218,
+    "sha256": "af3f3c5fdc5d3a23a1c3068119d70293d8ada54a18d3205e8494c5e65f10f44a"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_4_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "22db1a0e08f17c21e59655d79f23d3b73d8e7aedcc25af453a405ef650cf26fc"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_5_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "40672b01d820575f328eff866402b1a42527baa6312d66f442640b663237b263"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_5_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "38c4c776b8fb0cee659d2fd033082eb9bb93fc7dfaeef64312acdbabc33a2adf"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_5_model.pth",
+    "bytes": 552218,
+    "sha256": "8e9ef0f4c26b3ea5006439c2f73d254656408a984a5e2670e42682266e6193a6"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_5_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "59ed2254a41820d04ad203b676f3f614bbb2ad30fbdce76818f50363a51d91f7"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_6_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "07d8545021f91e1b1141bcc90d6b8bf248ad8dbb02ca6214ae336ed01e4bb96e"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_6_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "1cd7315df1f30697704a38adbfb3051af76ebb10919e0fb00e9001456ed65085"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_6_model.pth",
+    "bytes": 552218,
+    "sha256": "4a70ed0e46d91bec3c99e3bcdb9a2df5df638e7e6c43ce356d2760ab48c04180"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_6_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "081fd28e5d5152be72056c6842027d76442b55b29d95a02308c215d178b88932"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_7_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "2db47d1d550f185fee6b84c1a8aa9f3120938e8e0cdf19429c249f2ef7e22f03"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_7_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "6d8a3f71ef058dd4f258f45adc12a45a69c071d5ee7aa34accb6aeb90db34d90"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_7_model.pth",
+    "bytes": 552218,
+    "sha256": "d211a5e8b0ce4bda406e58aebe110c95c28200b6e944a941533e9f9a628def72"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/b_sc1p2_7_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "ddc10b7e31b6837c9aa9f87b743dfe40d0bbf29ca4addedd3a8790f78e3563d0"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/invented_predicates_operators_sc1.json",
+    "bytes": 12777,
+    "sha256": "d701e41b137111189a0f2e35109f748cc9dacd42d0e4a629e864ac545c053bfd"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/terminal_handreachtograsp_pull_0_ae_vector.pth",
+    "bytes": 2078,
+    "sha256": "5f6c6e8d9dadc3001a7916028985437c91f142d1aa979720493eaa3884449c99"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/terminal_handreachtograsp_pull_0_learned_ae_vector.pth",
+    "bytes": 2134,
+    "sha256": "ac00d35408f4a3c8e8ae83cc1db24896cbd6d9e1dea2784213d301fa790d8f41"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/terminal_handreachtograsp_pull_0_model.pth",
+    "bytes": 562321,
+    "sha256": "310b37e20defb7fdd40d37f2fcbe2181537c1f55ea036513634fb75d34290882"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage1/terminal_handreachtograsp_pull_0_var_bind_idx.pth",
+    "bytes": 1971,
+    "sha256": "ef6c0c8c4c7e348426bbbe73c13a392f08ceb8f95ca4d924737514da4e8f2b40"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_0_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "2a0cbe4f5c908b675eba06db173de210dd80e02e022fc40ecc695312943e0052"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_0_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "8f1723e7bc7212c463e83ec5d7531d1ed8e8f45c8143fb4efd0695bfe880531d"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_0_model.pth",
+    "bytes": 552218,
+    "sha256": "8a5155174f6036609bce2ea2ba1369053a32a88f4b95de0040d3c6662b3ca9d2"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_0_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "e6e657360fa58e36420680eae03eee68ccba0d12cab8bbc71481346abb83adca"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_10_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "67c0998916707a8f09ef098a55e49f317499404b339cf47c04c7039a92fa3e03"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_10_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "a0bd5e9a179b0498135ccc6be2fb3f82fba9f26709ae9c73d586a71edb7c8afb"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_10_model.pth",
+    "bytes": 552251,
+    "sha256": "9bb8a6edb5d352503637a5cfef2d952da668bd3179b6200406b1eb2a02850893"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_10_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "6f749daa12045f798b377dc7fef014d40550445ea1464ad5e0ddf34294164662"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_11_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "04fe80ad85ffbffdabb3ff721d0d157640c470d0ca4d7083ff7205c1baa5fe32"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_11_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "4495b708c028482b372cbb022f5746471e2981815d66a1d48b74ad3f15e6fe1b"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_11_model.pth",
+    "bytes": 552251,
+    "sha256": "769ecc17dde1395e642945fcecc4a273d4fdfcbf29a6c3dbdec83c091a079819"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_11_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "f4c9875a9fef4839f5eeeb23a6a58a1bdad5769baedb55ee72bd288ae1b1f63b"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_12_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "b4d616d3044ff1712066a7a220c99ecd12a5785be5727c2e554a24436fd8009a"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_12_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "1a7082150bb05d338b30b7908fe8e547256627d13bb2cf2452383f69e72d81aa"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_12_model.pth",
+    "bytes": 552251,
+    "sha256": "cfbb1991ca55abf8748dbe2ffac051ebe44fb1cb3a0c39a941d8ea2ce730a047"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_12_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "7cc5683a89db0af46ce31222014081d09356fd0f26e06de99a4f2abdae485e94"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_13_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "99974a67229d9954a2bb49dd2ec23c190b09f06758fa055196944de04d73a63c"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_13_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "b554154aecd295605a5dbde4bebee86de529cf6da3d2ce18c3afc89c29df4fa4"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_13_model.pth",
+    "bytes": 552251,
+    "sha256": "4ed2d1c3b3108d065ef90c76339ec13f31e57ba6b578837cc9f3133f67926d39"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_13_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "e66547f3f1ada589b019a5c99933207b7d6c606b0e4ab9d99e6f19bfdbb97930"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_14_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "e22366eb3a41638e1b85df3ff727a97557cb3e39d9e5ff50b8c22b247bee486d"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_14_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "0b724ba17c0090048b24984b7396c48ad4967bf82e53d540876613d357b17a88"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_14_model.pth",
+    "bytes": 552251,
+    "sha256": "8d63986b7c3959202f51c72a6bd08686ad516979608823d9c0ef91fc1d4aa36e"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_14_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "54d11066c2ce808141026e5b3e26c0a869488122fe3708eb2d1c8806bfc43c77"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_15_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "6c5e46e99c19b0aeae73dd555980f40aa00bf88fd1f2b44bbcc42c682c7e1f42"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_15_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "54000a62cf83e137dfbd2b0ae56980453ed7e3ba54272d3bc6b84ce8ffee008e"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_15_model.pth",
+    "bytes": 552251,
+    "sha256": "2d9bb7c7e2bc2cffe115cefc8d6e64f9158b0322a28918ca198a326bfd000f1e"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_15_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "b8123334ecb00ed037342058089bdaef8ab16784b22a515a7541aa2ec172acfd"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_16_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "bfc5b7194e0f419d1ba08f8279fa82b47f47a1f2e8dc17836b64cd9bbf507da4"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_16_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "3493028269e2b95e9c428b3a7f7a17d87680039d1f52e0e97026d80d46346c75"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_16_model.pth",
+    "bytes": 552251,
+    "sha256": "41bd32a17cf1b93a47a4040c2bd791c85a81adba3bb4b02ed341abddaa7b97ad"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_16_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "694b61b66f0a01755efbd760dca18865871a07a28875ef6a6feda6e2164af85b"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_17_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "6f57de611521858744aab0601733a3dfacadd80d73deb5f0bf9776ef4cf1f5cd"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_17_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "a663472fdf3cf44c34667fc8404511a4f9e1f39bf7828030a3854353f4d706fa"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_17_model.pth",
+    "bytes": 552251,
+    "sha256": "ff4038e947b91b6af7cbf8b57739878cf9fbaa4f04340af9804b63b4cedabb11"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_17_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "337d764d0738c7d374dd8119c936feb913cbdd104d468f665090e43f63558980"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_18_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "4ce98fc0768f8f0e21fd3ddff6bd5eb5dcc6818fb1241bc3e6eac33974d9aae1"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_18_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "31e71ccbce150138645bc7607d97ddf48062f04361be30a1ef17db3f9f839746"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_18_model.pth",
+    "bytes": 552251,
+    "sha256": "f8a2ede65eb289b5f2037bab9f7dec1c79f6b38a13e24f87d48e84fee65524df"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_18_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "a929723738e1e0f0d16661a66cd9987e4990c640281f0a562ae7bc050a4b1b93"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_19_ae_vector.pth",
+    "bytes": 1732,
+    "sha256": "850e819e41de0d295f31c003fb8934acae727670e222553929d7fb0f6f8d5eb0"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_19_learned_ae_vector.pth",
+    "bytes": 1852,
+    "sha256": "fcea2df5bd10a76a008a79ff02ec7ecf182f7e1448ea44e70a131d96380072be"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_19_model.pth",
+    "bytes": 552251,
+    "sha256": "9ad2c50256863ef286e80485e40f59851bc7eacd71c8a31ebb445a65ed0a0967"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_19_var_bind_idx.pth",
+    "bytes": 1753,
+    "sha256": "06d2111083ee5028766d0f8e53becbea0c20157d2f654dfabe3392dd8b2de10c"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_1_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "2b66b509e7d49199ddf376269ac719586d7d6c72c53bf8a5fc8f3f77a3c494a9"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_1_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "f6a7a991ca36e325ba9e747bd4e43035908cbe1fde959cfaa9186e8fb0b486b8"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_1_model.pth",
+    "bytes": 552218,
+    "sha256": "fa9e6d3200f0676ed5558e6b4af441148583542f488ac2278ec6369861c6ca77"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_1_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "aa05eac720c40475534a912e852547f698940719165f04adf935413c05ee3b43"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_2_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "4710cbb7630cc3971e0df2f2ffb8773f41df5542c7340aa3c198bc699f2bb44c"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_2_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "688787d8dc99470ce6b51601e777da89742b84a7661892eac0797de7e2067161"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_2_model.pth",
+    "bytes": 552218,
+    "sha256": "1c2900045b56832d96401153ffef9e209ff99c623fb9b6e42a93c586f6a670b7"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_2_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "45ebbd67dfffd981e8d9e9a0adde76fa1ddf96bb84683a6d22ea8767038773af"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_3_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "39e912449f0ba49b04f86b525ad07b52d87da127827ac32b31e7c685f0896bec"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_3_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "98e2e19e9fd206652a7b3106a2275d3c02129e180aa729c61400469b1d836e44"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_3_model.pth",
+    "bytes": 552218,
+    "sha256": "71f88ec50c285eaf172a447e3217aea8499d9f62ef29f376b2857c8267c7f0e7"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_3_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "80d77d18e3b3d31b1cce0faacae16f1fa94f5040d3cacf31e97d19284eed061e"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_4_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "a6942f7e33ce16aad319fb897c3197058d8ee8774218774542168f43a13c988a"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_4_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "8ebb8972e34d765b52026ae7652c19d252ca2eb4cad3caafdd63636a45c4efbe"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_4_model.pth",
+    "bytes": 552218,
+    "sha256": "a0cc5528a9f4482cd99c26ecdacf882f6b5405fe8db10ebad3e68bb36642915c"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_4_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "3e55cb46e6d365a850b44ff5a77c96559a867941b399e22e3143122f23718a32"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_5_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "23bb41809f8f540e2632c6e2c948b1cc0889d3b5ca7ad75874b10c8601196993"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_5_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "4e3bf208b0e73d725ea40d5f825ee0b0f654b63363faa3e966db906d52b24a5c"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_5_model.pth",
+    "bytes": 552218,
+    "sha256": "b763e4fde5c90859e1fa1d49276e366b6522896831ca64d8d9a4e7a973ee341b"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_5_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "e89f55f3fe4faa9ee4e2c72f4388a55d584fa15d273d65f7dac11913ed4f3c51"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_6_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "d0196b95bcc6a3de0addd36fe6002d9b2a9ff667b883a1f6fc2bfdd7da8607b9"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_6_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "c3bfedfdda0a71bd68412e08af83139668b30ebb754283d8f2df859b11851467"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_6_model.pth",
+    "bytes": 552218,
+    "sha256": "93aad3c253280593647f7d04afe43ad61527bd6cbc4619351755851400f52590"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_6_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "e22e6d63ce9b3c4f14f30b684d4e5ff547a5cbede96c9ccffd5601d5b04372b9"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_7_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "111cafa0acd0f92355bcb03f7c7ef0f07b85c237e830d64ea44c8ceb2f679d49"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_7_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "48115d8f9faa1a757908aa6765520d29d8ef6faf362d08c21c077dbda25ac67f"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_7_model.pth",
+    "bytes": 552218,
+    "sha256": "94a4a23c65977fe9857fdf588770b6f0c370906dacff8f2d5fdc65abc52408b4"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_7_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "57338b8210bb755b9743b9884f70cfb37e3023f282ba3d0956fe311226d08f86"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_8_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "db61eeee66731e3db342a8a01675dbf604833eaa6bd18eb6a6c72cc2a2a3e6b3"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_8_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "9cb514b7a1ac0274d784ff4900660357b3ce58ab275451ec79a062796629dd30"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_8_model.pth",
+    "bytes": 552218,
+    "sha256": "29bf7fadead2cd82f953addb1a8826ad5f2a090a9974e1f42e944b4a50601a86"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_8_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "45929d54c5dc47a8fbe84dea849c58f693d0c69734fe48d7cb593a19624333e2"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_9_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "ffca14d81f558d3aa3a6c47cf4e4976372f58c674e40378adf0c3842f987aba9"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_9_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "48573f94c65d41d3ce6789044dbe47150a658e7fcb6ad909f72cb9130abad21c"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_9_model.pth",
+    "bytes": 552218,
+    "sha256": "3f6618f6b76d8cdaf097097099b769df92590a5e4c51f660d756e548beae42eb"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p1_9_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "34d197961720bbf9c8fc1b15eefb72ea8e7e9333b45a97862b1aafe8a3befdba"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_0_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "0378bfc1ca72a29adf1a4b04fa0a0c30088fef6f3b1b652b131192a14461277d"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_0_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "858c5492ac4f432f24e37f3263930992b905cd57e7513695814f1d8f36475b46"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_0_model.pth",
+    "bytes": 552218,
+    "sha256": "7fd45b5b62ae290282812fbed95f44b7ce3c0f5da3818469780e3d0c4ce3b91c"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_0_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "46793dd41d0904c27450a2ae9152ac3cb6179d25daffd9535b781cab661a14a3"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_1_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "60e05f26eb2643bceb7fdab1123a542c6d4b674549e031c65f8ef930751acff2"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_1_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "40a69315374a04932b696f9e60c50cb875088c60bc0efe37dee05509a2843b5f"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_1_model.pth",
+    "bytes": 552218,
+    "sha256": "78ce039e489082613238be8f9dfc974579cd2e064365e9b388ca8b14fe33f346"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_1_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "311ee3dc50dc1133479080592e3bf4f6b67c1149a7ccd52c5aa4bafdec538d14"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_2_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "5f00956c15d3f73a30a019c4c057de2433500aa5a884c3e4c45bf8e12e34bb5b"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_2_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "ae010d48e1263f4020f5fcd64ee7b95d9072daa0a58b8b861c62fe2d5dc37cd1"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_2_model.pth",
+    "bytes": 552218,
+    "sha256": "ca4ee61b2e46219eb64fb1f1e4313a5f4e80cdb606ba24052de2dcb45a28cb00"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_2_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "24c61a3ebfaf89ebf2d22ea95cc37ee87db5609041d01016e8c45d42f1ffad2b"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_3_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "7b89954f3266a4cc1bad03a85c00b8743cd03a034b65600cf0c189417d2ebc1f"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_3_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "9473eae15587bae76cd3419bf806f5c22adab17b1e83c3622fa471eacd2684f1"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_3_model.pth",
+    "bytes": 552218,
+    "sha256": "40cab94c0669f683d499338c53792e09902fee6d6d98a67193948980943ce592"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_3_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "13a2c9aa16fc6da76173109350fef08690e8d855f74b4d2d4cc6f11bb78c70de"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_4_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "ceb5c31b637d524778379ee5efba711396110bb55abd792c13b6f96626816386"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_4_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "06dcd0f023dfbbc02356d42165a98b66ed6f973604fc1f882d3b5f34d8c698a5"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_4_model.pth",
+    "bytes": 552218,
+    "sha256": "af3f3c5fdc5d3a23a1c3068119d70293d8ada54a18d3205e8494c5e65f10f44a"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_4_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "22db1a0e08f17c21e59655d79f23d3b73d8e7aedcc25af453a405ef650cf26fc"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_5_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "40672b01d820575f328eff866402b1a42527baa6312d66f442640b663237b263"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_5_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "38c4c776b8fb0cee659d2fd033082eb9bb93fc7dfaeef64312acdbabc33a2adf"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_5_model.pth",
+    "bytes": 552218,
+    "sha256": "8e9ef0f4c26b3ea5006439c2f73d254656408a984a5e2670e42682266e6193a6"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_5_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "59ed2254a41820d04ad203b676f3f614bbb2ad30fbdce76818f50363a51d91f7"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_6_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "07d8545021f91e1b1141bcc90d6b8bf248ad8dbb02ca6214ae336ed01e4bb96e"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_6_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "1cd7315df1f30697704a38adbfb3051af76ebb10919e0fb00e9001456ed65085"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_6_model.pth",
+    "bytes": 552218,
+    "sha256": "4a70ed0e46d91bec3c99e3bcdb9a2df5df638e7e6c43ce356d2760ab48c04180"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_6_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "081fd28e5d5152be72056c6842027d76442b55b29d95a02308c215d178b88932"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_7_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "2db47d1d550f185fee6b84c1a8aa9f3120938e8e0cdf19429c249f2ef7e22f03"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_7_learned_ae_vector.pth",
+    "bytes": 1845,
+    "sha256": "6d8a3f71ef058dd4f258f45adc12a45a69c071d5ee7aa34accb6aeb90db34d90"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_7_model.pth",
+    "bytes": 552218,
+    "sha256": "d211a5e8b0ce4bda406e58aebe110c95c28200b6e944a941533e9f9a628def72"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc1p2_7_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "ddc10b7e31b6837c9aa9f87b743dfe40d0bbf29ca4addedd3a8790f78e3563d0"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_0_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "b4caf393d1bac3d218146ee8b0801050e91053892aa0145c830ab1a3af288465"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_0_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "1ff62ba01195523dc652f742c3c1bc2960a843c74724e6ac761186cbf5d68335"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_0_model.pth",
+    "bytes": 551805,
+    "sha256": "43b1dca1e760025ff54ba024778cb070bb95387d6e84b86a8b46d7b0e56f16ac"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_0_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "a48116f25c37ba9c90a35beb50916b8f81aba2997208b80af7050627b1a803a9"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_10_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "80ad0f3007eaad6366972dbd9f4f2e39cb596f70f1c82e9f661250fb1338008f"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_10_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "179fcf557179ef2fea0e378e39f90f5107540f73fdf158430e9ec8c383dc8a39"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_10_model.pth",
+    "bytes": 551836,
+    "sha256": "fbb95a334f8e85f73791a6e228b7837ed40baca05edb0507fbc827886c89f640"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_10_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "3813d3003c9c42991b896e7e9d60eb6447bd4680c776d03176a35eb7d48ea014"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_11_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "f1a5581eaaa4f1d057a36ce6442857026a55c69c3b368840630a41b2b00c245f"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_11_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "165bf9ab66f54c3f38a420bab7a38abb098590c3c997c61e4d05bef5c74f4fe8"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_11_model.pth",
+    "bytes": 551836,
+    "sha256": "449aec3279012c25268c010a5f254574b9f0ab164973fa2914bad08e12b90ffc"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_11_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "088441c25eb44a0acc52f2528698e3659b0517e8424f4ec69dea301ee7dfb462"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_12_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "39f6036647e2c9277dbdad81f16ad3db687666b4042355729f0337976b1314e6"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_12_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "ec408d92fcba12a3c6fa3ab72b19160f952076a73750fa111e27f7fb3725b6d4"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_12_model.pth",
+    "bytes": 551836,
+    "sha256": "c9cadac7b6cf54597fbccb657c5497eed020d4c5457d387b77605e1401994703"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_12_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "033d3325c9507c342bdea363d8604fdb8b7c98ce40c25633f0bbaa1c33583e2c"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_13_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "5a7fc7d1e72a6656cad6c633436a08a068ee037989cacc27ca6bcc82156b0724"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_13_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "5903072f87d656c23b00b5bb7c6e3ba1021000ee8b63b2dc3c5fba1f3370ccdb"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_13_model.pth",
+    "bytes": 551836,
+    "sha256": "ca5543727b65d8679d632fc6d5b39ca18caf85979e49598efd37ce630795c0f8"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_13_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "5da3aa9a29090adbc339a2419e4972850ae7533c048983fb89eebe3a1852b86d"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_14_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "b9f9e9c03c474490edc1ccac01a7f66b1b67da0f8d4ae85bbe0a7a3cbab54218"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_14_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "bd6f4b55843ab873eddcbaf397cb61f1b9fb859147179535197d5c7b6783989f"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_14_model.pth",
+    "bytes": 551836,
+    "sha256": "f432c3180d66ac249cb8bdb98500893d7ce6fa51b9c08df9b78654f637354fa5"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_14_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "e3451dc732e285b277046752e71e1f42dde07412ae2220913d3c93add36296dd"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_15_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "869d42bbdfe466d39f8b73bbd3b81105c5bfce5518334c0e808c957f18b17503"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_15_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "2b2f46f9abbe3dbb94a619b50f917479c510d0209b9c0fb0f64386ad9ddcce01"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_15_model.pth",
+    "bytes": 551836,
+    "sha256": "7c48a7d10e5d42890d3618d8e998845a49c6ac071c4cc09734fd53d63750f6b4"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_15_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "06d627637c7b004dffec02f1e3b2994f8d9387f9d1242f8092bd5763e7585f0d"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_16_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "b4b3831bce38ab8ffae4afcb0e055a06cca763e970cb5745395b224063033463"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_16_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "a01270b11d94b12c74f9da001db0d106675a3cc0b880716afc60e81e4fa3de72"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_16_model.pth",
+    "bytes": 551836,
+    "sha256": "f7cf3b30e94156e4f90a132a71082ddff75353405a92e07fe3cf563a7ef3e12d"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_16_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "d19b3fc087d1fd920b638b92a0d82e2109360709faaf0f30ff5d904e7505932b"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_17_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "f9241f71b7bf08aa3ac297aea6e7e36b9f96566b857997d508e082ed4374f200"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_17_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "8393779571fa08f583cacd448da3e063430392c4b73d199f3e0789cb29481f6f"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_17_model.pth",
+    "bytes": 551836,
+    "sha256": "928ed1e62cf9412bd149cce2384e0bcf866e93d43e02f7c1d26b9438479b8b7f"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_17_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "858d6ca0209e9e805a260f58c86c0d50e5678c5510cb47a340bc4a916c88b7cb"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_18_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "2cfc465ed36597b1f7eebc25c8af7949ee6add0fb71f36c2ce7c719f8216c9dd"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_18_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "e7b02ad075fad15a7c172d86814404d3002e5543e5761315feeef13661931110"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_18_model.pth",
+    "bytes": 551836,
+    "sha256": "054b9141166d8c9121f277fc84f726bd9dc51d112f2cedd049096aad80980d7a"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_18_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "a0dc38805c71479dade88304df5a73b772838ad39827140c92f741e4ad13a7f7"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_19_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "3f0693db20093d995730b7688ffe26b90b907c7d3e66745a1cc064aaebf1d259"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_19_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "641fa1d0648521b7a79fe1dfd9e41694fc3fe47350d653a7644fe8a5fa6f8605"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_19_model.pth",
+    "bytes": 551836,
+    "sha256": "57fda73ca9612fd8d7cedd4b9796c13963f07c5e43b9df90033c4b349dae5636"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_19_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "424fa1579fc09adb7b4b635623ba1cf606e9db54941d590b5d93fbe3591202dc"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_1_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "d1189bb19776f11720426188711712cc1ac1a37a97979483ab90551b45e165c9"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_1_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "6824c9592c4b673658f6dcd0412c519b8a56823f2adf0a824ad2c601823973d2"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_1_model.pth",
+    "bytes": 551805,
+    "sha256": "36819e31061472f017a04ab86c2fb174b640b10bdfca8ab38617f3cd755117d8"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_1_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "d8bf270f53bbce8a5df2183cb11e1f7b3ebd5b2d1a4ddf49b6b1f5f61857d1ac"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_2_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "32cc58445f0163812ddc73e72818097ce3690b73a6d8138a33070bb7f1e115ef"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_2_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "837d331c67281414e87be568254b28f846bfbf7663ef9786953358c2e89b3e87"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_2_model.pth",
+    "bytes": 551805,
+    "sha256": "e0d66d02664872c1c0e3dc44d62b55f27ea7733c4ccdf8b6bc1ca86b0206775d"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_2_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "1d04e2893e87ddbd180ac24dcf361203b37acc0bcab10b9a0e71bfd1815b29c4"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_3_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "c4d15a478fb78b14792690a230d725daac4002c77de52b916901863c9e50b9a4"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_3_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "5e67cc0c56627bf05f8658ce0552950e33baab9685ef781d00341ea3c274cb36"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_3_model.pth",
+    "bytes": 551805,
+    "sha256": "b799b2da5fe7c4ede9af28040705399890b501b2c27b505936fc7e02e7bbb827"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_3_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "13a1139735755a80809852693eace307cbf5057374b78ec7379f26e478bd0a7a"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_4_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "c0b1a8c69fe02d1928e40b1ee45950ab7b089b4c83e22e7eadc5196dbfc24cba"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_4_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "673005a69ff2dd4d1dea060cf5515cd143998aaa7995af79514462921a0c2916"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_4_model.pth",
+    "bytes": 551805,
+    "sha256": "51e9684f160dc2fe9fe3d8e337b32724c1fefdd90784c1923c2dcda0db972a3f"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_4_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "88cefbaebe006c52cd9b15a4ed4bd899148e66bbe10576ef46587803064cfd6b"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_5_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "c2592f54594b0e5169e343d61d9b01a9d147f69c0807ec9989db3f40569091af"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_5_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "ed423ea5c94d69dfb10dfab1ea8268d17ed4f8d545829a0d604161cd2922f23d"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_5_model.pth",
+    "bytes": 551805,
+    "sha256": "7943322a9ad33835c865d14bdeb698ed7c4271950668fcfb58078b3553875aa9"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_5_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "21f5e07370c3039855e6770f5bfba882c627bcf75947b4d55521d54576c2675d"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_6_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "00f91441ea06fc465a9139795cd9e13ed452eb93dce0e3dbc5cbaa5bf913215e"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_6_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "e4432398c90e921571255b821073b72c98a024bf446257c6a6a3bc8731e6f62b"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_6_model.pth",
+    "bytes": 551805,
+    "sha256": "2775c0c6d9a7f7158573b192ad0a17c2edbdb1bfaba3315435f9939ccba2bcd2"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_6_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "e215b90a53229e0f9f8f81c2a10bb55dd52aafd64c6fcdf8e352aa29b17e15e8"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_7_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "41092dcbb0044a2c2fe7d0764124955065715307d4e5660b0be3ec38ca3959d0"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_7_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "705d3d2d6deb14e81ec216b1fd9bc1db71f0d045421beba8bea78ae54876c945"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_7_model.pth",
+    "bytes": 551805,
+    "sha256": "6ddce391601a950754ef2a51b2f426b031642d8fea30e2b9d53aa5a50da985dc"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_7_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "a173ae52284976dfff9bd2622f77daf981994fa961b99f0ddf7bf61a97fc1a48"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_8_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "828e47e73c2a52fdb36b22092298ab93c56f05db6d69d5e2ac02036d3761d977"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_8_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "9de9a8bfcbb09987c3886f8bf5e50076defac0b789b2889869321472bdb5e171"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_8_model.pth",
+    "bytes": 551805,
+    "sha256": "37c0eff42dca856029c7a1b99aba2de4bafe42dcd9391a512da6a57368e799e2"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_8_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "45631dfcdfbc7736e6bc00d43fe9bbfd9d5e70ba3982ece8f12d5c6f84f5f2e9"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_9_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "cb075004428833d6e07aad5d648a2e44de5cbae142d13a27e0608f361b936c4a"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_9_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "6ae3a3c89feb06cb567d70795ea4cd6a7320d62b88d6e20214a813ec222c2987"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_9_model.pth",
+    "bytes": 551805,
+    "sha256": "e3355f1daac7454c0995894c7cc79c0f1efcf13dc1d1cb44e9c1909985c6a5c7"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p1_9_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "0f40ca0bb208d23e2780b6d73b9d5cfe9f70eb3dd0691ac0de03fd2676692cbb"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_0_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "3899154559edace24e0c955276261c54509abef6f420380576baac2806ad6b36"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_0_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "0852fe33645cd851320cc24d40f5485e421bd55e8fbfea508712f83ce160d351"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_0_model.pth",
+    "bytes": 551805,
+    "sha256": "7c1d0542bbd93415400608524f6bc384cfc5d5b1989e93cb8ad58df66957f1a1"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_0_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "6dc10800513aa154ea31793baa50c89f1b858f4e124f06a44198836a3afe945e"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_1_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "864099a1c45d458b1e918e3cb4406c9cc0914a2af1cde78cf2e6b61fa9ef3b82"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_1_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "2ca2543e14c3fcbbc3d33a689770a29841e8eaf9a70097c5de14216a1fa8ad72"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_1_model.pth",
+    "bytes": 551805,
+    "sha256": "693937062548f99e220966e38875f7a320c929677368ef3b2c48a6ca6e6af788"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_1_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "4c0d175baa00f9932faa8aef4044e03ab55b78a069cad5d686d2bf0fb3778de0"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_2_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "ba19ca965352a9132d2636362e6f75fd4a21b187a356d42b0f8fc7aa3246cfca"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_2_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "ac92524e0dcb7029a5684f37921f2443b6b77754ca5d08323f2dbdca8fca0ca2"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_2_model.pth",
+    "bytes": 551805,
+    "sha256": "9ec7690b1beb0cd7b7187b50a420819a3feacdd424418189a74ec5a2a196b635"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_2_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "48be68b24c30996b9494169343fbac5eac1f3b45a24120eaab44534be7fb3189"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_3_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "bad7cc32667a9c41c8de503588f4176c3c2d6d63469be2a0db02eff8091a7b62"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_3_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "7db01ff73cd4345252e54ed687cd8ce621f322149576c04f2cae6596d964d7fc"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_3_model.pth",
+    "bytes": 551805,
+    "sha256": "f77979cfd26c8f9f71bf699e6418d7135a31a04848e22da347f4d6499ecf7cef"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_3_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "859c93f563c9a0f6cc6a7d7a470d2654a1bff9cdac7b098591d2b228da575a4b"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_4_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "e9a21ee0cf2a6fba6352f51d23b207d4cebc65b9095d8fc247d19256fd2d457d"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_4_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "ba298f463e1bcc3d5a18a789603c70d65197154a895058be4c7eea5181c53135"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_4_model.pth",
+    "bytes": 551805,
+    "sha256": "7150f19423421b07e66b7c117a99a082ed65ef244e36ace611c00761f3d1a52d"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_4_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "34dcc40b16b9809967eef7c072c9ce40e574b256f41fe1ff305c2962f6f757c4"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_5_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "7012db2abe8d5fa733125540db5c9cb367755f20e4d0699dcf38c23927fe152c"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_5_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "cb375e56fd1ab105a19853931b808b3a73012a72756e933257a826cd5bc5ca9f"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_5_model.pth",
+    "bytes": 551805,
+    "sha256": "1b1c9939d6d102c1f36c0bb039584380648c44543ad5fa53a0b4f923c8df341c"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_5_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "500c6bd8d1b22b09e1812c2b2bb8aa78a4ed9b24d0fe5e9061e3ce7adf42fe15"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_6_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "3a39850fb967692ee3fa25a05b96571c75ae668834727ae99aa0723027932b13"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_6_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "8834ea7b1eca65e53b7611367bfce0f60576e01aaac1ace2b50ddc7c15772b9e"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_6_model.pth",
+    "bytes": 551805,
+    "sha256": "741d6992a9937a67edb6eb43827c51cd86415af6dda39ea22345350fcbf0b584"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_6_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "00a691dbccfbbbb1128afdb989ec690906764b24de29c77b6ec26ccc149cc6c1"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_7_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "eebe121c6c8f67abe0027ef88e89349542e3a175db3b413f5fe31770d069f542"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_7_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "7ee8f35577508c226f48061084284532c726a9a1cfe773b8e61255a20944c4f4"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_7_model.pth",
+    "bytes": 551805,
+    "sha256": "578156f24aa90419606ad014db7eae9484ccd42f18018a7524b48403b62ae1ac"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/b_sc2p2_7_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "7e314a276d578aae427f2d13155bffbe2d2aaad37b15cab6327907bb735b3803"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/invented_predicates_operators_sc1.json",
+    "bytes": 12777,
+    "sha256": "d701e41b137111189a0f2e35109f748cc9dacd42d0e4a629e864ac545c053bfd"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/invented_predicates_operators_sc2.json",
+    "bytes": 17110,
+    "sha256": "418b92532823418eab9b482fdebb685d9e1f2f41585ba10a84a899d777b25c3f"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/invented_predicates_operators_sc2_old.json",
+    "bytes": 18706,
+    "sha256": "aececeb1598065c180cd742c42f2ca49201f08d7bd475c69eae0eb304bea3264"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/terminal_handreachtograsp_pull_0_ae_vector.pth",
+    "bytes": 2078,
+    "sha256": "5f6c6e8d9dadc3001a7916028985437c91f142d1aa979720493eaa3884449c99"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/terminal_handreachtograsp_pull_0_learned_ae_vector.pth",
+    "bytes": 2134,
+    "sha256": "ac00d35408f4a3c8e8ae83cc1db24896cbd6d9e1dea2784213d301fa790d8f41"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/terminal_handreachtograsp_pull_0_model.pth",
+    "bytes": 562321,
+    "sha256": "310b37e20defb7fdd40d37f2fcbe2181537c1f55ea036513634fb75d34290882"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/terminal_handreachtograsp_pull_0_var_bind_idx.pth",
+    "bytes": 1971,
+    "sha256": "ef6c0c8c4c7e348426bbbe73c13a392f08ceb8f95ca4d924737514da4e8f2b40"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/terminal_handreachtograsp_wiggle_0_ae_vector.pth",
+    "bytes": 1685,
+    "sha256": "3d172d8e9fd78cca54c39a6803bef0bfde327975d5b61bcc4ab640d636d1ffaa"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/terminal_handreachtograsp_wiggle_0_learned_ae_vector.pth",
+    "bytes": 1725,
+    "sha256": "dd46d98bc1c2a929c9e9229cf140441ce1ffb7792645de4a7b39cddcf2bde259"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/terminal_handreachtograsp_wiggle_0_model.pth",
+    "bytes": 561860,
+    "sha256": "01abd2229fe2aee7bc75d11c7bc6f1be98387bc00a5a3b88f02697a2e70c2b43"
+  },
+  {
+    "path": "inference_assets/cluttered_drawer/predicates/stage2/terminal_handreachtograsp_wiggle_0_var_bind_idx.pth",
+    "bytes": 1508,
+    "sha256": "f57db1d9661d6d921969b7d87134f39202ace4b7efe6bae9b2bfdce33c5e8435"
+  }
+]

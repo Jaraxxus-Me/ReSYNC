@@ -1,0 +1,3362 @@
+[
+  {
+    "path": "inference_assets/blocked_stacking/datasets/stage1/lifted_operator_plans.pkl",
+    "bytes": 4604,
+    "sha256": "57688b86ce2fd1fa1a5fdb48df277a5ad9e6a912bf6365b82596893abf66fefe"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/datasets/stage1/meta.json",
+    "bytes": 30,
+    "sha256": "ad371f6e87ec366c28f9202b25899c1dc048dbd6390e281a23879ea1a1deb661"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/datasets/stage1/training_scenario_indices.pkl",
+    "bytes": 1593,
+    "sha256": "455322cbf095400f3801c0f9d53eb0b51eadcbf5120eb952d0e8616b8fabfe4d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/datasets/stage1/trajectories.pkl",
+    "bytes": 115621767,
+    "sha256": "fc3bf08956bddc34d514bca3feb12b4e3e313c0c974d2234147735f1a6082079"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/datasets/stage2/lifted_operator_plans.pkl",
+    "bytes": 14479,
+    "sha256": "9e2e81e1231c6fe63c6a5b0d1225743a921d8e244b03851b8919194278bdcd5f"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/datasets/stage2/meta.json",
+    "bytes": 30,
+    "sha256": "ad371f6e87ec366c28f9202b25899c1dc048dbd6390e281a23879ea1a1deb661"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/datasets/stage2/training_scenario_indices.pkl",
+    "bytes": 2798,
+    "sha256": "d15bac86fe168268b0bf282b1586e3445483668c355ef59745f0213652d1e96e"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/datasets/stage2/trajectories.pkl",
+    "bytes": 244458624,
+    "sha256": "3105d06d74f519de274ab11987f05bc701fb10965286f5b7455ac0e0398d7239"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/datasets/stage3/lifted_operator_plans.pkl",
+    "bytes": 21857,
+    "sha256": "7c5c3613d5fa11759afb5af462d653398074039bed4fe52183ce7d2b27052c09"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/datasets/stage3/meta.json",
+    "bytes": 30,
+    "sha256": "ad371f6e87ec366c28f9202b25899c1dc048dbd6390e281a23879ea1a1deb661"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/datasets/stage3/training_scenario_indices.pkl",
+    "bytes": 7307,
+    "sha256": "c8544c335bfd9aec3682064a4c75ede945429529a6d0abc39de13dc774e083c0"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/datasets/stage3/trajectories.pkl",
+    "bytes": 736150881,
+    "sha256": "d2772246539f6f8d7a15e2147d87ddc75a49812801dd182ec43192e23598ad8d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/policies/stage1.pt",
+    "bytes": 1116321,
+    "sha256": "302ed73a7763a99e9e61262a166cdd4216a4eb6fba2e12c3cff393762669b847"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/policies/stage2.pt",
+    "bytes": 1116321,
+    "sha256": "9bd88fb39ef6e787a7c7ca6533124dc7e1b94a7a3f9384c2f0cf2178a8cbf117"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/policies/stage3.pt",
+    "bytes": 1116321,
+    "sha256": "c4fc7471e385206f6888df5ece5f969702eff344915ff306fd232b880dce15b2"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_0_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "25f5067d3bad86572caa1369a205390d174beb380daec248ab39b39bad606530"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_0_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "92d972a757c42a31f25f17acf7ae5a536ad9001fe704e855e3cc8db222788ac7"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_0_model.pth",
+    "bytes": 552317,
+    "sha256": "de567401b8bec37dbc7f10a726668bed9c3a81d4b8ff2e1897251310d35cff11"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_0_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "e353b57610d0dbf6945f57ab9670fdae4270da1b117d5403dca9b9054955e2dc"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_10_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "581ffe35ac8925cecd44a72b61bc69c75e07d7ffced12e430b1077b1530920a3"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_10_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "0c0ade7efd960815ecd5be8f161d04445836109e8c0f79c3947404aa6c33d39c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_10_model.pth",
+    "bytes": 552348,
+    "sha256": "691b9d8167f00c6d8ba5b57c5d590fc068006b99b24f3c47894fe880f1b89a1d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_10_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "1aaf004c1b18d6626357158fbe5344601765eb4b80545c77320c46b49c4a385e"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_11_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "a3b0daf12d08625c75c3ff724e9182be74123850f54020cf0c9abfb24acb6ee5"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_11_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "c0dd1fcb370c8a3158567ee7911c4fd0d5ea3a78b7f27c1443302d603d86680b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_11_model.pth",
+    "bytes": 552348,
+    "sha256": "40e092c2c4c657eb812f92ffcabc452765d824284a2adcf186172e971786c999"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_11_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "458b81c1cbc44a197dafdc97649ab4a181eaf913a4419469480733564d39ac7d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_12_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "cf0a6d1769570292a1212f19cf3c8a22c67d1d9358f9bbd08de0b666d1dd4a55"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_12_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "a06d672fd65974017c1b73e339bc93c02d7aefd2ce15a028b185e35befc0fcbd"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_12_model.pth",
+    "bytes": 552348,
+    "sha256": "6e8fcaa89d316f985679e65aecc969d598792c623b4befb94837b27c65cbe8df"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_12_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "31b095c4ae87e1bf170da0a9edeee64b3b474e99f754b0d9057933ec5592f145"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_13_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "295819ef9141db9a4d12853e4396587d629c615cfec8f0a74767824064bfa3ea"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_13_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "6658c6c1fe87d92c18543fc56ec3b08b91a6762880e0a8bf24f6eef02b9412ed"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_13_model.pth",
+    "bytes": 552348,
+    "sha256": "7642871f862c22f1480209c8d50a05ce360ccb1f108ded6c30a852861ed9fbed"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_13_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "dbb10e99c99205205d57eaa3a32baa2675765914af664a24d491bf857994120f"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_14_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "cd61b02f6c9ef5de94d8caee42bb80aa52769c04ff4ec0765ac2dadea78e584a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_14_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "b3ed5959caae7f6bb679b180c86b9260bb236741b0cce1acd64930517548831c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_14_model.pth",
+    "bytes": 552348,
+    "sha256": "74fd2b2c1a3b05fbc75d3e7b27562d04d3f14b7f6f38dc0882b8145bc455038c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_14_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "f83b657a7972611091af3693559de00dc0af666170ebbfa2015145e732fbd2b5"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_15_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "da9253e2d57c20f806f911f9d4d7bacd59d554c23c925154f887d369b9b9779a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_15_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "a3a81d502af45422277203bf2b8787657d69d63588d344b73124751cd9954298"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_15_model.pth",
+    "bytes": 552348,
+    "sha256": "2172dc90e810cfb9b3c206c28e56214c0835499bc134f32471f11db773015324"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_15_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "01cb3e67b40f3614ba852df1fda1fa8e7c5c04c7240bea2b919c762c8af5f245"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_16_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "82901c32a37e6ac6c20d039bab7134b4955a6a95c6ade2be8c7d28c6c11d0add"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_16_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "3fe7d433d6feeb9cd95dce44140c12e245ac8f19ffa595dc01d94bfba7a2bc36"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_16_model.pth",
+    "bytes": 552348,
+    "sha256": "1d717563a34382e61733b88f40486a49c74e0fecf9929be835adf33c6c50ddc2"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_16_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "2cddbb042d2367efdf006a4b53e0ec2b84f927865ab4220f2bece147eadaa851"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_17_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "67d6ac7d42429eef59ebac4fd82da3c35b9e6c68b6929e8b33319ad77cf0fc48"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_17_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "c46f07e5b9e13dee78b3e801766189329a7c48d3f28db3f3f756ed0035afd73d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_17_model.pth",
+    "bytes": 552348,
+    "sha256": "91dd04a4e84dd7bb732f45f2bf6091fb60b19a071d7e95eab6f805a0859f2970"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_17_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "e251fc62d46d44cdb6f84e8c7f662896f8e0bfaade69999823879cca55ddd9a2"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_18_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "20d8249ef82f05ebeffdd42f6d0aa913846b514b2c62383c937426b9f9a06035"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_18_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "a3b6670b1a9f02ca04e6c71ac68d47465c7badacde6cf7bcf891456b7104c677"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_18_model.pth",
+    "bytes": 552348,
+    "sha256": "2d3a5f874b1307d7fb127c66194d8708fe02d68d261c2a7eeb91847a2829a8ab"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_18_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "a13c7930eaf84953650793b106abbb8adf315399c45a903e40ce3c9a50b9d952"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_19_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "a98ef38fb882886ad4145e90072c5bf2ed3f073d2f072eaeff9dd5238b2cba71"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_19_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "058faae25233273465e2fd9a665174ef247baa4d258d08930705174c8662e7fc"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_19_model.pth",
+    "bytes": 552348,
+    "sha256": "00bb3198848c09d6cf2b2e647f13aee5530a271928ac3b268fdb7f1aba3f934b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_19_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "58265c618f9a586aee6f5a2a7ead62528f8d9f93c9daba25875b8f12ad5bf139"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_1_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "9d2d592e7ff697df938219334636cdc864c10fe31afc7b5cfa24b6abe897f2d3"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_1_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "0338ceb8bd368bf69bac00a0f1fb5b9acc95a22d81e545c03d1728b20fc6efd7"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_1_model.pth",
+    "bytes": 552317,
+    "sha256": "aff68a429939a95504f2d15340ac41bf34b92d3303ca8665b496ff511998541c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_1_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "2248f0494d2802f55a84a28411adb0828fbaca9d59f1bfb770b0e688520564f7"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_2_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "f5a9d7334182c82aa1c6f94a342e76c77f4f39831af64b8fab612c03d72a605d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_2_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "3969908f019d85a6467deb8e4dc0fa0f05ba307bdee8c0098b081753da2f7a5a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_2_model.pth",
+    "bytes": 552317,
+    "sha256": "5f00973ea52952d77ddd2139b83bfad8cfa1ef243813503610bf54907f40de79"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_2_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "0c5581fceab688b0e8a3c3ba0fda81cc89d591585bac8872f27007eb8a29686b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_3_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "035e4c1af4e774932337e3b1298c1db2cf65024d051c3147a18b36690460756a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_3_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "9a25982898b40011de86a23555246c7df5dce4674aa4d3f75bf45a8bb828a89f"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_3_model.pth",
+    "bytes": 552317,
+    "sha256": "4024e9732ac83424cd1938e4dbd4d431ac6b65cafd8777e2f6e24e1960ecd2eb"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_3_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "0fc91f4d70d1d56a6dfa6c9f895fe2d03481d99f504bcee89830ccf946203c53"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_4_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "241dcac19542dad5f591d0ce2f55500911c5dfc3b6cbf2f50d0f629840b7a8f0"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_4_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "6eebacae3bc97fe86c64231907af599b4d1682afead8d31ed03faa9a97a9409b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_4_model.pth",
+    "bytes": 552317,
+    "sha256": "d1ee9c8bcd8976f38083a24f04d7b5c9adf03576bf888423cb3de8d095704d2b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_4_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "8b6b29ec123b1b963ac2d92344b8b65a4062d98c3159f91d2089afb3e328b44f"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_5_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "25e72db5c9beac6f88c1b500ecd2184bcd8e34caf529395ef697e0f3e6005496"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_5_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "99c245fd61c521c3c3546be6874bbc0912762f041dcc42c7fe4a9b21e88c69b6"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_5_model.pth",
+    "bytes": 552317,
+    "sha256": "ddee007f8682dd48d8cba3185abdbb1bebc3773968a1d16bf63e9aa157d12c83"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_5_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "529b70aaedd9744d6e661556bab7e198fe39e58ac6b4368da4d8cb934c93761b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_6_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "7c5ea54d33ef07fbf2815b7943259212485b939333d47218b7f2f25ba1a3c846"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_6_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "9c91e1bdd8637e29e37ed85858833c80e10f0c2694b403030bb9ae399bcc8d7d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_6_model.pth",
+    "bytes": 552317,
+    "sha256": "f8c126128ffd4fd75a369098ba6994c19bd5781b00f8b6561fc812e64b624059"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_6_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "df603551252784466c45335256d33edd605ec3c5a82a3fe12d2723f27c89c7d1"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_7_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "63cb03670f6778fa227a8c6c6a54a4dfaf91d50f2a0bedf21409df991e9bb6f0"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_7_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "b3cc09c572f7c94306709f80922c4d17c284e424475c9f376fa91e0b446a9083"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_7_model.pth",
+    "bytes": 552317,
+    "sha256": "9b2e3442ca9243e60b6768f76d58ac149c5d9c3cf164a2b5d4beda1032ee938d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_7_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "d1dba289eeb8d7a080a91d1b182cdd00f48611f49ceb1fbc4a7b1c42cf705334"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_8_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "8745a506c347a3c0cc2d957c01ae51e1ca330c1f51716728c9b789f2ac18eed3"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_8_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "c2d9b28d7eb1c5e068f5730c5f20ea500b6107bbd08df5ae9dd140e8f89631a8"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_8_model.pth",
+    "bytes": 552317,
+    "sha256": "f3b1a42067ac95c9fa2cdd4d253b12c1832b42e01df2f3babfb58ada76e11ff0"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_8_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "66aa528b5d927c1dc5b4b221f0fb0a9c5f6d38d6cfc4fd4abbd85f12f3fb0f29"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_9_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "fb0e0811184a5f19973d233203d174866316b13f73b5e80589630fa048a649b7"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_9_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "a8650860a2d8c1c0125c8aee9a873fbf9c14c61327baaa1bc1ef32a67654f767"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_9_model.pth",
+    "bytes": 552317,
+    "sha256": "6c584d0b71523c98e7081dbf94420f1e233c2fd4cd73dcb2628c678fd8f3eb50"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p1_9_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "e0d9da6f70446f8036dd3df959c3eb48985809feb0b7f3ef7ff403bafa195902"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_0_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "ea17c4086b6744ab6613fe0a8cc2ff571414fe0f4eb32d216acac43ed054b15b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_0_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "904c203f0f207ec4a61231349e76fc8226cd8e3404e62bf995eb9e1844a56023"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_0_model.pth",
+    "bytes": 552317,
+    "sha256": "b2b591b07f8f7323f8183646d7533c3e11184ade3494902a78213d52d4c534e8"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_0_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "93ec8f855070f540ab5aabb4af6db0bee05269c8cd960663c3672b86d5dea190"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_1_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "c0cd62aa00aea8fe64b1c945c63763f53d4f5d30bbeaaad00db645fd71515eb7"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_1_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "9cdfdee23d3e318b470567eb7162a6e7792373627557dbf42a8c5995954cddec"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_1_model.pth",
+    "bytes": 552317,
+    "sha256": "17b5d69d78172339e85d5f1004a7a44460f9851addd65cc5bb9e80c6cc2297cc"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_1_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "4884bf343a119f357d3f8beeb72809de4bf79a53dc8da6d18e817a4f4b23c9d6"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_2_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "eadec21aafb74fbea4f7373bb64acf73fb07934432cd4716bcb20af76b2ab248"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_2_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "d0c6d21d53a2b05d0c0baed404d3798fab418ad9b16aeca762d72b1207f3cb9c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_2_model.pth",
+    "bytes": 552317,
+    "sha256": "99ef02324bab1a3979a725af36f8d4423efe1641174143fa9b186fe8d4be9ac5"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_2_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "64f80ab2f69d9d7a66fee2fe92e777fb1ec8d17f0f9bb5eb258aba228f27d5d8"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_3_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "d171c89fce74896f5e1ebf05b974cb75362673ae039c95994e557df898bcac09"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_3_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "bc6e101433bbdeede73a3f0ecdb7c9eae468ca32bbc31b7a16f284d57bfd9b25"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_3_model.pth",
+    "bytes": 552317,
+    "sha256": "b2280db98da6c42289de1ba3b4729618a5a4fe7555565e948fa4882084fcec4c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_3_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "8663dbbf8a183e528883a2fd9482ed2459840b1330136d98ffee4b8ce35c467f"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_4_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "4e93cf79a36740d982afbab3d29f9884f8f36ee876e3527354385aa183d13e03"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_4_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "2ac4e5daa1857348c900ed6b443777bc8fa996a034e78c4aa2769098ec538f23"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_4_model.pth",
+    "bytes": 552317,
+    "sha256": "4c0bf6f3dd51449627dcea82d4dfa523a4858bc3d71ee77715cf4eed49483a3c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_4_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "74edff4ba707aa5e97f4c7ed2c97c23721ce849d7659024693af24167590bf7a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_5_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "b15c7e1d571c38c142e409d6bb04d3114e3f5206f6f6f057f2fd349e68db0294"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_5_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "391beac584c89f2a2172f399830d5e8aaa17c1efe2c85cce17044f68a5d42733"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_5_model.pth",
+    "bytes": 552317,
+    "sha256": "57948890be363fb0a793b5926c3a1e8cab509ae6825dd3ccd0ced3ae1f89e6f7"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_5_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "9941f1e290c52c1131fd558492a1f16e29a379c8e930969b244e7fb5bf25fe0d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_6_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "09181a5f1cabf4ae73ba882cc2c02b97163ee23264999701abdeef583af5e172"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_6_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "19db8bd9bfed7104348906fa49d654579b7d24b6ea713b4653acc5539c972399"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_6_model.pth",
+    "bytes": 552317,
+    "sha256": "4f858c802897806baa052527ee7d647fc42e4c43f68c9102a667fe646c117e15"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_6_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "24c5b30677623835cb0baae8a6002a9aca866a706f081d202d5b0c1881f275f8"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_7_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "c5ec938e00222a508a6534b9606da08dd7f5e2783762534548cd445cd79dfb91"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_7_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "22f173a846f139d49af8aede944d1e16ef656f6069abbfc7fd6ffb12eb67fd66"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_7_model.pth",
+    "bytes": 552317,
+    "sha256": "d28e046afa7b380d06f218d211dd507ca5a95d110abf6fee1a8cc87305604f8d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/b_sc1p2_7_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "b13ae6a57d069c63ac6ea1b85da7705ad57fecc6239ef5f98d334efa936c855f"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/invented_predicates_operators_sc1.json",
+    "bytes": 8040,
+    "sha256": "a3435ff9466eda32354b50928ab0891b20a15a64651c4cb7a82ee7902b5c097d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/terminal_reachtograsp_punch_0_ae_vector.pth",
+    "bytes": 1532,
+    "sha256": "2a4de14cae9cdbdae8a7956cd3d57ea735fabfeb08e8123bca988dd8c8c31b8c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/terminal_reachtograsp_punch_0_learned_ae_vector.pth",
+    "bytes": 1636,
+    "sha256": "fb3862fd27d0d7cadfb05b9ab4d9abf189308cc5850d5c37591fafa512fcf618"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/terminal_reachtograsp_punch_0_model.pth",
+    "bytes": 560169,
+    "sha256": "59a362fc9d69498a0996ed683abad4b8b71bb0a1324e194d75fd7e55574585b2"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage1/terminal_reachtograsp_punch_0_var_bind_idx.pth",
+    "bytes": 1419,
+    "sha256": "078d7c980ddcd6ab4f0b943fbd7d7966cbd950fbd28c4f7169e1933b39dd6d6c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_0_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "25f5067d3bad86572caa1369a205390d174beb380daec248ab39b39bad606530"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_0_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "92d972a757c42a31f25f17acf7ae5a536ad9001fe704e855e3cc8db222788ac7"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_0_model.pth",
+    "bytes": 552317,
+    "sha256": "de567401b8bec37dbc7f10a726668bed9c3a81d4b8ff2e1897251310d35cff11"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_0_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "e353b57610d0dbf6945f57ab9670fdae4270da1b117d5403dca9b9054955e2dc"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_10_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "581ffe35ac8925cecd44a72b61bc69c75e07d7ffced12e430b1077b1530920a3"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_10_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "0c0ade7efd960815ecd5be8f161d04445836109e8c0f79c3947404aa6c33d39c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_10_model.pth",
+    "bytes": 552348,
+    "sha256": "691b9d8167f00c6d8ba5b57c5d590fc068006b99b24f3c47894fe880f1b89a1d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_10_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "1aaf004c1b18d6626357158fbe5344601765eb4b80545c77320c46b49c4a385e"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_11_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "a3b0daf12d08625c75c3ff724e9182be74123850f54020cf0c9abfb24acb6ee5"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_11_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "c0dd1fcb370c8a3158567ee7911c4fd0d5ea3a78b7f27c1443302d603d86680b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_11_model.pth",
+    "bytes": 552348,
+    "sha256": "40e092c2c4c657eb812f92ffcabc452765d824284a2adcf186172e971786c999"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_11_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "458b81c1cbc44a197dafdc97649ab4a181eaf913a4419469480733564d39ac7d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_12_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "cf0a6d1769570292a1212f19cf3c8a22c67d1d9358f9bbd08de0b666d1dd4a55"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_12_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "a06d672fd65974017c1b73e339bc93c02d7aefd2ce15a028b185e35befc0fcbd"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_12_model.pth",
+    "bytes": 552348,
+    "sha256": "6e8fcaa89d316f985679e65aecc969d598792c623b4befb94837b27c65cbe8df"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_12_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "31b095c4ae87e1bf170da0a9edeee64b3b474e99f754b0d9057933ec5592f145"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_13_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "295819ef9141db9a4d12853e4396587d629c615cfec8f0a74767824064bfa3ea"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_13_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "6658c6c1fe87d92c18543fc56ec3b08b91a6762880e0a8bf24f6eef02b9412ed"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_13_model.pth",
+    "bytes": 552348,
+    "sha256": "7642871f862c22f1480209c8d50a05ce360ccb1f108ded6c30a852861ed9fbed"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_13_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "dbb10e99c99205205d57eaa3a32baa2675765914af664a24d491bf857994120f"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_14_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "cd61b02f6c9ef5de94d8caee42bb80aa52769c04ff4ec0765ac2dadea78e584a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_14_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "b3ed5959caae7f6bb679b180c86b9260bb236741b0cce1acd64930517548831c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_14_model.pth",
+    "bytes": 552348,
+    "sha256": "74fd2b2c1a3b05fbc75d3e7b27562d04d3f14b7f6f38dc0882b8145bc455038c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_14_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "f83b657a7972611091af3693559de00dc0af666170ebbfa2015145e732fbd2b5"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_15_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "da9253e2d57c20f806f911f9d4d7bacd59d554c23c925154f887d369b9b9779a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_15_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "a3a81d502af45422277203bf2b8787657d69d63588d344b73124751cd9954298"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_15_model.pth",
+    "bytes": 552348,
+    "sha256": "2172dc90e810cfb9b3c206c28e56214c0835499bc134f32471f11db773015324"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_15_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "01cb3e67b40f3614ba852df1fda1fa8e7c5c04c7240bea2b919c762c8af5f245"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_16_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "82901c32a37e6ac6c20d039bab7134b4955a6a95c6ade2be8c7d28c6c11d0add"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_16_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "3fe7d433d6feeb9cd95dce44140c12e245ac8f19ffa595dc01d94bfba7a2bc36"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_16_model.pth",
+    "bytes": 552348,
+    "sha256": "1d717563a34382e61733b88f40486a49c74e0fecf9929be835adf33c6c50ddc2"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_16_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "2cddbb042d2367efdf006a4b53e0ec2b84f927865ab4220f2bece147eadaa851"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_17_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "67d6ac7d42429eef59ebac4fd82da3c35b9e6c68b6929e8b33319ad77cf0fc48"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_17_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "c46f07e5b9e13dee78b3e801766189329a7c48d3f28db3f3f756ed0035afd73d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_17_model.pth",
+    "bytes": 552348,
+    "sha256": "91dd04a4e84dd7bb732f45f2bf6091fb60b19a071d7e95eab6f805a0859f2970"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_17_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "e251fc62d46d44cdb6f84e8c7f662896f8e0bfaade69999823879cca55ddd9a2"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_18_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "20d8249ef82f05ebeffdd42f6d0aa913846b514b2c62383c937426b9f9a06035"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_18_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "a3b6670b1a9f02ca04e6c71ac68d47465c7badacde6cf7bcf891456b7104c677"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_18_model.pth",
+    "bytes": 552348,
+    "sha256": "2d3a5f874b1307d7fb127c66194d8708fe02d68d261c2a7eeb91847a2829a8ab"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_18_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "a13c7930eaf84953650793b106abbb8adf315399c45a903e40ce3c9a50b9d952"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_19_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "a98ef38fb882886ad4145e90072c5bf2ed3f073d2f072eaeff9dd5238b2cba71"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_19_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "058faae25233273465e2fd9a665174ef247baa4d258d08930705174c8662e7fc"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_19_model.pth",
+    "bytes": 552348,
+    "sha256": "00bb3198848c09d6cf2b2e647f13aee5530a271928ac3b268fdb7f1aba3f934b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_19_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "58265c618f9a586aee6f5a2a7ead62528f8d9f93c9daba25875b8f12ad5bf139"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_1_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "9d2d592e7ff697df938219334636cdc864c10fe31afc7b5cfa24b6abe897f2d3"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_1_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "0338ceb8bd368bf69bac00a0f1fb5b9acc95a22d81e545c03d1728b20fc6efd7"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_1_model.pth",
+    "bytes": 552317,
+    "sha256": "aff68a429939a95504f2d15340ac41bf34b92d3303ca8665b496ff511998541c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_1_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "2248f0494d2802f55a84a28411adb0828fbaca9d59f1bfb770b0e688520564f7"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_2_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "f5a9d7334182c82aa1c6f94a342e76c77f4f39831af64b8fab612c03d72a605d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_2_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "3969908f019d85a6467deb8e4dc0fa0f05ba307bdee8c0098b081753da2f7a5a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_2_model.pth",
+    "bytes": 552317,
+    "sha256": "5f00973ea52952d77ddd2139b83bfad8cfa1ef243813503610bf54907f40de79"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_2_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "0c5581fceab688b0e8a3c3ba0fda81cc89d591585bac8872f27007eb8a29686b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_3_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "035e4c1af4e774932337e3b1298c1db2cf65024d051c3147a18b36690460756a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_3_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "9a25982898b40011de86a23555246c7df5dce4674aa4d3f75bf45a8bb828a89f"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_3_model.pth",
+    "bytes": 552317,
+    "sha256": "4024e9732ac83424cd1938e4dbd4d431ac6b65cafd8777e2f6e24e1960ecd2eb"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_3_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "0fc91f4d70d1d56a6dfa6c9f895fe2d03481d99f504bcee89830ccf946203c53"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_4_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "241dcac19542dad5f591d0ce2f55500911c5dfc3b6cbf2f50d0f629840b7a8f0"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_4_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "6eebacae3bc97fe86c64231907af599b4d1682afead8d31ed03faa9a97a9409b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_4_model.pth",
+    "bytes": 552317,
+    "sha256": "d1ee9c8bcd8976f38083a24f04d7b5c9adf03576bf888423cb3de8d095704d2b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_4_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "8b6b29ec123b1b963ac2d92344b8b65a4062d98c3159f91d2089afb3e328b44f"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_5_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "25e72db5c9beac6f88c1b500ecd2184bcd8e34caf529395ef697e0f3e6005496"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_5_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "99c245fd61c521c3c3546be6874bbc0912762f041dcc42c7fe4a9b21e88c69b6"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_5_model.pth",
+    "bytes": 552317,
+    "sha256": "ddee007f8682dd48d8cba3185abdbb1bebc3773968a1d16bf63e9aa157d12c83"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_5_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "529b70aaedd9744d6e661556bab7e198fe39e58ac6b4368da4d8cb934c93761b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_6_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "7c5ea54d33ef07fbf2815b7943259212485b939333d47218b7f2f25ba1a3c846"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_6_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "9c91e1bdd8637e29e37ed85858833c80e10f0c2694b403030bb9ae399bcc8d7d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_6_model.pth",
+    "bytes": 552317,
+    "sha256": "f8c126128ffd4fd75a369098ba6994c19bd5781b00f8b6561fc812e64b624059"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_6_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "df603551252784466c45335256d33edd605ec3c5a82a3fe12d2723f27c89c7d1"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_7_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "63cb03670f6778fa227a8c6c6a54a4dfaf91d50f2a0bedf21409df991e9bb6f0"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_7_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "b3cc09c572f7c94306709f80922c4d17c284e424475c9f376fa91e0b446a9083"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_7_model.pth",
+    "bytes": 552317,
+    "sha256": "9b2e3442ca9243e60b6768f76d58ac149c5d9c3cf164a2b5d4beda1032ee938d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_7_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "d1dba289eeb8d7a080a91d1b182cdd00f48611f49ceb1fbc4a7b1c42cf705334"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_8_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "8745a506c347a3c0cc2d957c01ae51e1ca330c1f51716728c9b789f2ac18eed3"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_8_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "c2d9b28d7eb1c5e068f5730c5f20ea500b6107bbd08df5ae9dd140e8f89631a8"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_8_model.pth",
+    "bytes": 552317,
+    "sha256": "f3b1a42067ac95c9fa2cdd4d253b12c1832b42e01df2f3babfb58ada76e11ff0"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_8_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "66aa528b5d927c1dc5b4b221f0fb0a9c5f6d38d6cfc4fd4abbd85f12f3fb0f29"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_9_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "fb0e0811184a5f19973d233203d174866316b13f73b5e80589630fa048a649b7"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_9_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "a8650860a2d8c1c0125c8aee9a873fbf9c14c61327baaa1bc1ef32a67654f767"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_9_model.pth",
+    "bytes": 551869,
+    "sha256": "f2552b41ea51851eec8bbb0b47cd3419c66b32ca5d748a7640959a10c051855a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p1_9_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "e0d9da6f70446f8036dd3df959c3eb48985809feb0b7f3ef7ff403bafa195902"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_0_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "ea17c4086b6744ab6613fe0a8cc2ff571414fe0f4eb32d216acac43ed054b15b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_0_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "904c203f0f207ec4a61231349e76fc8226cd8e3404e62bf995eb9e1844a56023"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_0_model.pth",
+    "bytes": 552317,
+    "sha256": "b2b591b07f8f7323f8183646d7533c3e11184ade3494902a78213d52d4c534e8"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_0_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "93ec8f855070f540ab5aabb4af6db0bee05269c8cd960663c3672b86d5dea190"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_1_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "c0cd62aa00aea8fe64b1c945c63763f53d4f5d30bbeaaad00db645fd71515eb7"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_1_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "9cdfdee23d3e318b470567eb7162a6e7792373627557dbf42a8c5995954cddec"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_1_model.pth",
+    "bytes": 552317,
+    "sha256": "17b5d69d78172339e85d5f1004a7a44460f9851addd65cc5bb9e80c6cc2297cc"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_1_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "4884bf343a119f357d3f8beeb72809de4bf79a53dc8da6d18e817a4f4b23c9d6"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_2_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "eadec21aafb74fbea4f7373bb64acf73fb07934432cd4716bcb20af76b2ab248"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_2_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "d0c6d21d53a2b05d0c0baed404d3798fab418ad9b16aeca762d72b1207f3cb9c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_2_model.pth",
+    "bytes": 551869,
+    "sha256": "c1ed5ea27c61045daee16bd0676e64c6ae162927d0966277a783b91c0e7ca979"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_2_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "64f80ab2f69d9d7a66fee2fe92e777fb1ec8d17f0f9bb5eb258aba228f27d5d8"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_3_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "d171c89fce74896f5e1ebf05b974cb75362673ae039c95994e557df898bcac09"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_3_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "bc6e101433bbdeede73a3f0ecdb7c9eae468ca32bbc31b7a16f284d57bfd9b25"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_3_model.pth",
+    "bytes": 552317,
+    "sha256": "b2280db98da6c42289de1ba3b4729618a5a4fe7555565e948fa4882084fcec4c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_3_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "8663dbbf8a183e528883a2fd9482ed2459840b1330136d98ffee4b8ce35c467f"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_4_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "4e93cf79a36740d982afbab3d29f9884f8f36ee876e3527354385aa183d13e03"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_4_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "2ac4e5daa1857348c900ed6b443777bc8fa996a034e78c4aa2769098ec538f23"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_4_model.pth",
+    "bytes": 552317,
+    "sha256": "4c0bf6f3dd51449627dcea82d4dfa523a4858bc3d71ee77715cf4eed49483a3c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_4_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "74edff4ba707aa5e97f4c7ed2c97c23721ce849d7659024693af24167590bf7a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_5_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "b15c7e1d571c38c142e409d6bb04d3114e3f5206f6f6f057f2fd349e68db0294"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_5_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "391beac584c89f2a2172f399830d5e8aaa17c1efe2c85cce17044f68a5d42733"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_5_model.pth",
+    "bytes": 552317,
+    "sha256": "57948890be363fb0a793b5926c3a1e8cab509ae6825dd3ccd0ced3ae1f89e6f7"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_5_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "9941f1e290c52c1131fd558492a1f16e29a379c8e930969b244e7fb5bf25fe0d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_6_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "09181a5f1cabf4ae73ba882cc2c02b97163ee23264999701abdeef583af5e172"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_6_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "19db8bd9bfed7104348906fa49d654579b7d24b6ea713b4653acc5539c972399"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_6_model.pth",
+    "bytes": 552317,
+    "sha256": "4f858c802897806baa052527ee7d647fc42e4c43f68c9102a667fe646c117e15"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_6_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "24c5b30677623835cb0baae8a6002a9aca866a706f081d202d5b0c1881f275f8"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_7_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "c5ec938e00222a508a6534b9606da08dd7f5e2783762534548cd445cd79dfb91"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_7_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "22f173a846f139d49af8aede944d1e16ef656f6069abbfc7fd6ffb12eb67fd66"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_7_model.pth",
+    "bytes": 552317,
+    "sha256": "d28e046afa7b380d06f218d211dd507ca5a95d110abf6fee1a8cc87305604f8d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc1p2_7_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "b13ae6a57d069c63ac6ea1b85da7705ad57fecc6239ef5f98d334efa936c855f"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_0_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "9749e9ecb4b688ced94220d68a2ff04dc2818a2df268c0937b74efbb99ffa516"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_0_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "a64ed5c47f1e3540a04c535b17d3f0ef40bfc97c368e59afaec9fd0e3e968692"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_0_model.pth",
+    "bytes": 552317,
+    "sha256": "a18420496ca8a6d73c0cc614adf384d51ec5d50d256dddddc844504461ad18c8"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_0_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "a48116f25c37ba9c90a35beb50916b8f81aba2997208b80af7050627b1a803a9"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_10_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "2afebbc0fb9bfc0e95bdfae14eaf87b670301c0b2ae29aa823a01fd67ae9ddfc"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_10_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "accc1ff3b030716c9897cb2c97e2dce28aafea96424c7be87d99f4fa2a5c2106"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_10_model.pth",
+    "bytes": 552348,
+    "sha256": "575fb0be85c42fbbabd6048119ef5e2e78b301b2b7cda28a75521bee7410af1a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_10_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "3813d3003c9c42991b896e7e9d60eb6447bd4680c776d03176a35eb7d48ea014"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_11_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "1fc8fac3fa14037046ef5484548439cd6877a9a5ca1fba778e06919587fdc2a9"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_11_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "56f9bf115df65fcecd9034c3bb45bbaef3f83b0c92c88f547fad8bbafdb6399d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_11_model.pth",
+    "bytes": 552348,
+    "sha256": "dc6ec6a54f5e4a1d3ecd63598eabd33619acf90e6d90c1dd290ff3abc33be04e"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_11_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "088441c25eb44a0acc52f2528698e3659b0517e8424f4ec69dea301ee7dfb462"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_12_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "367290447a0b0590bc5833c0fe58d9a8f33485a854ef2e06132b5fe52b2e7918"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_12_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "d1616db5911d00b29ced7c6cc88d7335025d3a5d72037497fdf0d04bd008e949"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_12_model.pth",
+    "bytes": 552348,
+    "sha256": "61d50e4ad7cde96392c22af31e271240ce9736a452bb5a40622620838f7c72a4"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_12_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "033d3325c9507c342bdea363d8604fdb8b7c98ce40c25633f0bbaa1c33583e2c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_13_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "d42d6635f093fdce64d96206de3d45ff57533617d09deb76ac84a1f292b40444"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_13_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "08c5013cf99095b8e02681e0e8e66543cb0991f34304b3d6e88df5a5a6ee7b3d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_13_model.pth",
+    "bytes": 552348,
+    "sha256": "e1c818ae38f89deccfbb51a661e71365a929512e4a8cb0d0a6614a434930fd82"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_13_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "5da3aa9a29090adbc339a2419e4972850ae7533c048983fb89eebe3a1852b86d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_14_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "6583f0fd6693fc52f39e473988ba393d439bc29cb60f009455418da2efc5502a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_14_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "141d8e5aff0649cf1703be8469a88daa542fcf743db504e28565d0cdf1242c10"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_14_model.pth",
+    "bytes": 552348,
+    "sha256": "2d09241d225a37e3710b8e98c9e30f31fc091819fa0e36ca940747a9315db9f9"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_14_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "e3451dc732e285b277046752e71e1f42dde07412ae2220913d3c93add36296dd"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_15_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "916badbc01ecb7fbb94f1841accfa38b49b123fa6912e231a4416ea5dcf949fb"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_15_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "15987e2fdff3857af49afc0ac62578ab29ea5e548d57d5f0f4f6382b07350ad5"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_15_model.pth",
+    "bytes": 552348,
+    "sha256": "814b78a99102c2e44fab10b8602a596eed4762f2857c0d245cec3cf37949f132"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_15_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "06d627637c7b004dffec02f1e3b2994f8d9387f9d1242f8092bd5763e7585f0d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_16_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "0cc550a9f42c299758df9432fc51c3d376d1b159392586ac5076f6a159b99f03"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_16_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "5fd41ff6c9c8b32102f8c1f59c76936be6e4c1a023e5d2ce1117a53df4b8f1de"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_16_model.pth",
+    "bytes": 552348,
+    "sha256": "1979673091b7746f9f2cf79034c3b3c3b7be7a04f3a24cd7164502a31c689425"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_16_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "d19b3fc087d1fd920b638b92a0d82e2109360709faaf0f30ff5d904e7505932b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_17_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "4a8f53364ef8b48eef630b66853bce8331416a6eb4de7bb3061a14c8cfbc2110"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_17_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "58484509a5edf3480c419ac4da21e5c9479550252e687d5ab849075f5076afc1"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_17_model.pth",
+    "bytes": 552348,
+    "sha256": "c25305f7eecb52e0a1dad72431e8f00789cef9f83d90cb3a2c70c302e0d30e04"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_17_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "858d6ca0209e9e805a260f58c86c0d50e5678c5510cb47a340bc4a916c88b7cb"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_18_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "be6a23a47dea1d35b4e3a860776be90561647d2e658deeafcbde815929f2d6cb"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_18_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "1c14a5b817aef15fe7ad8bd23e0debdbec645190eceec1cd1746400425fe6860"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_18_model.pth",
+    "bytes": 552348,
+    "sha256": "22427d013979c6dcd5c65f17107621703308438287ce6529fa4aaf0867ac3e78"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_18_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "a0dc38805c71479dade88304df5a73b772838ad39827140c92f741e4ad13a7f7"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_19_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "f66207386fb7a6b00f2c05d57a26c41665232e0f56e33d866d7d90da2cfcd55d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_19_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "8e253708884a523e0c4fe1ed65436f003476fcadf129b1134bc47aa5def171ac"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_19_model.pth",
+    "bytes": 552348,
+    "sha256": "a13774f91b5fbcf31d949dec41d44e3d122ab45f91f0bd61fcdf045ef2b408bf"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_19_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "424fa1579fc09adb7b4b635623ba1cf606e9db54941d590b5d93fbe3591202dc"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_1_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "9b66f8a120d31ac1baff5f88141786a5f6370c2029525b199101f3d31ad59d41"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_1_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "e5ef5c71f3625bef8d2ea15adce81a7f6f3fcd84a311cac72b9999c5fc2d2fcf"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_1_model.pth",
+    "bytes": 552317,
+    "sha256": "b27db07196bad17a8b5ac86329d948c442c4c32c1f07ecbd70d442fed5f3947a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_1_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "d8bf270f53bbce8a5df2183cb11e1f7b3ebd5b2d1a4ddf49b6b1f5f61857d1ac"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_2_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "84cc9b609628dd03dfdc5a3365e0be4d5f93b17a49c861a8e906152ca5411680"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_2_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "756e0160a76ebcd6eb10f12a94b2a8c08b52fa46e2fb0a269d2644c15bceffeb"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_2_model.pth",
+    "bytes": 552317,
+    "sha256": "97b4b1bffad4f4d9defd93eec093827fad8d5bf40d01f4c54068b8860c9aae0d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_2_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "1d04e2893e87ddbd180ac24dcf361203b37acc0bcab10b9a0e71bfd1815b29c4"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_3_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "f0e04e1fadadccde016b672aae8e1b0d64aa76719061111169957720de58caca"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_3_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "9d5164baff53d283dce26c2f72def7872b655d0452267bbf87da6f3413134a94"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_3_model.pth",
+    "bytes": 552317,
+    "sha256": "a416bf5ab6797325de35d32c6d36213b9c2d4befbc90120814d2f287bb1833f4"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_3_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "13a1139735755a80809852693eace307cbf5057374b78ec7379f26e478bd0a7a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_4_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "560d6809c2c9464d6f7ac1d8ea4498a4aeca2edf076e0f295d91d998c73e95cc"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_4_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "079a99c1b5c2b72d76b7776e561a2e1ab72e554182feb1be00159d36983a2483"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_4_model.pth",
+    "bytes": 552317,
+    "sha256": "34b4c11a5a5a75b224e03aec3243ce6836a917cb058272b089044e3e46726550"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_4_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "88cefbaebe006c52cd9b15a4ed4bd899148e66bbe10576ef46587803064cfd6b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_5_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "f384a598ea85aa1e1d84ea83c28dacac2332c67930a4196f319a17f4b317de8a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_5_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "a10aed0a5de8aa7d3ba8c0a087ba5a324e13510d9493a4fd3d1adcd9f2e4a8e2"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_5_model.pth",
+    "bytes": 552317,
+    "sha256": "a45f64d689182d846d92576f1866b55fe20074aa4986b8eeb0b15f2eb17d7d02"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_5_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "21f5e07370c3039855e6770f5bfba882c627bcf75947b4d55521d54576c2675d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_6_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "48d1fc6a06cf32ed97da0424be387adda25405b258be751c22e92f6c48c6aa75"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_6_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "fa1f770c43a32bfdc9da25c5339785a629e0450fee793d1419612f1d501322a9"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_6_model.pth",
+    "bytes": 552317,
+    "sha256": "e0490d46f20fba7cd5f474327881d40b2d91d813ff473cd88113c10fd66da099"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_6_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "e215b90a53229e0f9f8f81c2a10bb55dd52aafd64c6fcdf8e352aa29b17e15e8"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_7_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "f44d674fd150a4e7906307982103d599d80b67cce7452bf263d3bb1f376bc0d0"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_7_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "77633043d1060265df94d04bddff20c75bc6050ee31b38ef11579a97825c1404"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_7_model.pth",
+    "bytes": 552317,
+    "sha256": "5f007be01a4f19e074c49fd4cb9e7a47f1c81df892ac228fdbbf8b28992b877a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_7_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "a173ae52284976dfff9bd2622f77daf981994fa961b99f0ddf7bf61a97fc1a48"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_8_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "23f0fc902f76aeb302477db0f8b288e61a87e48bdb81a156b5cbf8098f051a5f"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_8_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "554604f0ba8dc7316b93107466c977c90c64e85f34533866c9a009956a74823c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_8_model.pth",
+    "bytes": 552317,
+    "sha256": "6e1d0dfce21779665d078b451fdcb4cd57212a591eff0fc00a30a6b6f6c3d9c5"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_8_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "45631dfcdfbc7736e6bc00d43fe9bbfd9d5e70ba3982ece8f12d5c6f84f5f2e9"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_9_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "88ddb2f61b951e11e866769d89b3ca35a1234dd88a3b960bebcad46b2d18c23b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_9_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "b97f4e1014772fa995089c3e05fa21c66f1e3375d235572ebb62bb724b937ff4"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_9_model.pth",
+    "bytes": 552317,
+    "sha256": "7a1ffee3d8c2257f93e40cc1f2218069387a0bc242f17feefec56aaef70b2b64"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p1_9_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "0f40ca0bb208d23e2780b6d73b9d5cfe9f70eb3dd0691ac0de03fd2676692cbb"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p2_0_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "116609188ae714e22541058fb34309962ac82c7796436ce6bdfb756faef05f50"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p2_0_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "4fcbd92598b698ef5c2a55fd42e64b855003dd54ccc0408857fe90f2e8205d6b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p2_0_model.pth",
+    "bytes": 552317,
+    "sha256": "a38cbc7fa573335ce54b53d1c8980b57c5c989a28be29bd6b73b0df0124891b9"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p2_0_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "6dc10800513aa154ea31793baa50c89f1b858f4e124f06a44198836a3afe945e"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p2_1_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "bfa12f5210eae3f331ea8defb08d95b4ca8fbd9297c23714dfaf9a9463297b72"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p2_1_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "00c0bb948b9cb61d59c2796e0f60afe0ba46efe62483015413eed2c05c7af627"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p2_1_model.pth",
+    "bytes": 552317,
+    "sha256": "62c2af44d3a1cdff12a8b7fb6027462169a5810560a03c62deac403e832124a5"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/b_sc2p2_1_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "4c0d175baa00f9932faa8aef4044e03ab55b78a069cad5d686d2bf0fb3778de0"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/invented_predicates_operators_sc1.json",
+    "bytes": 8040,
+    "sha256": "a3435ff9466eda32354b50928ab0891b20a15a64651c4cb7a82ee7902b5c097d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/invented_predicates_operators_sc2.json",
+    "bytes": 12080,
+    "sha256": "fd7c9c926a9c01e0746b0c6ae1ed39c30579d57f30b8755b81fc416635ce1fb4"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/invented_predicates_operators_sc2_raw.json",
+    "bytes": 12310,
+    "sha256": "3cf8fc4c8eeb0f8b2f50906c3ed558fcdc65cea2d7252734708477e7b8bd2f7d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/terminal_reachtograsp_punch_0_ae_vector.pth",
+    "bytes": 1532,
+    "sha256": "2a4de14cae9cdbdae8a7956cd3d57ea735fabfeb08e8123bca988dd8c8c31b8c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/terminal_reachtograsp_punch_0_learned_ae_vector.pth",
+    "bytes": 1636,
+    "sha256": "fb3862fd27d0d7cadfb05b9ab4d9abf189308cc5850d5c37591fafa512fcf618"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/terminal_reachtograsp_punch_0_model.pth",
+    "bytes": 560169,
+    "sha256": "59a362fc9d69498a0996ed683abad4b8b71bb0a1324e194d75fd7e55574585b2"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/terminal_reachtograsp_punch_0_var_bind_idx.pth",
+    "bytes": 1419,
+    "sha256": "078d7c980ddcd6ab4f0b943fbd7d7966cbd950fbd28c4f7169e1933b39dd6d6c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/terminal_reachtograsp_punch_wiggle_0_ae_vector.pth",
+    "bytes": 1631,
+    "sha256": "b66014a2c2e212f448d71af5ee32284ce5c62c5ad0d44abdc9a4d5d1b827e051"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/terminal_reachtograsp_punch_wiggle_0_learned_ae_vector.pth",
+    "bytes": 1735,
+    "sha256": "e146237a2f9aaced8c664fbf88f6b115982858e53b0d55637846963f7fde2eb7"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/terminal_reachtograsp_punch_wiggle_0_model.pth",
+    "bytes": 560450,
+    "sha256": "0697e467bb13966c5c18872efaa4e136e277118da9020733670c6a8d663e3c02"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage2/terminal_reachtograsp_punch_wiggle_0_var_bind_idx.pth",
+    "bytes": 1582,
+    "sha256": "06b23bcb227517503e63b12498e8d93d823867ea9ce3c1227014c7775775a2e5"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_0_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "25f5067d3bad86572caa1369a205390d174beb380daec248ab39b39bad606530"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_0_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "92d972a757c42a31f25f17acf7ae5a536ad9001fe704e855e3cc8db222788ac7"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_0_model.pth",
+    "bytes": 552317,
+    "sha256": "de567401b8bec37dbc7f10a726668bed9c3a81d4b8ff2e1897251310d35cff11"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_0_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "e353b57610d0dbf6945f57ab9670fdae4270da1b117d5403dca9b9054955e2dc"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_10_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "581ffe35ac8925cecd44a72b61bc69c75e07d7ffced12e430b1077b1530920a3"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_10_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "0c0ade7efd960815ecd5be8f161d04445836109e8c0f79c3947404aa6c33d39c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_10_model.pth",
+    "bytes": 552348,
+    "sha256": "691b9d8167f00c6d8ba5b57c5d590fc068006b99b24f3c47894fe880f1b89a1d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_10_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "1aaf004c1b18d6626357158fbe5344601765eb4b80545c77320c46b49c4a385e"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_11_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "a3b0daf12d08625c75c3ff724e9182be74123850f54020cf0c9abfb24acb6ee5"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_11_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "c0dd1fcb370c8a3158567ee7911c4fd0d5ea3a78b7f27c1443302d603d86680b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_11_model.pth",
+    "bytes": 552348,
+    "sha256": "40e092c2c4c657eb812f92ffcabc452765d824284a2adcf186172e971786c999"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_11_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "458b81c1cbc44a197dafdc97649ab4a181eaf913a4419469480733564d39ac7d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_12_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "cf0a6d1769570292a1212f19cf3c8a22c67d1d9358f9bbd08de0b666d1dd4a55"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_12_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "a06d672fd65974017c1b73e339bc93c02d7aefd2ce15a028b185e35befc0fcbd"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_12_model.pth",
+    "bytes": 552348,
+    "sha256": "6e8fcaa89d316f985679e65aecc969d598792c623b4befb94837b27c65cbe8df"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_12_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "31b095c4ae87e1bf170da0a9edeee64b3b474e99f754b0d9057933ec5592f145"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_13_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "295819ef9141db9a4d12853e4396587d629c615cfec8f0a74767824064bfa3ea"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_13_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "6658c6c1fe87d92c18543fc56ec3b08b91a6762880e0a8bf24f6eef02b9412ed"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_13_model.pth",
+    "bytes": 552348,
+    "sha256": "7642871f862c22f1480209c8d50a05ce360ccb1f108ded6c30a852861ed9fbed"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_13_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "dbb10e99c99205205d57eaa3a32baa2675765914af664a24d491bf857994120f"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_14_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "cd61b02f6c9ef5de94d8caee42bb80aa52769c04ff4ec0765ac2dadea78e584a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_14_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "b3ed5959caae7f6bb679b180c86b9260bb236741b0cce1acd64930517548831c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_14_model.pth",
+    "bytes": 552348,
+    "sha256": "74fd2b2c1a3b05fbc75d3e7b27562d04d3f14b7f6f38dc0882b8145bc455038c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_14_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "f83b657a7972611091af3693559de00dc0af666170ebbfa2015145e732fbd2b5"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_15_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "da9253e2d57c20f806f911f9d4d7bacd59d554c23c925154f887d369b9b9779a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_15_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "a3a81d502af45422277203bf2b8787657d69d63588d344b73124751cd9954298"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_15_model.pth",
+    "bytes": 552348,
+    "sha256": "2172dc90e810cfb9b3c206c28e56214c0835499bc134f32471f11db773015324"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_15_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "01cb3e67b40f3614ba852df1fda1fa8e7c5c04c7240bea2b919c762c8af5f245"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_16_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "82901c32a37e6ac6c20d039bab7134b4955a6a95c6ade2be8c7d28c6c11d0add"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_16_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "3fe7d433d6feeb9cd95dce44140c12e245ac8f19ffa595dc01d94bfba7a2bc36"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_16_model.pth",
+    "bytes": 552348,
+    "sha256": "1d717563a34382e61733b88f40486a49c74e0fecf9929be835adf33c6c50ddc2"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_16_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "2cddbb042d2367efdf006a4b53e0ec2b84f927865ab4220f2bece147eadaa851"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_17_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "67d6ac7d42429eef59ebac4fd82da3c35b9e6c68b6929e8b33319ad77cf0fc48"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_17_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "c46f07e5b9e13dee78b3e801766189329a7c48d3f28db3f3f756ed0035afd73d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_17_model.pth",
+    "bytes": 552348,
+    "sha256": "91dd04a4e84dd7bb732f45f2bf6091fb60b19a071d7e95eab6f805a0859f2970"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_17_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "e251fc62d46d44cdb6f84e8c7f662896f8e0bfaade69999823879cca55ddd9a2"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_18_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "20d8249ef82f05ebeffdd42f6d0aa913846b514b2c62383c937426b9f9a06035"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_18_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "a3b6670b1a9f02ca04e6c71ac68d47465c7badacde6cf7bcf891456b7104c677"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_18_model.pth",
+    "bytes": 552348,
+    "sha256": "2d3a5f874b1307d7fb127c66194d8708fe02d68d261c2a7eeb91847a2829a8ab"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_18_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "a13c7930eaf84953650793b106abbb8adf315399c45a903e40ce3c9a50b9d952"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_19_ae_vector.pth",
+    "bytes": 1245,
+    "sha256": "a98ef38fb882886ad4145e90072c5bf2ed3f073d2f072eaeff9dd5238b2cba71"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_19_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "058faae25233273465e2fd9a665174ef247baa4d258d08930705174c8662e7fc"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_19_model.pth",
+    "bytes": 552348,
+    "sha256": "00bb3198848c09d6cf2b2e647f13aee5530a271928ac3b268fdb7f1aba3f934b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_19_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "58265c618f9a586aee6f5a2a7ead62528f8d9f93c9daba25875b8f12ad5bf139"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_1_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "9d2d592e7ff697df938219334636cdc864c10fe31afc7b5cfa24b6abe897f2d3"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_1_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "0338ceb8bd368bf69bac00a0f1fb5b9acc95a22d81e545c03d1728b20fc6efd7"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_1_model.pth",
+    "bytes": 552317,
+    "sha256": "aff68a429939a95504f2d15340ac41bf34b92d3303ca8665b496ff511998541c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_1_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "2248f0494d2802f55a84a28411adb0828fbaca9d59f1bfb770b0e688520564f7"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_2_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "f5a9d7334182c82aa1c6f94a342e76c77f4f39831af64b8fab612c03d72a605d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_2_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "3969908f019d85a6467deb8e4dc0fa0f05ba307bdee8c0098b081753da2f7a5a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_2_model.pth",
+    "bytes": 552317,
+    "sha256": "5f00973ea52952d77ddd2139b83bfad8cfa1ef243813503610bf54907f40de79"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_2_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "0c5581fceab688b0e8a3c3ba0fda81cc89d591585bac8872f27007eb8a29686b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_3_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "035e4c1af4e774932337e3b1298c1db2cf65024d051c3147a18b36690460756a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_3_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "9a25982898b40011de86a23555246c7df5dce4674aa4d3f75bf45a8bb828a89f"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_3_model.pth",
+    "bytes": 552317,
+    "sha256": "4024e9732ac83424cd1938e4dbd4d431ac6b65cafd8777e2f6e24e1960ecd2eb"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_3_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "0fc91f4d70d1d56a6dfa6c9f895fe2d03481d99f504bcee89830ccf946203c53"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_4_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "241dcac19542dad5f591d0ce2f55500911c5dfc3b6cbf2f50d0f629840b7a8f0"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_4_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "6eebacae3bc97fe86c64231907af599b4d1682afead8d31ed03faa9a97a9409b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_4_model.pth",
+    "bytes": 552317,
+    "sha256": "d1ee9c8bcd8976f38083a24f04d7b5c9adf03576bf888423cb3de8d095704d2b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_4_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "8b6b29ec123b1b963ac2d92344b8b65a4062d98c3159f91d2089afb3e328b44f"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_5_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "25e72db5c9beac6f88c1b500ecd2184bcd8e34caf529395ef697e0f3e6005496"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_5_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "99c245fd61c521c3c3546be6874bbc0912762f041dcc42c7fe4a9b21e88c69b6"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_5_model.pth",
+    "bytes": 552317,
+    "sha256": "ddee007f8682dd48d8cba3185abdbb1bebc3773968a1d16bf63e9aa157d12c83"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_5_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "529b70aaedd9744d6e661556bab7e198fe39e58ac6b4368da4d8cb934c93761b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_6_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "7c5ea54d33ef07fbf2815b7943259212485b939333d47218b7f2f25ba1a3c846"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_6_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "9c91e1bdd8637e29e37ed85858833c80e10f0c2694b403030bb9ae399bcc8d7d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_6_model.pth",
+    "bytes": 552317,
+    "sha256": "f8c126128ffd4fd75a369098ba6994c19bd5781b00f8b6561fc812e64b624059"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_6_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "df603551252784466c45335256d33edd605ec3c5a82a3fe12d2723f27c89c7d1"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_7_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "63cb03670f6778fa227a8c6c6a54a4dfaf91d50f2a0bedf21409df991e9bb6f0"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_7_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "b3cc09c572f7c94306709f80922c4d17c284e424475c9f376fa91e0b446a9083"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_7_model.pth",
+    "bytes": 552317,
+    "sha256": "9b2e3442ca9243e60b6768f76d58ac149c5d9c3cf164a2b5d4beda1032ee938d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_7_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "d1dba289eeb8d7a080a91d1b182cdd00f48611f49ceb1fbc4a7b1c42cf705334"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_8_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "8745a506c347a3c0cc2d957c01ae51e1ca330c1f51716728c9b789f2ac18eed3"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_8_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "c2d9b28d7eb1c5e068f5730c5f20ea500b6107bbd08df5ae9dd140e8f89631a8"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_8_model.pth",
+    "bytes": 552317,
+    "sha256": "f3b1a42067ac95c9fa2cdd4d253b12c1832b42e01df2f3babfb58ada76e11ff0"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_8_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "66aa528b5d927c1dc5b4b221f0fb0a9c5f6d38d6cfc4fd4abbd85f12f3fb0f29"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_9_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "fb0e0811184a5f19973d233203d174866316b13f73b5e80589630fa048a649b7"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_9_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "a8650860a2d8c1c0125c8aee9a873fbf9c14c61327baaa1bc1ef32a67654f767"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_9_model.pth",
+    "bytes": 551869,
+    "sha256": "b0b6c082f8bb28ecc02a07f7b397abb50e6275810965f30da414cecfecd7c474"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p1_9_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "e0d9da6f70446f8036dd3df959c3eb48985809feb0b7f3ef7ff403bafa195902"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_0_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "ea17c4086b6744ab6613fe0a8cc2ff571414fe0f4eb32d216acac43ed054b15b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_0_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "904c203f0f207ec4a61231349e76fc8226cd8e3404e62bf995eb9e1844a56023"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_0_model.pth",
+    "bytes": 552317,
+    "sha256": "b2b591b07f8f7323f8183646d7533c3e11184ade3494902a78213d52d4c534e8"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_0_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "93ec8f855070f540ab5aabb4af6db0bee05269c8cd960663c3672b86d5dea190"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_1_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "c0cd62aa00aea8fe64b1c945c63763f53d4f5d30bbeaaad00db645fd71515eb7"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_1_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "9cdfdee23d3e318b470567eb7162a6e7792373627557dbf42a8c5995954cddec"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_1_model.pth",
+    "bytes": 552317,
+    "sha256": "17b5d69d78172339e85d5f1004a7a44460f9851addd65cc5bb9e80c6cc2297cc"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_1_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "4884bf343a119f357d3f8beeb72809de4bf79a53dc8da6d18e817a4f4b23c9d6"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_2_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "eadec21aafb74fbea4f7373bb64acf73fb07934432cd4716bcb20af76b2ab248"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_2_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "d0c6d21d53a2b05d0c0baed404d3798fab418ad9b16aeca762d72b1207f3cb9c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_2_model.pth",
+    "bytes": 551869,
+    "sha256": "f5c1415f1a850abbf7324a4bd3c0fcd208c36202eb2c042a7632f21d430a5b21"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_2_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "64f80ab2f69d9d7a66fee2fe92e777fb1ec8d17f0f9bb5eb258aba228f27d5d8"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_3_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "d171c89fce74896f5e1ebf05b974cb75362673ae039c95994e557df898bcac09"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_3_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "bc6e101433bbdeede73a3f0ecdb7c9eae468ca32bbc31b7a16f284d57bfd9b25"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_3_model.pth",
+    "bytes": 552317,
+    "sha256": "b2280db98da6c42289de1ba3b4729618a5a4fe7555565e948fa4882084fcec4c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_3_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "8663dbbf8a183e528883a2fd9482ed2459840b1330136d98ffee4b8ce35c467f"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_4_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "4e93cf79a36740d982afbab3d29f9884f8f36ee876e3527354385aa183d13e03"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_4_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "2ac4e5daa1857348c900ed6b443777bc8fa996a034e78c4aa2769098ec538f23"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_4_model.pth",
+    "bytes": 552317,
+    "sha256": "4c0bf6f3dd51449627dcea82d4dfa523a4858bc3d71ee77715cf4eed49483a3c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_4_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "74edff4ba707aa5e97f4c7ed2c97c23721ce849d7659024693af24167590bf7a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_5_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "b15c7e1d571c38c142e409d6bb04d3114e3f5206f6f6f057f2fd349e68db0294"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_5_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "391beac584c89f2a2172f399830d5e8aaa17c1efe2c85cce17044f68a5d42733"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_5_model.pth",
+    "bytes": 552317,
+    "sha256": "57948890be363fb0a793b5926c3a1e8cab509ae6825dd3ccd0ced3ae1f89e6f7"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_5_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "9941f1e290c52c1131fd558492a1f16e29a379c8e930969b244e7fb5bf25fe0d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_6_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "09181a5f1cabf4ae73ba882cc2c02b97163ee23264999701abdeef583af5e172"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_6_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "19db8bd9bfed7104348906fa49d654579b7d24b6ea713b4653acc5539c972399"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_6_model.pth",
+    "bytes": 552317,
+    "sha256": "4f858c802897806baa052527ee7d647fc42e4c43f68c9102a667fe646c117e15"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_6_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "24c5b30677623835cb0baae8a6002a9aca866a706f081d202d5b0c1881f275f8"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_7_ae_vector.pth",
+    "bytes": 1240,
+    "sha256": "c5ec938e00222a508a6534b9606da08dd7f5e2783762534548cd445cd79dfb91"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_7_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "22f173a846f139d49af8aede944d1e16ef656f6069abbfc7fd6ffb12eb67fd66"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_7_model.pth",
+    "bytes": 552317,
+    "sha256": "d28e046afa7b380d06f218d211dd507ca5a95d110abf6fee1a8cc87305604f8d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc1p2_7_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "b13ae6a57d069c63ac6ea1b85da7705ad57fecc6239ef5f98d334efa936c855f"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_0_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "9749e9ecb4b688ced94220d68a2ff04dc2818a2df268c0937b74efbb99ffa516"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_0_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "a64ed5c47f1e3540a04c535b17d3f0ef40bfc97c368e59afaec9fd0e3e968692"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_0_model.pth",
+    "bytes": 552317,
+    "sha256": "a18420496ca8a6d73c0cc614adf384d51ec5d50d256dddddc844504461ad18c8"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_0_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "a48116f25c37ba9c90a35beb50916b8f81aba2997208b80af7050627b1a803a9"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_10_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "2afebbc0fb9bfc0e95bdfae14eaf87b670301c0b2ae29aa823a01fd67ae9ddfc"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_10_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "accc1ff3b030716c9897cb2c97e2dce28aafea96424c7be87d99f4fa2a5c2106"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_10_model.pth",
+    "bytes": 552348,
+    "sha256": "575fb0be85c42fbbabd6048119ef5e2e78b301b2b7cda28a75521bee7410af1a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_10_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "3813d3003c9c42991b896e7e9d60eb6447bd4680c776d03176a35eb7d48ea014"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_11_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "1fc8fac3fa14037046ef5484548439cd6877a9a5ca1fba778e06919587fdc2a9"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_11_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "56f9bf115df65fcecd9034c3bb45bbaef3f83b0c92c88f547fad8bbafdb6399d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_11_model.pth",
+    "bytes": 552348,
+    "sha256": "dc6ec6a54f5e4a1d3ecd63598eabd33619acf90e6d90c1dd290ff3abc33be04e"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_11_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "088441c25eb44a0acc52f2528698e3659b0517e8424f4ec69dea301ee7dfb462"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_12_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "367290447a0b0590bc5833c0fe58d9a8f33485a854ef2e06132b5fe52b2e7918"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_12_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "d1616db5911d00b29ced7c6cc88d7335025d3a5d72037497fdf0d04bd008e949"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_12_model.pth",
+    "bytes": 552348,
+    "sha256": "61d50e4ad7cde96392c22af31e271240ce9736a452bb5a40622620838f7c72a4"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_12_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "033d3325c9507c342bdea363d8604fdb8b7c98ce40c25633f0bbaa1c33583e2c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_13_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "d42d6635f093fdce64d96206de3d45ff57533617d09deb76ac84a1f292b40444"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_13_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "08c5013cf99095b8e02681e0e8e66543cb0991f34304b3d6e88df5a5a6ee7b3d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_13_model.pth",
+    "bytes": 552348,
+    "sha256": "e1c818ae38f89deccfbb51a661e71365a929512e4a8cb0d0a6614a434930fd82"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_13_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "5da3aa9a29090adbc339a2419e4972850ae7533c048983fb89eebe3a1852b86d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_14_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "6583f0fd6693fc52f39e473988ba393d439bc29cb60f009455418da2efc5502a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_14_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "141d8e5aff0649cf1703be8469a88daa542fcf743db504e28565d0cdf1242c10"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_14_model.pth",
+    "bytes": 552348,
+    "sha256": "2d09241d225a37e3710b8e98c9e30f31fc091819fa0e36ca940747a9315db9f9"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_14_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "e3451dc732e285b277046752e71e1f42dde07412ae2220913d3c93add36296dd"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_15_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "916badbc01ecb7fbb94f1841accfa38b49b123fa6912e231a4416ea5dcf949fb"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_15_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "15987e2fdff3857af49afc0ac62578ab29ea5e548d57d5f0f4f6382b07350ad5"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_15_model.pth",
+    "bytes": 552348,
+    "sha256": "814b78a99102c2e44fab10b8602a596eed4762f2857c0d245cec3cf37949f132"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_15_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "06d627637c7b004dffec02f1e3b2994f8d9387f9d1242f8092bd5763e7585f0d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_16_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "0cc550a9f42c299758df9432fc51c3d376d1b159392586ac5076f6a159b99f03"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_16_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "5fd41ff6c9c8b32102f8c1f59c76936be6e4c1a023e5d2ce1117a53df4b8f1de"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_16_model.pth",
+    "bytes": 552348,
+    "sha256": "1979673091b7746f9f2cf79034c3b3c3b7be7a04f3a24cd7164502a31c689425"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_16_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "d19b3fc087d1fd920b638b92a0d82e2109360709faaf0f30ff5d904e7505932b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_17_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "4a8f53364ef8b48eef630b66853bce8331416a6eb4de7bb3061a14c8cfbc2110"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_17_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "58484509a5edf3480c419ac4da21e5c9479550252e687d5ab849075f5076afc1"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_17_model.pth",
+    "bytes": 552348,
+    "sha256": "c25305f7eecb52e0a1dad72431e8f00789cef9f83d90cb3a2c70c302e0d30e04"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_17_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "858d6ca0209e9e805a260f58c86c0d50e5678c5510cb47a340bc4a916c88b7cb"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_18_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "be6a23a47dea1d35b4e3a860776be90561647d2e658deeafcbde815929f2d6cb"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_18_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "1c14a5b817aef15fe7ad8bd23e0debdbec645190eceec1cd1746400425fe6860"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_18_model.pth",
+    "bytes": 552348,
+    "sha256": "22427d013979c6dcd5c65f17107621703308438287ce6529fa4aaf0867ac3e78"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_18_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "a0dc38805c71479dade88304df5a73b772838ad39827140c92f741e4ad13a7f7"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_19_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "f66207386fb7a6b00f2c05d57a26c41665232e0f56e33d866d7d90da2cfcd55d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_19_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "8e253708884a523e0c4fe1ed65436f003476fcadf129b1134bc47aa5def171ac"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_19_model.pth",
+    "bytes": 552348,
+    "sha256": "a13774f91b5fbcf31d949dec41d44e3d122ab45f91f0bd61fcdf045ef2b408bf"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_19_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "424fa1579fc09adb7b4b635623ba1cf606e9db54941d590b5d93fbe3591202dc"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_1_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "9b66f8a120d31ac1baff5f88141786a5f6370c2029525b199101f3d31ad59d41"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_1_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "e5ef5c71f3625bef8d2ea15adce81a7f6f3fcd84a311cac72b9999c5fc2d2fcf"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_1_model.pth",
+    "bytes": 552317,
+    "sha256": "b27db07196bad17a8b5ac86329d948c442c4c32c1f07ecbd70d442fed5f3947a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_1_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "d8bf270f53bbce8a5df2183cb11e1f7b3ebd5b2d1a4ddf49b6b1f5f61857d1ac"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_2_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "84cc9b609628dd03dfdc5a3365e0be4d5f93b17a49c861a8e906152ca5411680"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_2_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "756e0160a76ebcd6eb10f12a94b2a8c08b52fa46e2fb0a269d2644c15bceffeb"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_2_model.pth",
+    "bytes": 552317,
+    "sha256": "97b4b1bffad4f4d9defd93eec093827fad8d5bf40d01f4c54068b8860c9aae0d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_2_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "1d04e2893e87ddbd180ac24dcf361203b37acc0bcab10b9a0e71bfd1815b29c4"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_3_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "f0e04e1fadadccde016b672aae8e1b0d64aa76719061111169957720de58caca"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_3_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "9d5164baff53d283dce26c2f72def7872b655d0452267bbf87da6f3413134a94"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_3_model.pth",
+    "bytes": 551869,
+    "sha256": "b5ca11d42f7e2c5272131c8ce1f4f7d335ff1b58b1371f323798d67f81d88bd9"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_3_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "13a1139735755a80809852693eace307cbf5057374b78ec7379f26e478bd0a7a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_4_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "560d6809c2c9464d6f7ac1d8ea4498a4aeca2edf076e0f295d91d998c73e95cc"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_4_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "079a99c1b5c2b72d76b7776e561a2e1ab72e554182feb1be00159d36983a2483"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_4_model.pth",
+    "bytes": 552317,
+    "sha256": "34b4c11a5a5a75b224e03aec3243ce6836a917cb058272b089044e3e46726550"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_4_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "88cefbaebe006c52cd9b15a4ed4bd899148e66bbe10576ef46587803064cfd6b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_5_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "f384a598ea85aa1e1d84ea83c28dacac2332c67930a4196f319a17f4b317de8a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_5_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "a10aed0a5de8aa7d3ba8c0a087ba5a324e13510d9493a4fd3d1adcd9f2e4a8e2"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_5_model.pth",
+    "bytes": 552317,
+    "sha256": "a45f64d689182d846d92576f1866b55fe20074aa4986b8eeb0b15f2eb17d7d02"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_5_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "21f5e07370c3039855e6770f5bfba882c627bcf75947b4d55521d54576c2675d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_6_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "48d1fc6a06cf32ed97da0424be387adda25405b258be751c22e92f6c48c6aa75"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_6_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "fa1f770c43a32bfdc9da25c5339785a629e0450fee793d1419612f1d501322a9"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_6_model.pth",
+    "bytes": 552317,
+    "sha256": "e0490d46f20fba7cd5f474327881d40b2d91d813ff473cd88113c10fd66da099"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_6_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "e215b90a53229e0f9f8f81c2a10bb55dd52aafd64c6fcdf8e352aa29b17e15e8"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_7_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "f44d674fd150a4e7906307982103d599d80b67cce7452bf263d3bb1f376bc0d0"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_7_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "77633043d1060265df94d04bddff20c75bc6050ee31b38ef11579a97825c1404"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_7_model.pth",
+    "bytes": 552317,
+    "sha256": "5f007be01a4f19e074c49fd4cb9e7a47f1c81df892ac228fdbbf8b28992b877a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_7_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "a173ae52284976dfff9bd2622f77daf981994fa961b99f0ddf7bf61a97fc1a48"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_8_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "23f0fc902f76aeb302477db0f8b288e61a87e48bdb81a156b5cbf8098f051a5f"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_8_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "554604f0ba8dc7316b93107466c977c90c64e85f34533866c9a009956a74823c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_8_model.pth",
+    "bytes": 552317,
+    "sha256": "6e1d0dfce21779665d078b451fdcb4cd57212a591eff0fc00a30a6b6f6c3d9c5"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_8_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "45631dfcdfbc7736e6bc00d43fe9bbfd9d5e70ba3982ece8f12d5c6f84f5f2e9"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_9_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "88ddb2f61b951e11e866769d89b3ca35a1234dd88a3b960bebcad46b2d18c23b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_9_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "b97f4e1014772fa995089c3e05fa21c66f1e3375d235572ebb62bb724b937ff4"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_9_model.pth",
+    "bytes": 552317,
+    "sha256": "7a1ffee3d8c2257f93e40cc1f2218069387a0bc242f17feefec56aaef70b2b64"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p1_9_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "0f40ca0bb208d23e2780b6d73b9d5cfe9f70eb3dd0691ac0de03fd2676692cbb"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p2_0_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "116609188ae714e22541058fb34309962ac82c7796436ce6bdfb756faef05f50"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p2_0_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "4fcbd92598b698ef5c2a55fd42e64b855003dd54ccc0408857fe90f2e8205d6b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p2_0_model.pth",
+    "bytes": 551869,
+    "sha256": "0be735d1ea6ea1bb6d25cbe81155664d60af80004581b91f89723348c1b4797f"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p2_0_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "6dc10800513aa154ea31793baa50c89f1b858f4e124f06a44198836a3afe945e"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p2_1_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "bfa12f5210eae3f331ea8defb08d95b4ca8fbd9297c23714dfaf9a9463297b72"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p2_1_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "00c0bb948b9cb61d59c2796e0f60afe0ba46efe62483015413eed2c05c7af627"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p2_1_model.pth",
+    "bytes": 552317,
+    "sha256": "62c2af44d3a1cdff12a8b7fb6027462169a5810560a03c62deac403e832124a5"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc2p2_1_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "4c0d175baa00f9932faa8aef4044e03ab55b78a069cad5d686d2bf0fb3778de0"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_0_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "1b3938aebe6291a883ce99bc9dd08a269d58e0ac3a47398689c207e4cfac18b7"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_0_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "40d63bd9aa7b494fbd5cbc87df6572f2842e8cf9bf8fafda4dd3941157a8c96a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_0_model.pth",
+    "bytes": 552317,
+    "sha256": "ee62c41f8555f0e9195c40452385ecc6963a7d827441045b8ac055711a9bafa1"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_0_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "e99c7ce2d56c01e865eafb63db571a5e36cccf1d5bcbe9055f73cc2596fbdef6"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_10_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "ad0831c9434c8f5a21723a81e88951fece418697e9ce442843549aa72406ed51"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_10_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "a6e8d0e7c1459f2f17ca49c7921afe4819114ce1dd04d413d43a4e714070ab08"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_10_model.pth",
+    "bytes": 552348,
+    "sha256": "075c581acd8e987f39b605805aebbda1e6436b3f82374dd5582372a013914f36"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_10_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "7c6d891a5bc0d7d262db46db59c19a47c998216f357245c4995e3883c8b31653"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_11_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "bab7ba6787d73fe836d03d629ed4f27ea564e7f73067141b18914e506308dcbc"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_11_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "b122438fbe07db0c782647cc9037c22759ee2f8c8c00c25b08a06d5b38b45318"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_11_model.pth",
+    "bytes": 552348,
+    "sha256": "dc04872a7c482e738cddfb5d951e8fb8a58290cc30948840b46c38c02818ba63"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_11_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "8b4a992bb552cdcb55818a0f6564996df688f159c643ff486a146cdbb3d116f7"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_12_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "e45da7a54e0e696308b5b2d03e2ab7063a50ece130e9ccdb3f494cf7fb83e755"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_12_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "f1e4f8b19e6f935f5eeb174d76c5b9fc2280a7f9665039746edd0d8e46d7078d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_12_model.pth",
+    "bytes": 552348,
+    "sha256": "23bf4c3ee5eacfd99cd8f8304bcc316b958a4d6e213c7547d8b0d491e5a3da73"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_12_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "9fc5916a1f984902e7f651d9786522cb2c1ac9609cb733f0b1eb0ac81152fdea"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_13_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "c3fad3323b4d269c0ef16b56580316c111f2d3bfc553a8dd1acb47a3129e9a04"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_13_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "c05245282e940b9c90e9cc118c2c34fdb38edbbbe98f47dd23f6674221813f4b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_13_model.pth",
+    "bytes": 552348,
+    "sha256": "45e5268057ba1df2a97824d16679a8f5ac3dd57be673172e6940dc0788141b17"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_13_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "d81cda9f859417d375953be4c956a49010d8ad69c505f50faf92bfffd39d12b6"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_14_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "fa6428247b31c55a3fedd52cc8732474846fb91e41ef5bbea98349538c7a21bc"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_14_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "a176b44db73357dbd08de888e79d363d16ce973ae9b3b5ea72c197565296944b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_14_model.pth",
+    "bytes": 552348,
+    "sha256": "d98799d6b6c7026dbff4728f7030abc8b916de277ce680eecfd72c3d6ad96e61"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_14_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "e0bb350bf829f01ef48802d81d05029811a5216d29efa3017360612339282994"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_15_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "0392b9673d30344f4ba99a26a617f27433cc2af6157fca96cf797b410fa9a82a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_15_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "264434c7241612a0e19c1f44ca5f921e1c5a97f922ad698455d2a5beb111e0b7"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_15_model.pth",
+    "bytes": 552348,
+    "sha256": "2aaee32d2e5ee87ca35dc8c81264dac6111c5b4b01e97a566de0a791576f0a6b"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_15_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "116c468f2c6ce22359635959d4f46c8abf2429f577cdb05b65b5878da21fda93"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_16_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "c1fd4d65fafd5f6809f5d259c4c115a79900df8944ed01800770e03b1ed4376a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_16_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "3ea2ee9d038e611bf2c24e8d4dde832e29a38aef7fd72a1fbc6319728f3d9035"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_16_model.pth",
+    "bytes": 552348,
+    "sha256": "29faf846ed882a9b13c86f9e7d4aae9ede36a268bcb8ff9f56c279f2a1ca5993"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_16_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "3319b52e32ff4724d26f888f68160aa3b4da50b18d3c7a4348e42937a2a6a8d0"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_17_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "00b4c3cb1130f80d774dc264b3fb4248d4a31ed7a5868ce73ad7f6a95bccaa27"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_17_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "2ac4af9d61d9967ebf1c0b5e5f68fe2cb54982307bc412680002f6d0aa09b84c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_17_model.pth",
+    "bytes": 552348,
+    "sha256": "2972da5b3fd165fbff801b4daf05b81d774dd0d35775b0a2bab0cb01ae554e9e"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_17_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "2a535e31880dcaf83f68d63ef1afc53acaf71132741a5f1de1f1293b12b8275f"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_18_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "0054795e507b5aeb48a294abb343407c586488cfb308e28becb87128258f3bd8"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_18_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "4a6345d2d885b2a7f21d60f79f4c942017945f5881b5d8ac166a797e6edf7787"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_18_model.pth",
+    "bytes": 552348,
+    "sha256": "73c5433700a077a7b01a72ab562f9a4abbfb23e92156638ceacc53dc06ad637a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_18_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "0a3f9e32ed7d53945365031fcaeb20a7bf5016971643e5e4a14118d5759b2b9c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_19_ae_vector.pth",
+    "bytes": 1309,
+    "sha256": "8fc8b6afebcda7a2de8c6a460cdd6e7be7744f8b79a27c98e2ab8274281ad6f7"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_19_learned_ae_vector.pth",
+    "bytes": 1413,
+    "sha256": "372ee3e713ca6892bc9759d27dff086a8f115e7ab23e3cfbab18fb2a08db6d3e"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_19_model.pth",
+    "bytes": 552348,
+    "sha256": "c52089013c63d2c4e7ae7d8cafdac71bda61e5fa2f6c4aac5592b6a32117ac39"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_19_var_bind_idx.pth",
+    "bytes": 1324,
+    "sha256": "6b1ddaaf25f9bc9737603772d4d99ecbc035e95b85edd49b12835147af27ce50"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_1_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "8a33fef6bb135a6223ae543c04e3f2664043017791bfd802750312f575cebefc"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_1_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "d4989a00022ad340442339badd1da21c84a4b12e45adafbcc9a9a7573fe7d306"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_1_model.pth",
+    "bytes": 552317,
+    "sha256": "78b2038b3b5b935d69efcf20db383c658fb273a0b020b77ead07ddd12a8f9794"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_1_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "0f3a81ce784bc077aaa0cd51cf8ba61072413334c9771be1be6c11189cd0c3f4"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_2_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "987bb4f0b3ae237ac247912a06775d78ae3d48411757ab92a061e452bef7a867"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_2_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "7b8f5f29ea8beb26e849a7468b8988b9d43d762135235ab49faf1051659893aa"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_2_model.pth",
+    "bytes": 552317,
+    "sha256": "8e2a4dc01374b635f5207e52d118c10548cfafe91880c11764e9ca39c88007ca"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_2_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "94d9d8954bba5c8b1d37aff07a1ec2a06c6f8fca3c6e1e04bdc7cb55200bdc12"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_3_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "62905db3f51f8d8bde57f51988443c7c5c558b85346368ac0b1eb9ddd94e2643"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_3_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "cc067f8a3604eebfd764216105d59f7620852137f405edd17395b9280282a1ce"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_3_model.pth",
+    "bytes": 552317,
+    "sha256": "7f32ddc0d0c7d6a508803b241d5e6e3d9231b0efb400b649d5566fbf4f9e7d24"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_3_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "b7dedb24e4311b7173e4d34d74e6996f803e84241ac63dbe9a31e243a6c1c26d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_4_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "f6254bcffba71f82435ae2201fb9b5beadc441252ebaf027d64a1faf1c63fcc3"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_4_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "eda7826ebf671a1c1bd6fccec5daebeba54d9dfa3c3644130658f2291e38b618"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_4_model.pth",
+    "bytes": 552317,
+    "sha256": "3cf0b671f7848487b0d59aa0b4e978ead93ccb70ad6a078f617f56a81502ed38"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_4_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "bed3268bb4939cd66e21ff505f9c39cc482141aea93f2a67eee09a1f2ff5d529"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_5_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "984ab3dae223e5bfea829fa21c4744a9abaac2d8fb254af267fb7080552586ff"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_5_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "d2252f28e7ace77ed5240db8f887225fbcf417c0f9c408dc92c316a86e2db044"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_5_model.pth",
+    "bytes": 552317,
+    "sha256": "d801fe76af9f411b45a2167cd20de1a61e144bd7eed2402fc96e17fe57794496"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_5_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "938b68bb703dad03b814d6b3f1faa732ca31e336fa04032a6499aa10f6613577"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_6_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "c8f45b410b6709114c3b07c396dd22faa0595800e4249cd25552c01280c4df28"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_6_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "77224a32642a88e1f2adf3ee15fbe1921bef1652cdebb34be2e54b2a464a9f7e"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_6_model.pth",
+    "bytes": 552317,
+    "sha256": "d7af97ba342e38b2c420619782f4ee37cf4d99f0826b8a8587c453b20bdb275a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_6_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "bc8bf5c54572f5bada7a785d0f7fb969ada63d8f367461913cf42a2bedaf328e"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_7_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "29355122b460296a1061d2efd2181b387a98c7b8d8d486d987f92e58c1fb5410"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_7_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "9bbd81aa902a424505370dbc476f54b007611a94a78cef6e3b6987f319731e63"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_7_model.pth",
+    "bytes": 552317,
+    "sha256": "43a4a0e67e393fbcd194ba842c8434e325118556bd291e868850df061baec067"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_7_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "cbb09210ac60640d7109018a43192960d7b974fceac7963df1bea2d9e9de56a6"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_8_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "5e6a57e49daad472f57a01b4335854a10b15b29d2e92c914391f045024a3a910"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_8_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "3d7d7f07c97605a3253ad16273ab20883e653e049e2c1240b5acf39b75e9e748"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_8_model.pth",
+    "bytes": 552317,
+    "sha256": "f244a7a3dcbd168da9b29ff536047f244d1794e0925f5e436234f33fc8f5f4ea"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_8_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "0d6496e77f6bd6ebb4da2736fe4cb0dd6333b8724d24252c3fd16f917475d759"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_9_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "6e4a8cca55278beab82f5adbad0e2736e99a16d2b66b2cbaf234f455a60363ea"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_9_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "a69016f8efa8bb793dd02f4c75b201a702b3e99ffcaebeb17d51243d3a589d6a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_9_model.pth",
+    "bytes": 552317,
+    "sha256": "513d5f98555dc5941eac65159d141434f0a09b952268ca5511a97c87d4d5fe21"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p1_9_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "2535b8575295d278eaca7ac3b56e51587bea3cdea54ade4864b7ef5eebbd197d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_0_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "29486c21912eb6e04a1b9f1208e609321cdcd37db52dd9f2fb454f66a059c39a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_0_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "cfad0bc1aaa0c035255b61cf64a0a81722c4fde0c8a62c1f5813a5e91ee19bae"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_0_model.pth",
+    "bytes": 552317,
+    "sha256": "87c82b35496aa9d2865543b86e7803228df397cba3a11a03e10cf4ce94d766ba"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_0_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "db05772ad9eceb0d28df2a19b9dface63fa6cd8e11a7138db2b8c40c925d8275"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_1_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "bb40db6f59e50eac3ff16b5107440a83fe5b5f478b25a202d236652ca6fc61f8"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_1_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "eaa6bed7b7c53b9b7099518a4d6d772ffa5e3b9e33284944a83b215d8eeb9f8d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_1_model.pth",
+    "bytes": 552317,
+    "sha256": "603f40a48d52dcef22e62e5c716c50d48199147e3807464125b329a442b651a1"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_1_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "0c828c33c8abe13f3ec34b143cbcf111200af61be3198647a6da302c8d0ea612"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_2_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "efc76c801b3a33455995447b5350d0acf56f9364f2f82a2ba6a22a6c22bc456e"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_2_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "20968fd4cfa36c4f85681a7bc36c8362ed20f5540ec97bc96a6f26e0f57346d0"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_2_model.pth",
+    "bytes": 552317,
+    "sha256": "8ea5919e0a775e6f81e41cf8bc34425f829cacfaa69f98013bcef893eb7f7ca5"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_2_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "a34123308a1c783671e7933815d929f02c4237f13232e683029899afcb266725"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_3_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "626bd8e9230e580e28f655ab87dad37ccee415ffa3cb673645a3b426c1307ef8"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_3_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "bc3c52602f53d919ab4520f1f88cc8001fe33a78bf845a70cdc7989344d3732f"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_3_model.pth",
+    "bytes": 552317,
+    "sha256": "a7f234073f941f569f935d8138571e215f37a21f076fb876fdfb76002306308c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_3_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "50a415983a63394280746800c09e9e4192a5ffde3fb5232eacfdc5987379c568"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_4_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "6a7d7cb13e518b150b55c4f20ac0a370761b41b61f47e940cd452fd8fd6ef568"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_4_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "fac3379f057ed965fd0451403beabb81f157935676a72d92264420ba41bbb5c5"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_4_model.pth",
+    "bytes": 552317,
+    "sha256": "ccf75473583a7a944fce214ad17d8209f33deec70940d865682e170574496822"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_4_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "86eacb07d0cb77415625c06886bb9977e698668440ca9125f8930bec1c6d45de"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_5_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "ec67987e8233ef8989897d7e988ce1feb8bc3a08b45dabf2c0c513682ee50978"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_5_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "f71bcbc44a5fc028a26449a49f7b39a4bfd34a4c3448750ff02b2da69b8420bd"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_5_model.pth",
+    "bytes": 552317,
+    "sha256": "df8c7197ff299b9238b79eca48f8f49a70a1d6cd53ddff508d2b4f02a1c95ba7"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_5_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "060ab972d80b4cfb58e6f9b8ff3716d5a70a397ffba5a3eaf64cc2241dda36b1"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_6_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "fce27873ecbea1deec2a433339e9c8c8ba26aa8ec85441e1e9e1a5a7fb65dce0"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_6_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "de20f6d9765c8e1d5eb74ab4a07d3beff2525c0c7de5f4a0021feb2a4c108c12"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_6_model.pth",
+    "bytes": 552317,
+    "sha256": "7830d87dbc2c0fe05fdaf8a4b931c2eec8cf0d0e336515474ee1f62882092f3d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_6_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "c7ad8617ffef786644ee1e75d156d0c93c3624e739f26d04b30a67bc480b9546"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_7_ae_vector.pth",
+    "bytes": 1304,
+    "sha256": "8a21679562900a872f3028d1b1655a59b3f59a41a46be0fed42ace9a2caf9920"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_7_learned_ae_vector.pth",
+    "bytes": 1408,
+    "sha256": "88f91f8843f84f2dfe90c3ea0edb3c844d3b2a99b6b7062ebaf57b669811632e"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_7_model.pth",
+    "bytes": 552317,
+    "sha256": "60d2ec87c294a7c7ba3a2b210dc22f8f299abe8b6730a993eeb0dbde22cc0070"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/b_sc3p2_7_var_bind_idx.pth",
+    "bytes": 1319,
+    "sha256": "9dc95f285672fc519fade3ad97174eb3134f912b6623d364bdf759496978aca1"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/invented_predicates_operators_sc1.json",
+    "bytes": 8040,
+    "sha256": "a3435ff9466eda32354b50928ab0891b20a15a64651c4cb7a82ee7902b5c097d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/invented_predicates_operators_sc2.json",
+    "bytes": 12080,
+    "sha256": "fd7c9c926a9c01e0746b0c6ae1ed39c30579d57f30b8755b81fc416635ce1fb4"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/invented_predicates_operators_sc2_raw.json",
+    "bytes": 12310,
+    "sha256": "3cf8fc4c8eeb0f8b2f50906c3ed558fcdc65cea2d7252734708477e7b8bd2f7d"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/invented_predicates_operators_sc3.json",
+    "bytes": 16930,
+    "sha256": "62bd890610bdfa40849d188d7185f98707a70a1d1218299a7e3c47232c5dd5bd"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/invented_predicates_operators_sc3_filtered.json",
+    "bytes": 16930,
+    "sha256": "0ddf3dfd1e2dba482e1ac5958a8e7028d6077c8e0b56785cfedb7045cf373071"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/terminal_reachtograsp_fiddle_0_ae_vector.pth",
+    "bytes": 1601,
+    "sha256": "cd9ae3e97fcf0c4ae0a6340d14dd3e5fb8890cacdcac77136af91913dfb0361a"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/terminal_reachtograsp_fiddle_0_learned_ae_vector.pth",
+    "bytes": 1705,
+    "sha256": "d8728673acd1f23415033c2460214f93cd861fffd3e110fb133243405f85cb37"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/terminal_reachtograsp_fiddle_0_model.pth",
+    "bytes": 560200,
+    "sha256": "827cd182247c3731586dd837156692d83a678d8e1e583b2f1d9903e46018b4d5"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/terminal_reachtograsp_fiddle_0_var_bind_idx.pth",
+    "bytes": 1424,
+    "sha256": "5f2db8b38c8b746f95f6c43455375c23bf07827e68161a91c11bfe76ffd74c12"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/terminal_reachtograsp_punch_0_ae_vector.pth",
+    "bytes": 1532,
+    "sha256": "2a4de14cae9cdbdae8a7956cd3d57ea735fabfeb08e8123bca988dd8c8c31b8c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/terminal_reachtograsp_punch_0_learned_ae_vector.pth",
+    "bytes": 1636,
+    "sha256": "fb3862fd27d0d7cadfb05b9ab4d9abf189308cc5850d5c37591fafa512fcf618"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/terminal_reachtograsp_punch_0_model.pth",
+    "bytes": 560169,
+    "sha256": "59a362fc9d69498a0996ed683abad4b8b71bb0a1324e194d75fd7e55574585b2"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/terminal_reachtograsp_punch_0_var_bind_idx.pth",
+    "bytes": 1419,
+    "sha256": "078d7c980ddcd6ab4f0b943fbd7d7966cbd950fbd28c4f7169e1933b39dd6d6c"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/terminal_reachtograsp_punch_wiggle_0_ae_vector.pth",
+    "bytes": 1631,
+    "sha256": "b66014a2c2e212f448d71af5ee32284ce5c62c5ad0d44abdc9a4d5d1b827e051"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/terminal_reachtograsp_punch_wiggle_0_learned_ae_vector.pth",
+    "bytes": 1735,
+    "sha256": "e146237a2f9aaced8c664fbf88f6b115982858e53b0d55637846963f7fde2eb7"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/terminal_reachtograsp_punch_wiggle_0_model.pth",
+    "bytes": 560450,
+    "sha256": "0697e467bb13966c5c18872efaa4e136e277118da9020733670c6a8d663e3c02"
+  },
+  {
+    "path": "inference_assets/blocked_stacking/predicates/stage3/terminal_reachtograsp_punch_wiggle_0_var_bind_idx.pth",
+    "bytes": 1582,
+    "sha256": "06b23bcb227517503e63b12498e8d93d823867ea9ce3c1227014c7775775a2e5"
+  }
+]

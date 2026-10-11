@@ -241,6 +241,13 @@ class LifelongRefApproach(BaseApproach):
         # Create a new skill for the operator
         max_rl_steps = scenario_info.get("max_rl_steps", 20)
         rl_static_steps = scenario_info.get("rl_static_steps", 3)
+        legacy_static_warmup = (
+            CFG.env == "blocked_stacking" and CFG.blocked_stacking_legacy_skill_timing
+        )
+        # Optionally use the post-skill delay before policy execution too.
+        policy_start_step = (
+            rl_static_steps if legacy_static_warmup else CFG.pre_rl_stabilize_steps
+        )
         tamp_system = self.system
         # NOTE: The following has bs=1 when created, but will be updated during reset
         # where it can be executed in batched environments.
@@ -284,6 +291,8 @@ class LifelongRefApproach(BaseApproach):
                 act_low=action_space_low,
                 act_high=action_space_high,
                 max_rl_steps=max_rl_steps,
+                policy_start_step=policy_start_step,
+                legacy_static_warmup=legacy_static_warmup,
             ) -> Tensor:
                 """Defines an object-parameterized policy."""
                 assert (
@@ -312,7 +321,7 @@ class LifelongRefApproach(BaseApproach):
 
                 if (
                     self._step <= max_rl_steps + CFG.pre_rl_stabilize_steps
-                    and self._step > CFG.pre_rl_stabilize_steps
+                    and self._step > policy_start_step
                 ):
                     # first clip the observation
                     sub_obs = tamp_system.state_to_vec(
@@ -327,16 +336,18 @@ class LifelongRefApproach(BaseApproach):
                         act_low,
                         act_high,
                     )
-                elif self._step <= CFG.pre_rl_stabilize_steps:
+                elif self._step <= policy_start_step and not legacy_static_warmup:
                     # During pre-rl stabilize steps, just use zero actions
                     # NOTE: This is not necessarily frozen action.
                     rl_static_actions = torch.zeros_like(self._last_action)
                     if not CFG.delta_finger_control:
                         rl_static_actions[:, -1] = self._last_action[:, -1]
                     clipped_action = rl_static_actions.clone()
+                elif CFG.control_mode == "force_torque":
+                    # Apply zero force between policy commands.
+                    clipped_action = torch.zeros_like(self._last_action)
                 else:
-                    # We handel static steps in side the skill
-                    # so that the planning execution loop is not affected.
+                    # Keep joint-controlled skills stationary between commands.
                     clipped_action = get_frozen_action(
                         self._last_action,
                         arm_action_low,
@@ -504,7 +515,11 @@ class LifelongRefApproach(BaseApproach):
         predicate_configures = config_data["predicates"]
 
         # Load trajectory dataset
-        dataset_path = Path(os.path.join(CFG.planner_dataset_path, f"seed_{CFG.seed}"))
+        dataset_path = (
+            Path(CFG.inference_dataset_path)
+            if CFG.inference_dataset_path
+            else Path(CFG.planner_dataset_path) / f"seed_{CFG.seed}"
+        )
         assert dataset_path.is_dir(), "Dataset path is invalid"
         num_traj = planner_cfg.get("planner_num_traj", -1)
         planner_dataset = PlannerDataset.load(dataset_path, num_traj=num_traj)
@@ -1987,6 +2002,15 @@ class LifelongRefApproach(BaseApproach):
                 f"Found {len(valid_plans)} valid plans matching training skeletons"
             )
             # Return the first valid plan
+            if CFG.env == "icy_transport" and CFG.icy_legacy_plan_order:
+                # Prioritize plans acting on obj1 earlier; preserve other ties.
+                def first_obj1_step(plan: list[GroundOperator]) -> int:
+                    for index, op in enumerate(plan):
+                        if any("obj1" in obj.name for obj in op.parameters):
+                            return index
+                    return len(plan)
+
+                valid_plans.sort(key=lambda item: first_obj1_step(item[0]))
             return valid_plans[0][0]
         else:
             logging.warning(

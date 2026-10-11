@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "datasets": [
+    {
+      "name": "ReplicaCAD",
+      "repository": "haosulab/ReplicaCAD",
+      "revision": "88bdca74dd4ec1f8c994904f7985392fc3f2b4c4",
+      "kind": "huggingface_snapshot",
+      "target": "src/skill_refactor/assets/maniskill_assets/data/scene_datasets/replica_cad_dataset",
+      "file_count": 872
+    },
+    {
+      "name": "ReplicaCADRearrange",
+      "repository": "haosulab/ReplicaCADRearrange",
+      "revision": "c5921276ddece53607cd7dd55e7ed54385c9e49d",
+      "kind": "huggingface_archive",
+      "filename": "rearrange.zip",
+      "bytes": 1486211499,
+      "sha256": "6ab9a0ceece6e0fe176ffc67a6aab1bad1efb7a4bf70808089e19673cd59b15b",
+      "target": "src/skill_refactor/assets/maniskill_assets/data/scene_datasets/replica_cad_dataset",
+      "archive_root": "rearrange",
+      "file_count": 33216
+    }
+  ]
+}

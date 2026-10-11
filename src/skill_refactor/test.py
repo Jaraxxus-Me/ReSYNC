@@ -2,16 +2,16 @@
 
 Example usage (run from project root):
     # Single scenario test
-    python -m skill_refactor.test --seed 0 --lll_config config/lifelong_learning/cluttered_drawer_sc1.yaml --scenario 1
+    python -m skill_refactor.test --lll_config config/lifelong_learning/cluttered_drawer_sc1.yaml --scenario 1
 
     # Alternative: direct execution from root
-    python src/skill_refactor/test.py --seed 0 --lll_config config/lifelong_learning/cluttered_drawer_sc1.yaml --scenario 1
+    python src/skill_refactor/test.py --lll_config config/lifelong_learning/cluttered_drawer_sc1.yaml --scenario 1
 
     # Multi-scenario test
-    python -m skill_refactor.test --seed 0 --lll_config config/lifelong_learning/cluttered_drawer_sc12_2.yaml --scenario 12_2
+    python -m skill_refactor.test --lll_config config/lifelong_learning/cluttered_drawer_sc12_2.yaml --scenario 12_2
 
-    # Multiple seeds
-    python -m skill_refactor.test --seeds 0,1,2 --lll_config config/lifelong_learning/cluttered_drawer_sc1.yaml --scenario 1
+    # Multiple seeds: set EVAL_SEEDS to match your available models
+    python -m skill_refactor.test --seeds "${EVAL_SEEDS}" --lll_config config/lifelong_learning/cluttered_drawer_sc1.yaml --scenario 1
 """
 
 import logging

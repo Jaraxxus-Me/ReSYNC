@@ -929,7 +929,8 @@ class ObjectCentricIcyTransport2DEnv(
         gymnasium.Env.reset(self, seed=seed)
         self.robot_is_colliding = False
         self.success = False
-        self._prev_colliding = {key: False for key in self.region_ids}
+        if CFG.icy_reset_collision_history:
+            self._prev_colliding = {key: False for key in self.region_ids}
 
         # Clear existing physics space
         if self.pymunk_space:

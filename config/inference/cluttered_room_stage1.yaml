@@ -1,0 +1,37 @@
+scenarios:
+  1:
+    trained: false
+    tgt_skill: Push(robot,goal,can)
+    failed_skill: PlaceBox
+    failed_objects: robot,box,box_goal
+    basic_type: goal
+    max_rl_steps: 8
+    rl_static_steps: 3
+    max_skill_steps: 3500
+    max_env_steps: 3500
+    train_objects: robot,box_goal,can
+    basic_objects: box_goal
+    known_invalid_sc: sc1_pre_n3
+    planner_learning_cfg_settings:
+      num_envs: 1
+      scenario: '1'
+      middle_state_method: naive_init
+      real_scenario_name: sc1_pre_n4
+      num_middle_states: 100
+      pre_trained_policy_path: inference_assets/cluttered_room/policies/stage1.pt
+      specified_task_path: config/specified_tasks/cluttered_room
+      predicate_config: config/predicates/cluttered_room_confined_enu_sc1.yaml
+      rl_config: config/pure_rl/cluttered_room_ppoc_sc1.yaml
+      dreaming_noise_base_var: 0.0
+      clamp_xy_to_radius: 0.1
+      force_skip_pred_learning: true
+      can_blocking_target1: false
+      can_blocking_target2: true
+      num_train_episodes_planner: 400
+      num_failed_episodes_planner: 40
+      num_train_episodes_planner_before_dreaming: 100
+      pred_search_num_trajectories: 200
+      max_env_steps: 7000
+      planner_num_traj: 5
+      pred_net_save_dir: inference_assets/cluttered_room/predicates/stage1
+      inference_dataset_path: inference_assets/cluttered_room/datasets/stage1

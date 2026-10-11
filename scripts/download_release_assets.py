@@ -36,9 +36,6 @@ def main() -> None:
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     manifest = json.loads((root / "release/assets_manifest.json").read_text())
-    source_paths = set(
-        json.loads((root / "release/source_manifest.json").read_text())["files"]
-    )
     cache = root / ".release-cache"
     cache.mkdir(exist_ok=True)
     for archive in manifest["archives"]:
@@ -46,7 +43,7 @@ def main() -> None:
             continue
         metadata = root / archive.get(
             "contents_manifest",
-            f"release/asset_contents/{archive['domain']}_seed0.json",
+            f"release/asset_contents/{archive['domain']}.json",
         )
         if not args.verify_only:
             path = cache / archive["filename"]
@@ -95,9 +92,10 @@ def main() -> None:
                     if (
                         relative.is_absolute()
                         or ".." in relative.parts
-                        or (
-                            relative.as_posix() in source_paths
-                            and not (
+                        or not (
+                            relative.as_posix().startswith("inference_assets/")
+                            or relative.as_posix().startswith("release/asset_contents/")
+                            or (
                                 archive["domain"] == "simulation_assets"
                                 and relative.as_posix().startswith(
                                     "src/skill_refactor/assets/"

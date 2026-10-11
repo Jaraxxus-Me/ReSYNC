@@ -1,0 +1,8 @@
+[
+  {
+    "path": "src/skill_refactor/assets/obstacle_legacy.urdf",
+    "bytes": 2403,
+    "sha256": "b52fd711d58f5cf813b0e82e5ef28463e75776960f454dd908e5db1a13b54964",
+    "source": "ivntr_baseline@8ea56fe44579e65488f1fb8cd9eb8f35e8b3ce50:src/skill_refactor/assets/obstacle.urdf"
+  }
+]

@@ -1,5 +1,7 @@
 # Standalone Test Script Documentation
 
+For inference with the provided checkpoints, follow the [reproduction instructions](README.md#reproduce-the-experiments), which select the runtime and evaluation settings. This guide documents the general test harness for custom local experiment configurations.
+
 ## Overview
 
 `src/skill_refactor/test.py` is a standalone script for running lifelong learning tests similar to the unit tests in `tests/cluttered_drawer/approaches/test_lifelong_ref.py`, but with command-line configuration support.
@@ -22,7 +24,7 @@ Ensure you have:
 
 ## Usage
 
-**Note**: All commands should be run from the project root directory.
+**Note**: All commands should be run from the project root directory. For examples using `EVAL_SEEDS`, set that environment variable to a comma-separated list matching your available policies and predicates.
 
 ### Basic Usage
 
@@ -38,7 +40,7 @@ python src/skill_refactor/test.py \
     --scenario 1
 
 # Test with multiple seeds
-python -m skill_refactor.test --seeds 0,1,2 \
+python -m skill_refactor.test --seeds "${EVAL_SEEDS}" \
     --lll_config config/lifelong_learning/cluttered_drawer_sc1.yaml \
     --scenario 1
 
@@ -74,7 +76,7 @@ python -m skill_refactor.test \
     --debug_log
 
 # Test all seeds for scenario 12_2
-python -m skill_refactor.test --seeds 0,1,2,3,4 \
+python -m skill_refactor.test --seeds "${EVAL_SEEDS}" \
     --lll_config config/lifelong_learning/cluttered_drawer_sc12_2.yaml \
     --scenario 12_2 \
     --num_eval_episodes 50
@@ -88,7 +90,7 @@ python -m skill_refactor.test --seeds 0,1,2,3,4 \
 |----------|-------------|---------|
 | `--lll_config` | Path to lifelong learning YAML config file | `config/lifelong_learning/cluttered_drawer_sc1.yaml` |
 | `--scenario` | Scenario name | `1`, `12_2`, `123_3` |
-| `--seed` or `--seeds` | Single seed or comma-separated list | `--seed <seed>` or `--seeds 0,1,2` |
+| `--seed` or `--seeds` | Single seed or comma-separated list | `--seed <seed>` or `--seeds "${EVAL_SEEDS}"` |
 
 ### Optional Arguments
 
@@ -155,7 +157,7 @@ python -m skill_refactor.test \
 
 ### Comprehensive Evaluation (Multiple Seeds)
 ```bash
-python -m skill_refactor.test --seeds 0,1,2,3,4 \
+python -m skill_refactor.test --seeds "${EVAL_SEEDS}" \
     --lll_config config/lifelong_learning/cluttered_drawer_sc12_2.yaml \
     --scenario 12_2 \
     --num_eval_episodes 50

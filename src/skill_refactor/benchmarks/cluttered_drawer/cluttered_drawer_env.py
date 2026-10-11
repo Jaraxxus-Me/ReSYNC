@@ -103,6 +103,9 @@ class ClutteredDrawerEnv(BaseEnv):
         robot_init_qpos_noise=0.02,
         **kwargs,
     ) -> None:
+        self._legacy_physics = CFG.c_drawer_legacy_physics
+        if self._legacy_physics:
+            self.obstacle_urdf_path = f"{PACKAGE_ASSET_DIR}/obstacle_legacy.urdf"
         self.robot_init_qpos_noise = robot_init_qpos_noise
         self.sensor_cam_eye_pos = CFG.c_drawer_sensor_cam_eye_pos
         self.sensor_cam_target_pos = CFG.c_drawer_sensor_cam_target_pos
@@ -205,11 +208,6 @@ class ClutteredDrawerEnv(BaseEnv):
         self.hammer_colliding_link = self.drawer_blocking.links_map["tabletop"]
         self.collision_links.append(self.drawer_blocking.links_map["drawer"])
 
-        # DEBUG: YCB object and hacked link
-        builder = actors.get_actor_builder(self.scene, id=f"ycb:024_bowl")
-        builder.initial_pose = sapien.Pose(p=[0.8, 0.0, 0.7], q=[1, 0, 0, 0])
-        self.apple_actor = builder.build(name="debug_apple")
-
         loader = self.scene.create_urdf_loader()
         loader.fix_root_link = True
         loader.disable_self_collisions = True
@@ -263,7 +261,7 @@ class ClutteredDrawerEnv(BaseEnv):
 
         # Add a block to the scene
         loader = self.scene.create_urdf_loader()
-        loader.fix_root_link = True
+        loader.fix_root_link = not self._legacy_physics
         loader.name = "block"
         self.obstacle = loader.load(self.obstacle_urdf_path)
         self.obstacle_base = self.obstacle.links_map["body_link"]
@@ -282,26 +280,28 @@ class ClutteredDrawerEnv(BaseEnv):
             group=2, bit_idx=SPOT_LLEG_COLLISION_BIT, bit=1
         )
 
-        # Wall and block do not collide with drawer links
+        # The original environment also disabled wall-ground collisions.
         self.wall.set_collision_group_bit(group=2, bit_idx=CABINET_COLLISION_BIT, bit=1)
-        self.obstacle_base.set_collision_group_bit(
-            group=2, bit_idx=CABINET_COLLISION_BIT, bit=1
-        )
-        self.obstacle_attach.set_collision_group_bit(
-            group=2, bit_idx=CABINET_COLLISION_BIT, bit=1
-        )
-        self.drawer_supporting.links_map["drawer"].set_collision_group_bit(
-            group=2, bit_idx=CABINET_COLLISION_BIT, bit=1
-        )
-        self.drawer_blocking.links_map["drawer"].set_collision_group_bit(
-            group=2, bit_idx=CABINET_COLLISION_BIT, bit=1
-        )
-        self.drawer_supporting.links_map["tabletop"].set_collision_group_bit(
-            group=2, bit_idx=CABINET_COLLISION_BIT, bit=1
-        )
-        self.drawer_blocking.links_map["tabletop"].set_collision_group_bit(
-            group=2, bit_idx=CABINET_COLLISION_BIT, bit=1
-        )
+        if not self._legacy_physics:
+            # Block and wall do not collide with drawer links.
+            self.obstacle_base.set_collision_group_bit(
+                group=2, bit_idx=CABINET_COLLISION_BIT, bit=1
+            )
+            self.obstacle_attach.set_collision_group_bit(
+                group=2, bit_idx=CABINET_COLLISION_BIT, bit=1
+            )
+            self.drawer_supporting.links_map["drawer"].set_collision_group_bit(
+                group=2, bit_idx=CABINET_COLLISION_BIT, bit=1
+            )
+            self.drawer_blocking.links_map["drawer"].set_collision_group_bit(
+                group=2, bit_idx=CABINET_COLLISION_BIT, bit=1
+            )
+            self.drawer_supporting.links_map["tabletop"].set_collision_group_bit(
+                group=2, bit_idx=CABINET_COLLISION_BIT, bit=1
+            )
+            self.drawer_blocking.links_map["tabletop"].set_collision_group_bit(
+                group=2, bit_idx=CABINET_COLLISION_BIT, bit=1
+            )
 
         self.goal_site = actors.build_sphere(
             self.scene,
@@ -618,16 +618,19 @@ class ClutteredDrawerEnv(BaseEnv):
             self.hammer_tgt.set_pose(target_hammer_pose)
 
             # Set block poses
-            block_yaw = quat_to_yaw(block_pose.q)  # align with grasp hammer yaw
-            block_pose_zero_rot = Pose.create_from_pq(
-                p=block_pose.p, q=euler2quat(0.0, 0.0, 0.0)
-            )
-            # NOTE: obstacle is always set with zero yaw,
-            # the rotation is set via qpos
-            self.obstacle.set_pose(block_pose_zero_rot)
-            qpos = torch.zeros((b, 3), device=self.device)
-            qpos[:, -1] = block_yaw
-            self.obstacle.set_qpos(qpos)
+            if self._legacy_physics:
+                self.obstacle.set_pose(block_pose)
+            else:
+                block_yaw = quat_to_yaw(block_pose.q)  # align with grasp hammer yaw
+                block_pose_zero_rot = Pose.create_from_pq(
+                    p=block_pose.p, q=euler2quat(0.0, 0.0, 0.0)
+                )
+                # NOTE: obstacle is always set with zero yaw,
+                # the rotation is set via qpos
+                self.obstacle.set_pose(block_pose_zero_rot)
+                qpos = torch.zeros((b, 3), device=self.device)
+                qpos[:, -1] = block_yaw
+                self.obstacle.set_qpos(qpos)
 
             if self.gpu_sim_enabled:
                 for _ in range(5):
@@ -641,8 +644,9 @@ class ClutteredDrawerEnv(BaseEnv):
             self.hammer_tgt_drawer_rel_pose = (
                 self.hammer_tgt_drawer_link.pose.inv() * target_hammer_pose
             )
-            assert self.block_drawer is not None
-            self.block_drawer_init_q = self.block_drawer.get_qpos().clone()
+            if not self._legacy_physics:
+                assert self.block_drawer is not None
+                self.block_drawer_init_q = self.block_drawer.get_qpos().clone()
             # Reset the robot
             # NOTE: qpos
             # x, y, z, arm_6, gripper 1
@@ -690,7 +694,8 @@ class ClutteredDrawerEnv(BaseEnv):
             goal_xyz[:, 2] = CFG.c_drawer_world_max[2]
             self.goal_site.set_pose(Pose.create_from_pq(goal_xyz))
 
-            self.drawer_opened = torch.zeros((b,), device=self.device)
+            if not self._legacy_physics:
+                self.drawer_opened = torch.zeros((b,), device=self.device)
 
     def _initialize_episode_from_state(
         self, env_idx: torch.Tensor, init_state: torch.Tensor
@@ -745,17 +750,24 @@ class ClutteredDrawerEnv(BaseEnv):
             block_pose[:, 2] = (
                 CFG.c_drawer_block_dz + CFG.c_drawer_hammer_height
             )  # ensure height
-            block_yaw = quat_to_yaw(block_pose[:, 3:7])  # align with grasp hammer yaw
-            block_pose_zero_rot = Pose.create_from_pq(
-                p=block_pose[:, :3], q=euler2quat(0.0, 0.0, 0.0)
-            )
-            # NOTE: obstacle is always set with zero yaw,
-            # the rotation is set via qpos
-            qpos = torch.zeros((b, 3), device=self.device)
-            qpos[:, -1] = block_yaw
+            if self._legacy_physics:
+                self.obstacle.set_pose(
+                    Pose.create_from_pq(block_pose[:, :3], block_pose[:, 3:7])
+                )
+            else:
+                block_yaw = quat_to_yaw(
+                    block_pose[:, 3:7]
+                )  # align with grasp hammer yaw
+                block_pose_zero_rot = Pose.create_from_pq(
+                    p=block_pose[:, :3], q=euler2quat(0.0, 0.0, 0.0)
+                )
+                # NOTE: obstacle is always set with zero yaw,
+                # the rotation is set via qpos
+                qpos = torch.zeros((b, 3), device=self.device)
+                qpos[:, -1] = block_yaw
 
-            self.obstacle.set_pose(block_pose_zero_rot)
-            self.obstacle.set_qpos(qpos)
+                self.obstacle.set_pose(block_pose_zero_rot)
+                self.obstacle.set_qpos(qpos)
 
             if self.gpu_sim_enabled:
                 for _ in range(10):
@@ -783,21 +795,22 @@ class ClutteredDrawerEnv(BaseEnv):
                 self.hammer_tgt_drawer_link.pose.inv() * self.hammer_tgt.pose
             )
 
-            # Update block_drawer link and relative pose based on distance
-            dist_y_block = torch.abs(
-                block_pose[:, 1] - blocking_drawer_pose_tensor[:, 1]
-            )
-            dist_y_block_mean = dist_y_block.mean()
-            dist_y_support = torch.abs(
-                block_pose[:, 1] - supporting_drawer_pose_tensor[:, 1]
-            )
-            dist_y_support_mean = dist_y_support.mean()
-            if (dist_y_block_mean < dist_y_support_mean).all():
-                self.block_drawer = self.drawer_blocking
-            else:
-                self.block_drawer = self.drawer_supporting
-            assert self.block_drawer is not None
-            self.block_drawer_init_q = self.block_drawer.get_qpos().clone()
+            if not self._legacy_physics:
+                # Update block_drawer link and relative pose based on distance
+                dist_y_block = torch.abs(
+                    block_pose[:, 1] - blocking_drawer_pose_tensor[:, 1]
+                )
+                dist_y_block_mean = dist_y_block.mean()
+                dist_y_support = torch.abs(
+                    block_pose[:, 1] - supporting_drawer_pose_tensor[:, 1]
+                )
+                dist_y_support_mean = dist_y_support.mean()
+                if (dist_y_block_mean < dist_y_support_mean).all():
+                    self.block_drawer = self.drawer_blocking
+                else:
+                    self.block_drawer = self.drawer_supporting
+                assert self.block_drawer is not None
+                self.block_drawer_init_q = self.block_drawer.get_qpos().clone()
 
             # 4) Set robot qpos and qvel
             robot_qpos = extract_robot_joints(init_state)
@@ -822,26 +835,27 @@ class ClutteredDrawerEnv(BaseEnv):
         )
         self.hammer_tgt.set_pose(current_target_pose)
 
-        drawer_actual_q = self.drawer_blocking.get_qpos()
-        drawer_q_set = drawer_actual_q.clone()
+        if not self._legacy_physics:
+            drawer_actual_q = self.drawer_blocking.get_qpos()
+            drawer_q_set = drawer_actual_q.clone()
 
-        # NOTE: A hack that once a drawer is opened, it will be forced to open throughout
-        # Since the sim is not very stable when the block is in contact with the drawer,
-        # sometimes the drawer would be pushed back in slightly causing the robot to fail
-        if self.drawer_opened.any():
-            # Allow drawer to move only if previously opened
-            drawer_q_set[self.drawer_opened] = self.drawer_q_max.unsqueeze(1)[
-                self.drawer_opened
-            ]
-        self.drawer_blocking.set_qpos(drawer_q_set)
+            # NOTE: A hack that once a drawer is opened, it will be forced to open throughout
+            # Since the sim is not very stable when the block is in contact with the drawer,
+            # sometimes the drawer would be pushed back in slightly causing the robot to fail
+            if self.drawer_opened.any():
+                # Allow drawer to move only if previously opened
+                drawer_q_set[self.drawer_opened] = self.drawer_q_max.unsqueeze(1)[
+                    self.drawer_opened
+                ]
+            self.drawer_blocking.set_qpos(drawer_q_set)
 
-        block_q_current = self.block_drawer.get_qpos()
-        change = block_q_current - self.block_drawer_init_q
-        block_curr_q = self.obstacle.get_qpos().clone()
-        # Add dx to block current qpos if drawer has moved
-        block_curr_q[:, 0:1] -= change
-        self.obstacle.set_qpos(block_curr_q)
-        self.block_drawer_init_q = block_q_current.clone()
+            block_q_current = self.block_drawer.get_qpos()
+            change = block_q_current - self.block_drawer_init_q
+            block_curr_q = self.obstacle.get_qpos().clone()
+            # Add dx to block current qpos if drawer has moved
+            block_curr_q[:, 0:1] -= change
+            self.obstacle.set_qpos(block_curr_q)
+            self.block_drawer_init_q = block_q_current.clone()
 
         if self.gpu_sim_enabled:
             self.scene._gpu_apply_all()
@@ -917,9 +931,10 @@ class ClutteredDrawerEnv(BaseEnv):
         # success if the object is placed close to the goal and not grasped
         success = self.hammar_head_touched() & ~is_grasped
         # is_robot_static = self.agent.is_static(0.2)
-        self.drawer_opened = (
-            self.drawer_blocking.get_qpos() >= 0.9 * self.drawer_q_max.unsqueeze(1)
-        )
+        if not self._legacy_physics:
+            self.drawer_opened = (
+                self.drawer_blocking.get_qpos() >= 0.9 * self.drawer_q_max.unsqueeze(1)
+            )
         return {
             "success": success,
             "is_obj_placed": self.hammar_head_touched(),
