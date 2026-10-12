@@ -1,0 +1,92 @@
+[
+  {
+    "path": "inference_assets/isaac/flipped_stacking/policy.pt",
+    "bytes": 6770869,
+    "sha256": "b2f8636f0a04d12ce9b93a27fdfb1eeb0ec4e865ba911dcb3ce6f52e7fbb5b0c"
+  },
+  {
+    "path": "inference_assets/isaac/flipped_stacking/predicates/b_sc1p1_0_ae_vector.pth",
+    "bytes": 1661,
+    "sha256": "7dbf197f9d754f92cddc158291d69a60b274f06fd5fab194b874603c26afa797"
+  },
+  {
+    "path": "inference_assets/isaac/flipped_stacking/predicates/b_sc1p1_0_learned_ae_vector.pth",
+    "bytes": 1781,
+    "sha256": "815ccef54e42db5a7dfa5d1c765a7a55ab1741563e3b4e2ed784b5d694f582b8"
+  },
+  {
+    "path": "inference_assets/isaac/flipped_stacking/predicates/b_sc1p1_0_model.pth",
+    "bytes": 956305,
+    "sha256": "9b41188402811fe62469a565c57af23f6b705ff4d77a0693b382776929b321c6"
+  },
+  {
+    "path": "inference_assets/isaac/flipped_stacking/predicates/b_sc1p1_0_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "e6e657360fa58e36420680eae03eee68ccba0d12cab8bbc71481346abb83adca"
+  },
+  {
+    "path": "inference_assets/isaac/flipped_stacking/predicates/b_sc1p1_1_ae_vector.pth",
+    "bytes": 1661,
+    "sha256": "9cf0e3fdb8c96043a98258f301091823c71960b78c5ca0a9ba5d67a93ae3ee46"
+  },
+  {
+    "path": "inference_assets/isaac/flipped_stacking/predicates/b_sc1p1_1_learned_ae_vector.pth",
+    "bytes": 1781,
+    "sha256": "d6d73b36eac2d1b88e4e91946266dad841e9a1a9590706a20451146b234d642b"
+  },
+  {
+    "path": "inference_assets/isaac/flipped_stacking/predicates/b_sc1p1_1_model.pth",
+    "bytes": 956305,
+    "sha256": "689ca4982106b3bdcdbed9efe053426e52443e223e2f58680469d6eadb40bd8d"
+  },
+  {
+    "path": "inference_assets/isaac/flipped_stacking/predicates/b_sc1p1_1_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "aa05eac720c40475534a912e852547f698940719165f04adf935413c05ee3b43"
+  },
+  {
+    "path": "inference_assets/isaac/flipped_stacking/predicates/invented_predicates_operators_sc1.json",
+    "bytes": 3933,
+    "sha256": "32dfe527efe38b3168f6fc195a76da122888e4ec9b4c4508c420379edcd69fb9"
+  },
+  {
+    "path": "inference_assets/isaac/flipped_stacking/predicates/u_sc1p1_0_ae_vector.pth",
+    "bytes": 1661,
+    "sha256": "bdccdd900fba5ded35a2ac3b0cef1fb7732bbeefac728189ce3d445426af5a76"
+  },
+  {
+    "path": "inference_assets/isaac/flipped_stacking/predicates/u_sc1p1_0_learned_ae_vector.pth",
+    "bytes": 1781,
+    "sha256": "7afda5b04777ce17b8893e0d766071dffdb759352cb34afc96475a58021b204b"
+  },
+  {
+    "path": "inference_assets/isaac/flipped_stacking/predicates/u_sc1p1_0_model.pth",
+    "bytes": 549146,
+    "sha256": "7a35917d58f680c9c74b51a3e82355fa07c17cb6369993c52f800756372a2cd3"
+  },
+  {
+    "path": "inference_assets/isaac/flipped_stacking/predicates/u_sc1p1_0_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "d1b7751fb41c8625b29773c5de27f65d4c6b005863e9b1845480627b5c715431"
+  },
+  {
+    "path": "inference_assets/isaac/flipped_stacking/predicates/u_sc1p1_1_ae_vector.pth",
+    "bytes": 1661,
+    "sha256": "451c2287cd135470bff089998b567d474a648644c6d6667938cb3bf936517ab1"
+  },
+  {
+    "path": "inference_assets/isaac/flipped_stacking/predicates/u_sc1p1_1_learned_ae_vector.pth",
+    "bytes": 1781,
+    "sha256": "175df13446150039b23e3386a34029b47491c4a1ff442c5cea3838006f7c8227"
+  },
+  {
+    "path": "inference_assets/isaac/flipped_stacking/predicates/u_sc1p1_1_model.pth",
+    "bytes": 549146,
+    "sha256": "7e7c836bda7b0c5f53681499ba5f768d9eb4e2dd00eb47e50ce03c604c095765"
+  },
+  {
+    "path": "inference_assets/isaac/flipped_stacking/predicates/u_sc1p1_1_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "dc4cbe0101dc2e0fd2ee9ba1f9bafc7bc39fe57cec56df6f9167364920e54d29"
+  }
+]

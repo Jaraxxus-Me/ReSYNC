@@ -214,3 +214,8 @@ ablation_assets/
 !/release/asset_contents/cluttered_drawer.json
 !/release/asset_contents/icy_transport.json
 !/release/asset_contents/cluttered_room.json
+
+# Optional Isaac demo runtime and release metadata
+/.venv-isaac/
+!/release/isaac/
+!/release/isaac/**

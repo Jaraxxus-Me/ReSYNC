@@ -1,0 +1,57 @@
+[
+  {
+    "path": "inference_assets/isaac/corner_stacking/Resets/block__box/resets_ObjectAnywhereEEAnywhere.pt",
+    "bytes": 35136939,
+    "sha256": "46506174107c62eecad258cbfe439e8efe0a339641fde9469032ddd51bc8a8de"
+  },
+  {
+    "path": "inference_assets/isaac/corner_stacking/policy.pt",
+    "bytes": 6770869,
+    "sha256": "22c29dc594bc3c36ef930990b3390abecc2a9f19f67d3799328fa1f30eb00555"
+  },
+  {
+    "path": "inference_assets/isaac/corner_stacking/predicates/b_sc1p2_0_ae_vector.pth",
+    "bytes": 1661,
+    "sha256": "f3bb4f3fd7c64e3d661c3f1e2d9a324fab3eb8fecb85635eab6e27d61bc072fe"
+  },
+  {
+    "path": "inference_assets/isaac/corner_stacking/predicates/b_sc1p2_0_learned_ae_vector.pth",
+    "bytes": 1781,
+    "sha256": "97e9121213f21a79e68208d3d9b513ed780353f4388923c061f66fd61906ec1c"
+  },
+  {
+    "path": "inference_assets/isaac/corner_stacking/predicates/b_sc1p2_0_model.pth",
+    "bytes": 956305,
+    "sha256": "d5a76f072efbfac396c068c84f8b009d15631de8c463f4376005e21ca393fff0"
+  },
+  {
+    "path": "inference_assets/isaac/corner_stacking/predicates/b_sc1p2_0_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "46793dd41d0904c27450a2ae9152ac3cb6179d25daffd9535b781cab661a14a3"
+  },
+  {
+    "path": "inference_assets/isaac/corner_stacking/predicates/b_sc1p2_1_ae_vector.pth",
+    "bytes": 1661,
+    "sha256": "277439446bbf8364a60e5bd13d4329ffce8c4d006b233c9df1a36c4cd732f205"
+  },
+  {
+    "path": "inference_assets/isaac/corner_stacking/predicates/b_sc1p2_1_learned_ae_vector.pth",
+    "bytes": 1781,
+    "sha256": "a6403176285aa9ecdae46b51d47c814ee556625d37d3bf7fb0d6463857fbbd33"
+  },
+  {
+    "path": "inference_assets/isaac/corner_stacking/predicates/b_sc1p2_1_model.pth",
+    "bytes": 956305,
+    "sha256": "e8fac2d4464864da518d53cc6c540885b3dfc100b6c8f0cd069c8910eb15eaec"
+  },
+  {
+    "path": "inference_assets/isaac/corner_stacking/predicates/b_sc1p2_1_var_bind_idx.pth",
+    "bytes": 1746,
+    "sha256": "311ee3dc50dc1133479080592e3bf4f6b67c1149a7ccd52c5aa4bafdec538d14"
+  },
+  {
+    "path": "inference_assets/isaac/corner_stacking/predicates/invented_predicates_operators_sc1.json",
+    "bytes": 2695,
+    "sha256": "3eec5fc1894ab5a0ca0f95449a8616b6aa8f7cf3f95dae2560cd84e0f096d077"
+  }
+]

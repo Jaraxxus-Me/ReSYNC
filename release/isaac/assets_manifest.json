@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "archives": [
+    {
+      "domain": "isaac_runtime",
+      "filename": "resync_isaac_runtime.zip",
+      "sha256": "19adbac97876b5526eae939ef743ec6b660ab97f4ba5d624f6c4925792aa494f",
+      "bytes": 90666436,
+      "file_count": 3028,
+      "contents_manifest": "release/isaac/isaac_runtime_contents.json",
+      "parts": [
+        {
+          "filename": "resync_isaac_runtime.zip.part001",
+          "bytes": 90666436,
+          "sha256": "19adbac97876b5526eae939ef743ec6b660ab97f4ba5d624f6c4925792aa494f",
+          "drive_file_id": "1RHCAEL2bv2DiaFFSDfaUEqrZRgZOShf2",
+          "drive_url": "https://drive.google.com/file/d/1RHCAEL2bv2DiaFFSDfaUEqrZRgZOShf2/view?usp=drivesdk"
+        }
+      ]
+    },
+    {
+      "domain": "isaac_flipped_stacking",
+      "filename": "resync_isaac_flipped_stacking.zip",
+      "sha256": "8aa084b6d1ca198fd0a727261f26894321e3c605887f592390187ea8856425fd",
+      "bytes": 8787851,
+      "file_count": 18,
+      "contents_manifest": "release/isaac/isaac_flipped_stacking_contents.json",
+      "parts": [
+        {
+          "filename": "resync_isaac_flipped_stacking.zip.part001",
+          "bytes": 8787851,
+          "sha256": "8aa084b6d1ca198fd0a727261f26894321e3c605887f592390187ea8856425fd",
+          "drive_file_id": "1rgvCgBkjICWCZYYN0WyHCY7ALBNmkZeM",
+          "drive_url": "https://drive.google.com/file/d/1rgvCgBkjICWCZYYN0WyHCY7ALBNmkZeM/view?usp=drivesdk"
+        }
+      ]
+    },
+    {
+      "domain": "isaac_corner_stacking",
+      "filename": "resync_isaac_corner_stacking.zip",
+      "sha256": "866907c8b5d54116a85302a16b926432eb80735c7c262de26ba5ace08260b614",
+      "bytes": 13342579,
+      "file_count": 11,
+      "contents_manifest": "release/isaac/isaac_corner_stacking_contents.json",
+      "parts": [
+        {
+          "filename": "resync_isaac_corner_stacking.zip.part001",
+          "bytes": 13342579,
+          "sha256": "866907c8b5d54116a85302a16b926432eb80735c7c262de26ba5ace08260b614",
+          "drive_file_id": "1HEX1QQ82gx5AnxG8eqTU_AVfMLxMxyXI",
+          "drive_url": "https://drive.google.com/file/d/1HEX1QQ82gx5AnxG8eqTU_AVfMLxMxyXI/view?usp=drivesdk"
+        }
+      ]
+    }
+  ]
+}

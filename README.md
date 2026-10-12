@@ -208,6 +208,50 @@ Observed success rates over 50 episodes per scenario. Icy Transport uses PyTorch
 | Cluttered Room | 1 | `1_g` | 52% |
 | Cluttered Room | 1 | `1_b` | 48% |
 
+## IsaacLab Env Demos
+
+The optional IsaacLab demos run pretrained skills with learned predicates and symbolic operators. They use a separate environment and asset bundle; the four-domain reproduction commands and dependency locks above are unchanged. These are qualitative inference/video demonstrations, not additions to the reported success-rate table.
+
+Use Linux, an NVIDIA GPU with working Vulkan drivers, and Python 3.11. Download the additional assets from the same [release folder](https://drive.google.com/drive/folders/1w1gB9M4SrqF-3-vQY6t6R-TdOFs4ycID), then install the isolated runtime:
+
+```bash
+# Use the existing reproduction environment for the downloader.
+.venv/bin/python scripts/download_isaac_assets.py
+bash scripts/install_isaac_demo.sh
+# After reviewing and accepting NVIDIA's Omniverse license:
+export OMNI_KIT_ACCEPT_EULA=YES
+```
+
+The installer creates `.venv-isaac` with Isaac Sim 5.1.0, the bundled IsaacLab/UWLab source revisions, PyTorch 2.7.0+cu128, and Gymnasium 1.1.1. It installs without dependency resolution because the upstream packages declare conflicting Gymnasium requirements. It does not modify `.venv` or `.venv-icy`. NVIDIA's Omniverse license must be accepted on first launch; for headless execution after reviewing the license, set `OMNI_KIT_ACCEPT_EULA=YES`.
+
+**Flipped Stacking:** four blocks by default, ordered `top → mid1 → mid2 → bottom`. Exactly two start inverted. Omit `--flipped` to sample a pair, or select any two distinct roles:
+
+```bash
+.venv-isaac/bin/python scripts/infer_isaac.py \
+  --env flipped_stacking --headless --record-video \
+  --output results/isaac_demos/flipped
+
+.venv-isaac/bin/python scripts/infer_isaac.py \
+  --env flipped_stacking --flipped top bottom --headless --record-video \
+  --output results/isaac_demos/flipped_top_bottom
+```
+
+`--num-blocks 2` and `--num-blocks 3` are also supported. The learned plan uses `MoveToFlip`, the pretrained `Flip` policy, and scripted `Pick`/`Place` skills. As in the source demonstration, the runner applies explicit symbolic composition repairs, orders tower construction bottom-up, and advances on skill termination rather than checking learned symbolic effects.
+
+**Cornered Stacking:** `block0` is the block associated with the corner/box recovery, and `block1` is the outside block. `1_g` stacks `block0` on `block1` (recovery on the grasped block); `1_b` stacks `block1` on `block0` (recovery on the support block):
+
+```bash
+for scenario in 1_g 1_b; do
+  .venv-isaac/bin/python scripts/infer_isaac.py \
+    --env corner_stacking --case "$scenario" --headless --record-video \
+    --output "results/isaac_demos/corner_${scenario}"
+done
+```
+
+The corner demo uses the saved neural predicates/operators and native RL recovery policy. It preserves the source hybrid execution: if the learned plan omits recovery, the runner explicitly prefixes it and records that intervention.
+
+Both commands write an MP4 with the skill sequence, an `episodes.json` execution log, and a `provenance.json` containing runtime versions and model/source hashes. Use `--episodes`, `--seed`, and `--max-steps` to control a run; omit `--headless` for an interactive window. Failed episodes can occur. Logs distinguish skill completion from the physical stacking goal. Asset checksums and source revisions are in `release/isaac/`; verify downloaded assets with `python scripts/download_isaac_assets.py --verify-only`.
+
 ## Citation
 
 ```bibtex
@@ -225,4 +269,4 @@ The source retains its upstream [MIT license](LICENSE) and dependency licenses.
 
 - [x] Installation and inference checks.
 - [ ] Test predicate learning in BlockedStacking stage 1.
-- [ ] Incorporate the IsaacLab FlippedStacking environment: inference with learned predicates and skills.
+- [x] IsaacLab Flipped Stacking and Cornered Stacking demos with learned predicates, pretrained skills, and video recording.

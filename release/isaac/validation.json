@@ -1,0 +1,92 @@
+{
+  "validated_at": "2026-10-11T16:17:33.028803+00:00",
+  "baseline_commit": "261f24870a9fec9df583f497af8b0b400e621a3a",
+  "existing_protected_files_byte_identical": 113,
+  "cpu_contract_tests": "6 passed",
+  "gpu_reset_tests": {
+    "explicit_pairs": [
+      [
+        "top",
+        "mid1"
+      ],
+      [
+        "top",
+        "mid2"
+      ],
+      [
+        "top",
+        "bottom"
+      ],
+      [
+        "mid1",
+        "mid2"
+      ],
+      [
+        "mid1",
+        "bottom"
+      ],
+      [
+        "mid2",
+        "bottom"
+      ]
+    ],
+    "random_pair_resets": 3,
+    "scope": "Reset selection/orientation checks, not full rollouts for every pair."
+  },
+  "type_check": "mypy src/resync_isaac --follow-imports skip --ignore-missing-imports: passed",
+  "format_check": "black --check: passed",
+  "public_drive_download": "All three archives and every extracted file verified in an empty destination using gdown without cookies.",
+  "reproduction_asset_verification": [
+    "PASS: simulation_assets, 1011 files verified",
+    "PASS: simulation_assets, 1 files verified",
+    "PASS: blocked_stacking, 672 files verified",
+    "PASS: cluttered_drawer, 362 files verified",
+    "PASS: icy_transport, 361 files verified",
+    "PASS: cluttered_room, 122 files verified"
+  ],
+  "successful_demo_videos": [
+    {
+      "demo": "flipped",
+      "video": "results/isaac_demos/flipped/flipped_000.mp4",
+      "video_sha256": "48106c62af66436d5d66a78dd0cc90500865cca4e7ab894ef348ad38ad80407b",
+      "frames": 852,
+      "fps": 10.0,
+      "steps": 839,
+      "goal_satisfied": true,
+      "manually_prefixed_recovery": false,
+      "initially_upright_blocks": {
+        "top": false,
+        "mid1": false,
+        "mid2": true,
+        "bottom": true
+      }
+    },
+    {
+      "demo": "corner_1_g",
+      "video": "results/isaac_demos/corner_1_g/corner_1_g_000.mp4",
+      "video_sha256": "9bf806280e5165d494104ef70701f720592b82a4eb99ef17ef2fc51ea1f029e0",
+      "frames": 359,
+      "fps": 10.0,
+      "steps": 346,
+      "goal_satisfied": true,
+      "manually_prefixed_recovery": false,
+      "initially_upright_blocks": null
+    },
+    {
+      "demo": "corner_1_b",
+      "video": "results/isaac_demos/corner_1_b/corner_1_b_000.mp4",
+      "video_sha256": "0cd796d712974e41e0cf3962f05dd1ef7776f14a9e5c189534e5e5023c4aace3",
+      "frames": 430,
+      "fps": 10.0,
+      "steps": 417,
+      "goal_satisfied": true,
+      "manually_prefixed_recovery": false,
+      "initially_upright_blocks": null
+    }
+  ],
+  "notes": [
+    "Qualitative demonstrations; no benchmark success-rate claims.",
+    "Flipped execution retains explicit source-demo symbolic composition repairs and termination-only execution.",
+    "Corner runner records a manual recovery prefix when needed; neither recorded corner episode needed it."
+  ]
+}
