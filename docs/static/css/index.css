@@ -49,7 +49,7 @@ code { padding: .13em .36em; color: #075c4c; background: var(--green-soft); bord
 .publication-authors a { color: var(--ink); border-bottom: 1px solid #a4b3ae; }
 .publication-authors a:hover { color: var(--green); border-color: var(--green); }
 .publication-affiliations { display: flex; flex-wrap: wrap; justify-content: center; gap: .25rem 1rem; margin-top: .75rem; color: var(--muted); font-size: .87rem; }
-.publication-links { display: flex; justify-content: center; gap: .65rem; margin-top: 1.7rem; }
+.publication-links { display: flex; flex-wrap: wrap; justify-content: center; gap: .65rem; margin-top: 1.7rem; }
 .paper-button, .outline-button { display: inline-flex; align-items: center; gap: .55rem; padding: .7rem 1.2rem; border: 1px solid var(--ink); border-radius: 999px; font-family: "Google Sans", sans-serif; font-weight: 700; transition: transform .2s ease, box-shadow .2s ease, background .2s ease; }
 .paper-button { color: white; background: var(--ink); }
 .outline-button { color: var(--ink); background: transparent; }
