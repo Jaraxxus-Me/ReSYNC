@@ -129,7 +129,8 @@ def _extract_ground_truth_values(
             predicates=perceiver.predicates_container.as_set(),
             objects=objects,
         )
-    except Exception as e:
+    # A failed planner setup should not abort the remaining evaluations.
+    except Exception as e:  # pylint: disable=broad-exception-caught
         logging.warning(f"Failed to create task planning components: {e}")
         return
 

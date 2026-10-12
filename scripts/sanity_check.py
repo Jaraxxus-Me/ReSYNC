@@ -13,6 +13,7 @@ import os
 import time
 from collections import Counter
 from pathlib import Path
+from typing import Any, cast
 
 
 def main() -> None:
@@ -38,6 +39,7 @@ def main() -> None:
 
     import torch
     import yaml
+    from mani_skill.envs.sapien_env import BaseEnv
 
     from skill_refactor import register_all_environments
     from skill_refactor.approaches.lifelong_ref import LifelongRefApproach
@@ -51,6 +53,7 @@ def main() -> None:
         )
     torch.set_num_threads(4)
     drawer = args.env == "cluttered_drawer"
+    system_cls: type[ClutteredDrawerRLTAMPSystem] | type[BlockedStackingRLTAMPSystem]
     if drawer:
         from skill_refactor.benchmarks.cluttered_drawer.cluttered_drawer import (
             ClutteredDrawerRLTAMPSystem,
@@ -78,7 +81,9 @@ def main() -> None:
         else {"blocked_stacking_legacy_skill_timing": True}
     )
     config_path = f"config/inference/{args.env}_stage1.yaml"
-    stage = yaml.safe_load(Path(config_path).read_text())["scenarios"][1]
+    stage = yaml.safe_load(Path(config_path).read_text(encoding="utf-8"))["scenarios"][
+        1
+    ]
     settings = stage["planner_learning_cfg_settings"]
     predicate_dir = settings["pred_net_save_dir"]
     policy_path = settings["pre_trained_policy_path"]
@@ -162,16 +167,16 @@ def main() -> None:
             }
         )
         system = system_cls.create_default(render_mode="rgb_array", seed=42)
-        env = system.env
-        episodes = []
-        counts = Counter()
+        env = cast(BaseEnv, system.env)
+        episodes: list[dict[str, Any]] = []
+        counts: Counter[str] = Counter()
         try:
             for episode in range(args.episodes):
                 obs, info = env.reset(seed=10 * episode, options={})
                 success = False
                 steps = 0
                 error = None
-                sequence = []
+                sequence: list[str] = []
                 try:
                     result = approach.reset(obs, info)
                     reward = torch.zeros(
@@ -219,7 +224,7 @@ def main() -> None:
                 output.write_text(json.dumps(report, indent=2) + "\n")
         finally:
             env.close()
-    base.env.close()
+    base.env.close()  # type: ignore[no-untyped-call]
     for name, result in report["configurations"].items():
         print(
             f"{name}: {result['successes']}/{result['episodes']} ({result['success_rate']:.1%})"

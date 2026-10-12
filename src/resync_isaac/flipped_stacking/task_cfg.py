@@ -179,7 +179,7 @@ def _sample_uniform(
 
 def reset_flipped_stacking(
     env: Any,
-    env_ids: torch.Tensor,
+    env_ids: torch.Tensor | None,
     flipped_cube: str,
     num_of_blocks: int,
     home_joints: tuple[float, ...],
@@ -410,6 +410,8 @@ def top_supported_only_by_bottom(
 
 @configclass
 class FlippedStackingEventCfg:
+    """Reset events for the flipped stacking task."""
+
     reset_everything: EventTerm = EventTerm(
         func=reset_scene_to_default, mode="reset", params={}
     )
@@ -507,6 +509,8 @@ class StackedUprightSuccess(ManagerTermBase):
 
 @configclass
 class FlippedStackingRewardsCfg:
+    """Reward terms for upright stacking success."""
+
     progress_context: RewTerm = RewTerm(
         func=StackedUprightSuccess,
         weight=1.0,
@@ -523,11 +527,13 @@ class FlippedStackingRewardsCfg:
 
 @configclass
 class EmptyCommandsCfg:
-    pass
+    """No command generator is needed for this task."""
 
 
 @configclass
 class FlippedStackingCfg(Ur5eRobotiq2f140RelCartesianOSCEvalCfg):
+    """Scene, observations, and task terms for flipped stacking."""
+
     scene: FlippedStackingSceneCfg = FlippedStackingSceneCfg(
         num_envs=1, env_spacing=1.5
     )

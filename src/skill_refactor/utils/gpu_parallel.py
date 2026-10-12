@@ -106,7 +106,8 @@ class GPUParallelTrainer:
                 for policy_key, async_result in async_results:
                     try:
                         results[policy_key] = async_result.get()
-                    except Exception as e:
+                    # Worker exceptions must be recorded while collecting the other results.
+                    except Exception as e:  # pylint: disable=broad-exception-caught
                         logging.info(f"Error training policy {policy_key}: {e}")
                         results[policy_key] = None
 
@@ -151,6 +152,7 @@ def _train_policy_process(
             f"Process for {policy_key} completed training but no model was saved"
         )
         return {"success": result}
-    except Exception as e:
+    # Worker exceptions must be recorded while collecting the other results.
+    except Exception as e:  # pylint: disable=broad-exception-caught
         logging.info(f"Error in training process for {policy_key}: {e}")
         raise

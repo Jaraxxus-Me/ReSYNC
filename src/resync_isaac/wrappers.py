@@ -1,6 +1,7 @@
 """Isaac policy observation projection (loaded only in the demo runtime)."""
 
 from typing import Any, Callable
+
 import torch
 
 PolicyObsAdapter = Callable[[torch.Tensor], torch.Tensor]
@@ -38,7 +39,7 @@ def _build_skill_vec_env_wrapper_cls() -> Any:
     import until the factory is invoked keeps ``wrappers.py`` usable in
     non-Isaac contexts.
     """
-    global _SKILL_VEC_ENV_WRAPPER_CLS
+    global _SKILL_VEC_ENV_WRAPPER_CLS  # pylint: disable=global-statement
     if _SKILL_VEC_ENV_WRAPPER_CLS is not None:
         return _SKILL_VEC_ENV_WRAPPER_CLS
 

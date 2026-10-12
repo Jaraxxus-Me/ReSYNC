@@ -50,11 +50,6 @@ from relational_structs import (
 )
 from torch import Tensor
 
-from skill_refactor.benchmarks.base import (
-    BaseRLTAMPSystem,
-    GraphData,
-    TensorPlanningComponents,
-)
 from resync_isaac.corner_stacking.corner_stacking_env import (
     ACTION_SCALE,
     ScriptedBringToGoal,
@@ -72,6 +67,11 @@ from resync_isaac.corner_stacking.utils import (
     get_receptive_object_pose_in_base,
     object_pitch_180_target_quat,
     top_down_wrist_target_quat,
+)
+from skill_refactor.benchmarks.base import (
+    BaseRLTAMPSystem,
+    GraphData,
+    TensorPlanningComponents,
 )
 from skill_refactor.settings import CFG
 from skill_refactor.utils.structs import (
@@ -445,7 +445,7 @@ class BaseCornerStackingSkill(LiftedOperatorSkill):
 
     def _phase_step_limit_reached(self) -> bool:
         max_phase_steps = int(getattr(CFG, "c_stack_scripted_max_phase_steps", 0))
-        return max_phase_steps > 0 and self._phase_step_idx + 1 >= max_phase_steps
+        return 0 < max_phase_steps <= self._phase_step_idx + 1
 
     def _update_phase_step_counter(self, prev_phase: int) -> None:
         if self._phase != prev_phase:
@@ -459,7 +459,7 @@ class BaseCornerStackingSkill(LiftedOperatorSkill):
         return self._last_done.clone().detach()
 
 
-class _ScriptedReachSkill(BaseCornerStackingSkill):
+class _ScriptedReachSkill(BaseCornerStackingSkill, abc.ABC):
     """Back-compat alias used by tests/visualisers.
 
     Exposes the same ``_controller``/``goal_pos``/``goal_quat`` attributes as

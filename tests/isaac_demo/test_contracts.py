@@ -39,8 +39,8 @@ def test_default_four_blocks_and_pair_validation():
 
 
 def test_legacy_pose_architecture_is_unchanged():
-    from skill_refactor.approaches.pred_learner.neural_models import setup_predicate_net
     from resync_isaac.neural_models import setup_predicate_net as demo_setup
+    from skill_refactor.approaches.pred_learner.neural_models import setup_predicate_net
 
     spec = {
         "type": "PoseMLP",

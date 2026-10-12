@@ -285,13 +285,13 @@ def make_corner_stacking_env(
 
     # Default task is the custom cube-reset task; upstream UWLab id is
     # retained as an opt-in fallback via ``task_id=CUBE_TASK_ID``.
-    from resync_isaac.corner_stacking.task_cfg import (
-        CORNER_STACKING_CUSTOM_TASK_ID,
-        CornerStackingCustomCfg,
-    )
     from resync_isaac.corner_stacking.cornered_stacking_task_cfg import (
         CORNERED_STACKING_TASK_ID,
         CorneredStackingCfg,
+    )
+    from resync_isaac.corner_stacking.task_cfg import (
+        CORNER_STACKING_CUSTOM_TASK_ID,
+        CornerStackingCustomCfg,
     )
 
     if task_id is None:

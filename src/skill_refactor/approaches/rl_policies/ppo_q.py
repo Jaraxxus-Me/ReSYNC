@@ -33,10 +33,7 @@ from torch.utils.tensorboard import SummaryWriter  # type: ignore
 
 from skill_refactor.approaches.rl_policies.base import Logger, Policy
 from skill_refactor.approaches.rl_policies.ppo import Agent as PPOAgent
-from skill_refactor.approaches.rl_policies.ppo import (
-    PPOArgs,
-    layer_init,
-)
+from skill_refactor.approaches.rl_policies.ppo import PPOArgs, layer_init
 from skill_refactor.settings import CFG
 from skill_refactor.utils.controllers import get_frozen_action
 

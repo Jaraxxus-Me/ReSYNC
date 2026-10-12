@@ -11,12 +11,12 @@ import torch
 import yaml
 from relational_structs import LiftedAtom, Variable
 
+from resync_isaac.neural_models import setup_predicate_net
 from skill_refactor.approaches.pred_learner.neural_models import (
     create_neural_predicate_interpreter,
     create_quantified_predicate,
 )
-from skill_refactor.utils.structs import Predicate, LiftedOperator
-from resync_isaac.neural_models import setup_predicate_net
+from skill_refactor.utils.structs import LiftedOperator, Predicate
 
 
 def load_domain(system, directory: Path, config: Path):
@@ -77,11 +77,19 @@ def load_domain(system, directory: Path, config: Path):
                 for pddl, bindings in op[key].items()
                 for binding in bindings
             }
-        operators.add(LiftedOperator(op["name"], variables, **atoms))
+        operators.add(
+            LiftedOperator(
+                op["name"],
+                variables,
+                preconditions=atoms["preconditions"],
+                add_effects=atoms["add_effects"],
+                delete_effects=atoms["delete_effects"],
+            )
+        )
     return operators
 
 
-def repair_flipped_composition(operators):
+def repair_flipped_composition(operators: set[LiftedOperator]) -> set[LiftedOperator]:
     """Preserve the source demo's explicit repairs for multi-block composition."""
     clear_name = "ForAll_robot_0_Not_b_sc1p1_0"
     all_up = "ForAll_block_0_u_sc1p1_0"

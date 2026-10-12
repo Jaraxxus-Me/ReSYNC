@@ -45,6 +45,7 @@ from isaaclab.utils.math import (
     subtract_frame_transforms,
     wrap_to_pi,
 )
+from uwlab_assets import custom_cloud_path
 from uwlab_tasks.manager_based.manipulation.omnireset.config.ur5e_robotiq_2f140.rl_state_cfg import (
     ObservationsCfg as BlockBoxObservationsCfg,
 )
@@ -61,8 +62,8 @@ from uwlab_tasks.manager_based.manipulation.omnireset.mdp import (
     reset_root_states_uniform,
     target_asset_pose_in_root_asset_frame,
 )
-from uwlab_assets import custom_cloud_path
 
+from resync_isaac.paths import ASSET_ROOT
 from skill_refactor.settings import CFG
 
 # ---------------------------------------------------------------------------
@@ -70,8 +71,6 @@ from skill_refactor.settings import CFG
 # ---------------------------------------------------------------------------
 
 CORNERED_STACKING_TASK_ID = "CornerStacking-Ur5eRobotiq2f140-CorneredStacking-v0"
-
-from resync_isaac.paths import ASSET_ROOT
 
 _BLOCK_USD = str(
     ASSET_ROOT / "simulation/objects/objects/single_ur_scene/block/block.usd"
@@ -438,6 +437,8 @@ class CorneredStackingObservationsCfg(BlockBoxObservationsCfg):
 
     @configclass
     class PolicyCfg(BlockBoxObservationsCfg.PolicyCfg):
+        """Extend the policy observations with the outside block pose."""
+
         outside_block_pose = ObsTerm(
             func=target_asset_pose_in_root_asset_frame,
             params={

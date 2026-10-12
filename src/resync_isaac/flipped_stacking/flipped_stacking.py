@@ -15,7 +15,7 @@ from __future__ import annotations
 
 import abc
 import copy
-from typing import Any, Callable, Dict, List, Optional, Sequence
+from typing import Any, Callable, Dict, List, Optional, Sequence, cast
 
 import gymnasium as gym
 import torch
@@ -38,11 +38,6 @@ from relational_structs import (
 from tensordict import TensorDict
 from torch import Tensor
 
-from skill_refactor.benchmarks.base import (
-    BaseRLTAMPSystem,
-    GraphData,
-    TensorPlanningComponents,
-)
 from resync_isaac.corner_stacking.corner_stacking import (
     GRIPPER_CLOSE,
     GRIPPER_OPEN,
@@ -70,6 +65,11 @@ from resync_isaac.flipped_stacking.utils import (
     get_cube_pose_in_base,
     get_finger_joint_pos,
     top_down_wrist_goal,
+)
+from skill_refactor.benchmarks.base import (
+    BaseRLTAMPSystem,
+    GraphData,
+    TensorPlanningComponents,
 )
 from skill_refactor.settings import CFG
 from skill_refactor.utils.structs import (
@@ -236,7 +236,7 @@ class FlippedStackingPerceiver(Perceiver):
             for pred, fn in self.predicate_interpreters.items():
                 if pred.name not in desired_predicates:
                     continue
-                combos = list(
+                combos: List[Sequence[Object]] = list(
                     get_object_combinations(
                         self._objects.as_set(),
                         pred.types,
@@ -377,13 +377,12 @@ class BaseFlippedStackingSkill(LiftedOperatorSkill):
         return self._last_done.clone().detach()
 
 
-class _ScriptedReachSkill(BaseFlippedStackingSkill):
+class _ScriptedReachSkill(BaseFlippedStackingSkill, abc.ABC):
     """Scripted skill marker matching corner stacking's public structure."""
 
 
 class MoveToFlipSkill(_ScriptedReachSkill):
-    def __init__(self, env, operators, layout) -> None:
-        super().__init__(env, operators, layout)
+    """Move the gripper above the block before invoking its flip policy."""
 
     def get_operator_name(self) -> str:
         return "MoveToFlip"
@@ -413,6 +412,8 @@ class MoveToFlipSkill(_ScriptedReachSkill):
 
 
 class FlipSkill(BaseFlippedStackingSkill):
+    """Recover an overturned block with the pretrained policy and retreat."""
+
     RL, OPEN, RETREAT, DONE = range(4)
 
     def __init__(self, env, operators, layout) -> None:
@@ -793,6 +794,12 @@ class PlaceSkill(_ScriptedReachSkill):
 
 
 class FlippedStackingRLTAMPSystem(BaseRLTAMPSystem):
+    """Combine the flipped stacking simulator with symbolic planning skills."""
+
+    @property
+    def perceiver(self) -> FlippedStackingPerceiver:
+        return cast(FlippedStackingPerceiver, self.components.perceiver)
+
     def __init__(self, components, seed=None, render_mode=None, env_cfg=None) -> None:
         self.render_mode = render_mode
         self.env_cfg = env_cfg

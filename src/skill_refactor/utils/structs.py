@@ -30,20 +30,11 @@ from relational_structs.pddl import (
     GroundAtom,
 )
 from relational_structs.pddl import GroundOperator as BaseGroundOperator
-from relational_structs.pddl import (
-    LiftedAtom,
-)
+from relational_structs.pddl import LiftedAtom
 from relational_structs.pddl import LiftedOperator as BaseLiftedOperator
-from relational_structs.pddl import (
-    Object,
-)
+from relational_structs.pddl import Object
 from relational_structs.pddl import Predicate as BasePredicate
-from relational_structs.pddl import (
-    Type,
-    TypedEntity,
-    Variable,
-    consistent_hash,
-)
+from relational_structs.pddl import Type, TypedEntity, Variable, consistent_hash
 from torch import Tensor
 
 # Planning Structs

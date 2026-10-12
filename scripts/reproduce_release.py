@@ -10,12 +10,15 @@ import subprocess
 import time
 from collections import Counter
 from pathlib import Path
+from typing import Any
 
 
-def main():
+def main() -> None:
     root = Path(__file__).resolve().parents[1]
     os.chdir(root)
-    specs = json.loads(Path("config/inference/experiments.json").read_text())
+    specs = json.loads(
+        Path("config/inference/experiments.json").read_text(encoding="utf-8")
+    )
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--experiment", required=True, choices=specs)
     parser.add_argument("--episodes", type=int, default=50)
@@ -59,6 +62,7 @@ def main():
     )
     import torch
     import yaml
+
     from skill_refactor import PACKAGE_ASSET_DIR, register_all_environments
     from skill_refactor.approaches.lifelong_ref import LifelongRefApproach
     from skill_refactor.args import reset_config, update_config
@@ -78,6 +82,7 @@ def main():
     }
     module = importlib.import_module(f"skill_refactor.benchmarks.{env_name}.{env_name}")
     # Hash the source files used by this process before initialization.
+    assert module.__file__ is not None
     package_root = Path(module.__file__).resolve().parents[2]
     source_sha256 = {
         str(p.relative_to(package_root)): hashlib.sha256(p.read_bytes()).hexdigest()
@@ -86,7 +91,7 @@ def main():
     runner_sha256 = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
     system_cls = getattr(module, class_names[env_name] + "RLTAMPSystem")
     config_path = Path(f"config/inference/{env_name}_stage{stage}.yaml")
-    stages = yaml.safe_load(config_path.read_text())["scenarios"]
+    stages = yaml.safe_load(config_path.read_text(encoding="utf-8"))["scenarios"]
     if overrides.get("c_drawer_legacy_physics"):
         legacy_obstacle = Path(PACKAGE_ASSET_DIR) / "obstacle_legacy.urdf"
         if not legacy_obstacle.is_file():
@@ -193,11 +198,13 @@ def main():
             }
         )
         system = system_cls.create_default(render_mode="rgb_array", seed=42)
-        episodes, counts = [], Counter()
+        episodes: list[dict[str, Any]] = []
+        counts: Counter[str] = Counter()
         try:
             for episode in range(args.episodes):
                 obs, info = system.env.reset(seed=10 * episode, options={})
-                success, steps, error, sequence = False, 0, None, []
+                success, steps, error = False, 0, None
+                sequence: list[str] = []
                 try:
                     result = approach.reset(obs, info)
                     reward = torch.zeros(1, device=CFG.device)

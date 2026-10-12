@@ -2,10 +2,12 @@
 
 import json
 import time
+from argparse import Namespace
 
 import torch
 from isaaclab_rl.rsl_rl import RslRlVecEnvWrapper
 from isaaclab_tasks.utils.parse_cfg import load_cfg_from_registry
+
 from resync_isaac.corner_stacking.corner_stacking import CornerStackingRLTAMPSystem
 from resync_isaac.corner_stacking.corner_stacking_env import CUBE_TASK_ID
 from resync_isaac.corner_stacking.utils import load_block_box_rl_policy
@@ -15,7 +17,7 @@ from resync_isaac.video import PlanVideoRecorder
 from skill_refactor.utils.ttmp import TaskThenMotionPlanner
 
 
-def run(args):
+def run(args: Namespace) -> None:
     system = CornerStackingRLTAMPSystem.create_default(
         seed=args.seed, render_mode="rgb_array" if args.record_video else None
     )
@@ -108,7 +110,7 @@ def run(args):
                         f"[{args.case}] {op.name}{tuple(o.name for o in op.parameters)}",
                         flush=True,
                     )
-                    for step in range(budget):
+                    for _ in range(budget):
                         with torch.inference_mode():
                             action = skill.get_action(obs)
                             if action.shape[-1] != env.num_actions:

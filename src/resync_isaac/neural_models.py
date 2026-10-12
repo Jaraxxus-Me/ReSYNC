@@ -1,13 +1,17 @@
 """Checkpoint-compatible Isaac architectures; legacy PoseMLP is untouched."""
 
 from typing import Any, Callable
+
 import torch
 from torch import nn
+
 from skill_refactor.approaches.pred_learner.neural_models import (
     MLP,
+    quaternion_to_matrix,
+)
+from skill_refactor.approaches.pred_learner.neural_models import (
     setup_predicate_net as legacy_setup,
 )
-from skill_refactor.approaches.pred_learner.neural_models import quaternion_to_matrix
 
 
 class IsaacPoseMLP(nn.Module):
@@ -30,7 +34,7 @@ class IsaacPoseMLP(nn.Module):
         encoder: nn.Module,
         encoder_rot: nn.Module,
         decoder: nn.Module,
-        init_fn: Callable[[torch.Tensor], None],
+        init_fn: Callable[[torch.Tensor], torch.Tensor],
     ) -> None:
         super().__init__()
         self.encoder = encoder
@@ -39,7 +43,7 @@ class IsaacPoseMLP(nn.Module):
 
         self._apply_init(init_fn)
 
-    def _apply_init(self, init_fn: Callable[[torch.Tensor], None]) -> None:
+    def _apply_init(self, init_fn: Callable[[torch.Tensor], torch.Tensor]) -> None:
         """Apply custom initialization to model parameters."""
         for p in self.parameters():
             if p.dim() > 1:
@@ -96,7 +100,7 @@ class UpAxisMLP(nn.Module):
         self,
         encoder: nn.Module,
         decoder: nn.Module,
-        init_fn: Callable[[torch.Tensor], None],
+        init_fn: Callable[[torch.Tensor], torch.Tensor],
     ) -> None:
         super().__init__()
         self.encoder = encoder

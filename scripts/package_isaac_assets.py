@@ -4,19 +4,20 @@ import hashlib
 import json
 import zipfile
 from pathlib import Path
+from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def digest(path):
+def digest(path: Path) -> str:
     with path.open("rb") as f:
         return hashlib.file_digest(f, "sha256").hexdigest()
 
 
-def main():
+def main() -> None:
     cache = ROOT / ".release-cache/isaac"
     cache.mkdir(parents=True, exist_ok=True)
-    manifest = {"schema_version": 1, "archives": []}
+    manifest: dict[str, Any] = {"schema_version": 1, "archives": []}
     for domain, folders in [
         ("isaac_runtime", ["runtime", "simulation"]),
         ("isaac_flipped_stacking", ["flipped_stacking"]),

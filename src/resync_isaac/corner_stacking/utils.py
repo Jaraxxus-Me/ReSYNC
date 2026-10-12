@@ -12,9 +12,9 @@ Two families of helpers live here:
 
 from __future__ import annotations
 
-import importlib.metadata as metadata
 import inspect
 import os
+from importlib import metadata
 from typing import Any
 
 import torch
@@ -296,7 +296,7 @@ def compute_goal_from_insertive_object(
     during the approach).
     """
     obj_pos_b, _ = get_insertive_object_pose_in_base(env)
-    ee_pos_b, ee_quat_b = get_ee_pose_in_base(env)
+    _, ee_quat_b = get_ee_pose_in_base(env)
 
     goal_pos_b = obj_pos_b.clone()
     goal_pos_b[:, 2] += z_offset

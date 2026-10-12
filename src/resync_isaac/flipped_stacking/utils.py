@@ -21,11 +21,11 @@ from resync_isaac.corner_stacking.utils import (
     CornerStackingObsLayout,
     get_ee_pose_in_base,
     get_ee_pose_in_world,
-    goal_pose_base_to_world,
     get_robot_body_pose_in_base,
+    goal_pose_base_to_world,
     load_block_box_rl_policy,
-    top_down_wrist_target_quat,
     top_down_target_quat,
+    top_down_wrist_target_quat,
 )
 from resync_isaac.flipped_stacking.task_cfg import POLICY_OBS_DIM
 from skill_refactor.settings import CFG

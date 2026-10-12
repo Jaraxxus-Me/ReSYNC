@@ -1,11 +1,15 @@
 """Demo-only defaults, installed into CFG only by the demo process."""
 
 from typing import Any
+
 import numpy as np
+
 from resync_isaac.paths import ASSET_ROOT
 
 
 class IsaacDefaults:
+    """Configuration defaults for the optional Isaac simulation demos."""
+
     # ******* Corner Stacking (Isaac Sim) Settings ********
     c_stack_num_envs: int = 1
     c_stack_max_steps: int = 400
@@ -185,8 +189,8 @@ class IsaacDefaults:
 
 
 def configure(**overrides: Any) -> None:
-    from skill_refactor.settings import CFG
     from skill_refactor.args import reset_config
+    from skill_refactor.settings import CFG
 
     for name, value in vars(IsaacDefaults).items():
         if not name.startswith("_"):

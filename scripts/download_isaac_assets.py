@@ -10,12 +10,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def sha256(path):
+def sha256(path: Path) -> str:
     with path.open("rb") as stream:
         return hashlib.file_digest(stream, "sha256").hexdigest()
 
 
-def checked_path(root, name):
+def checked_path(root: Path, name: str) -> Path:
     relative = Path(name)
     if (
         relative.is_absolute()
@@ -29,7 +29,7 @@ def checked_path(root, name):
     return target
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--verify-only", action="store_true")
     parser.add_argument(

@@ -2,6 +2,7 @@
 
 import os
 from itertools import combinations
+from typing import cast
 
 
 def main() -> None:
@@ -10,6 +11,8 @@ def main() -> None:
     app = AppLauncher(headless=True, fast_shutdown=True).app
     system = None
     try:
+        from isaaclab.envs import ManagerBasedRLEnv
+
         from resync_isaac.settings import configure
 
         configure(
@@ -19,14 +22,16 @@ def main() -> None:
             fstack_num_envs=1,
             fstack_flipped_cube="random_pair",
         )
+        from resync_isaac.flipped_runner import _is_upright
         from resync_isaac.flipped_stacking.flipped_stacking import (
             FlippedStackingRLTAMPSystem,
         )
-        from resync_isaac.flipped_runner import _is_upright
 
         system = FlippedStackingRLTAMPSystem.create_default(seed=0)
         roles = ("top", "mid1", "mid2", "bottom")
-        event = system.env.unwrapped.event_manager.get_term_cfg("reset_task")
+        event = cast(
+            ManagerBasedRLEnv, system.env.unwrapped
+        ).event_manager.get_term_cfg("reset_task")
         for pair in combinations(roles, 2):
             event.params["flipped_cube"] = ",".join(pair)
             system.env.reset()
@@ -48,7 +53,7 @@ def main() -> None:
     else:
         print("PASS all six pairs and three random-pair resets", flush=True)
         if system is not None:
-            system.env.close()
+            system.env.close()  # type: ignore[no-untyped-call]
         app.close()
 
 

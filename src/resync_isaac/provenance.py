@@ -5,10 +5,11 @@ import importlib.metadata
 import json
 import platform
 import subprocess
+from argparse import Namespace
 from pathlib import Path
 
 
-def write_provenance(args):
+def write_provenance(args: Namespace) -> None:
     root = Path(__file__).resolve().parents[2]
     files = {}
     for path in sorted((args.asset_root / args.env).rglob("*")):

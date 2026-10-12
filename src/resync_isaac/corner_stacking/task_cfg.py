@@ -95,7 +95,8 @@ class CornerStackingEventCfg(TrainEvalEventCfg):
     )
 
     def __post_init__(self):
-        super().__post_init__() if hasattr(super(), "__post_init__") else None
+        if hasattr(super(), "__post_init__"):
+            super().__post_init__()
         pose_range = _cube_pose_range()
         self.reset_grasp_cube_pose.params["pose_range"] = pose_range
         self.reset_target_cube_pose.params["pose_range"] = pose_range

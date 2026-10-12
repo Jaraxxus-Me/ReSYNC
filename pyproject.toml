@@ -36,7 +36,6 @@ develop = [
     "isort",
     "mypy",
     "pylint>=2.14.5",
-    "pytest-pylint>=0.18.0",
     "pytest>=7.2.2",
 ]
 
@@ -54,7 +53,6 @@ exclude = "(third-party|\\.venv)"
 [tool.isort]
 py_version = 311
 profile = "black"
-multi_line_output = 2
 skip_glob = ["venv/*", ".venv/*", "third-party/*"]
 split_on_trailing_comma = true
 
@@ -79,6 +77,16 @@ module = [
     "transforms3d.*",
     "pyperplan.*",
     "huggingface_hub.*",
+    # These packages belong to the optional IsaacLab runtime, which is not
+    # installed on the CPU-only CI runners. Keep checking our integration code.
+    "isaaclab.*",
+    "isaaclab_rl.*",
+    "isaaclab_tasks.*",
+    "uwlab_tasks.*",
+    "uwlab_assets.*",
+    "rsl_rl.*",
+    "pxr.*",
+    "tensordict.*",
 ]
 ignore_missing_imports = true
 

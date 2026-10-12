@@ -35,7 +35,8 @@ def get_or_collect_rl_data(
             logging.info(f"Loaded {len(train_data)} training states.")
             return train_data
 
-        except Exception as e:
+        # A stale cache may fail deserialization in several ways; recollect it.
+        except Exception as e:  # pylint: disable=broad-exception-caught
             logging.info(f"Error loading training data: {e}")
             logging.info("Collecting new data instead...")
 
@@ -77,7 +78,8 @@ def get_or_collect_planner_data(
             logging.info(f"Loaded {len(train_data)} training trajectories")
             return train_data
 
-        except Exception as e:
+        # A stale cache may fail deserialization in several ways; recollect it.
+        except Exception as e:  # pylint: disable=broad-exception-caught
             logging.info(f"Error loading training data: {e}")
             logging.info("Collecting new data instead...")
 

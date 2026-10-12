@@ -47,7 +47,7 @@ jobs:
         uv pip install third-party/prpl-mono/prpl-utils
     - name: Lint
       run: |
-        uv run pytest . --pylint -m pylint --pylint-rcfile=.pylintrc
+        uv run pylint --rcfile=.pylintrc --recursive=y src scripts tests
   static-type-checking:
     runs-on: ubuntu-latest
     strategy:
@@ -112,4 +112,4 @@ jobs:
           uv pip install third-party/prpl-mono/prpl-utils
       - name: Pytest
         run: |
-          uv run pytest tests/blocked_stacking
+          uv run pytest tests/blocked_stacking tests/isaac_demo

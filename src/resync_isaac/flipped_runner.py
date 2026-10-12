@@ -1,28 +1,32 @@
 """Flipped demo executor, adapted from the source learned-predicate demo."""
 
 from __future__ import annotations
+
 import logging
 import time
-from pathlib import Path
-from typing import Any
 from itertools import permutations
+from pathlib import Path
+from typing import Any, cast
+
 import torch
+from isaaclab.envs import ManagerBasedRLEnv
 from isaaclab.utils.math import euler_xyz_from_quat, wrap_to_pi
+
+from resync_isaac.flipped_stacking.flipped_stacking import FlippedStackingRLTAMPSystem
+from resync_isaac.flipped_stacking.task_cfg import top_supported_only_by_bottom
+from resync_isaac.flipped_stacking.utils import get_cube_pose_in_base, get_task_success
+from resync_isaac.video import PlanVideoRecorder
 from skill_refactor.settings import CFG
 from skill_refactor.utils.ttmp import (
     TaskThenMotionPlanner,
     TaskThenMotionPlanningFailure,
 )
-from resync_isaac.flipped_stacking.flipped_stacking import FlippedStackingRLTAMPSystem
-from resync_isaac.flipped_stacking.utils import get_cube_pose_in_base, get_task_success
-from resync_isaac.flipped_stacking.task_cfg import top_supported_only_by_bottom
-from resync_isaac.video import PlanVideoRecorder
 
 BOTH_CUBES = "both"
 
 
 def get_frozen_action(
-    skill_action: torch.Tensor, *args: Any, **kwargs: Any
+    skill_action: torch.Tensor, *_args: Any, **_kwargs: Any
 ) -> torch.Tensor:
     action = torch.zeros_like(skill_action)
     action[:, -1] = skill_action[:, -1]
@@ -86,7 +90,9 @@ def _physical_diagnostics(system: FlippedStackingRLTAMPSystem) -> dict[str, Any]
         }
     contacts = {}
     for upper, lower in zip(names[:-1], names[1:]):
-        sensor = system.env.unwrapped.scene[f"{upper}_{lower}_contact"]
+        sensor = cast(ManagerBasedRLEnv, system.env.unwrapped).scene[
+            f"{upper}_{lower}_contact"
+        ]
         matrix = sensor.data.force_matrix_w
         contacts[f"{upper}_on_{lower}"] = (
             None

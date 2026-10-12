@@ -9,7 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 
 
-def parser():
+def parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument(
         "--env", choices=["flipped_stacking", "corner_stacking"], required=True
@@ -38,7 +38,7 @@ def parser():
     return p
 
 
-def main():
+def main() -> None:
     p = parser()
     args = p.parse_args()
     roles = {
@@ -125,16 +125,17 @@ def main():
         app.close()
 
 
-def run_flipped(args):
+def run_flipped(args: argparse.Namespace) -> None:
     from isaaclab_rl.rsl_rl import RslRlVecEnvWrapper
     from isaaclab_tasks.utils.parse_cfg import load_cfg_from_registry
+
+    from resync_isaac.corner_stacking.corner_stacking_env import CUBE_TASK_ID
+    from resync_isaac.domain import load_domain, repair_flipped_composition
+    from resync_isaac.flipped_runner import _evaluate_episode, _make_planner
     from resync_isaac.flipped_stacking.flipped_stacking import (
         FlippedStackingRLTAMPSystem,
     )
-    from resync_isaac.corner_stacking.corner_stacking_env import CUBE_TASK_ID
     from resync_isaac.flipped_stacking.utils import load_flip_rl_policy
-    from resync_isaac.domain import load_domain, repair_flipped_composition
-    from resync_isaac.flipped_runner import _make_planner, _evaluate_episode
 
     system = FlippedStackingRLTAMPSystem.create_default(
         seed=args.seed, render_mode="rgb_array" if args.record_video else None

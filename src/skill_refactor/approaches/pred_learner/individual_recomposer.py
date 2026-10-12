@@ -147,7 +147,7 @@ class IndividualPredicateRecomposer(TopDownPredicateLearner):
             segment_data: List[List[Segment]] = []
             for low_level_traj, ground_atoms in self._ground_atom_dataset:
                 traj_scenario = low_level_traj.train_scenario_idx
-                if int(scenario_str) != traj_scenario:  # type: ignore[comparison-overlap]
+                if scenario_str != traj_scenario:
                     # Skip trajectories from other scenarios
                     continue
                 segments = segment_trajectory(low_level_traj, ground_atoms)
