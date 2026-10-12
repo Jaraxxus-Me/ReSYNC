@@ -1,7 +1,7 @@
 {
   "description": "Two selected successful inference rollouts per domain: recovery-training setup and transfer/composition setup. Not training footage or an aggregate evaluation.",
   "scope": "Documentation media only. Experiment source, configurations, policies, predicates and reproduction entry points are unchanged.",
-  "recording": "The four benchmark pairs use release-runner inference semantics with rendering added. Room footage is re-recorded with a visualization-only hand-tracking camera; physics, skills, predicates and experiment configurations are unchanged. Icy demos use the main PyTorch 2.11 environment, separately from the PyTorch 2.9.1 reproduction environment. Isaac demos use existing successful recordings.",
+  "recording": "The four benchmark pairs use release-runner inference semantics with rendering added. Room videos show complete episodes, with a visualization-only goal-centered close-up during the RL Push operator and a wide camera otherwise; physics, skills, predicates and experiment configurations are unchanged. Icy demos use the main PyTorch 2.11 environment, separately from the PyTorch 2.9.1 reproduction environment. Isaac demos use existing successful recordings.",
   "preview_edits": "IsaacLab RL recovery segments play at original 1x source speed; only planned motions are accelerated. Other per-clip timing, camera views, crops and encoding settings are recorded below. GIFs loop indefinitely.",
   "clips": [
     {
@@ -325,28 +325,31 @@
     {
       "domain": "room",
       "role": "train",
-      "source": "results/gallery/room-close-train/1_g_0.mp4",
-      "source_sha256": "88a0f1d42243603347f047beb272cf69fa7d67d63ca23b7af301eff882df8027",
+      "source": "results/gallery/room-full-train/1_g_0.mp4",
+      "source_sha256": "0451bc70c94771c1f9a2b225642cab07a6c55afd0fde5d9ad3ca95cb654bc008",
       "segments": [
         {
-          "start_seconds": 103,
-          "end_seconds": 108,
-          "playback_speed": 2
+          "start_seconds": 0,
+          "end_seconds": 109.9,
+          "playback_speed": 12,
+          "view": "wide"
         },
         {
-          "start_seconds": 108,
-          "end_seconds": 112,
-          "playback_speed": 0.5
+          "start_seconds": 109.9,
+          "end_seconds": 110.6,
+          "playback_speed": 0.5,
+          "view": "goal_closeup"
         },
         {
-          "start_seconds": 112,
-          "end_seconds": 115,
-          "playback_speed": 2
+          "start_seconds": 110.6,
+          "end_seconds": 278.7,
+          "playback_speed": 12,
+          "view": "wide"
         }
       ],
-      "filter": "[0:v]split=3[i0][i1][i2];[i0]trim=start=103:end=108,setpts=(PTS-STARTPTS)/2,fps=20[s0];[i1]trim=start=108:end=112,setpts=(PTS-STARTPTS)/0.5,fps=20[s1];[i2]trim=start=112:end=115,setpts=(PTS-STARTPTS)/2,fps=20[s2];[s0][s1][s2]concat=n=3:v=1:a=0,eq=gamma=1.08,setsar=1,tpad=stop_mode=clone:stop_duration=1.2[v]",
+      "filter": "[0:v]split=3[i0][i1][i2];[i0]trim=start=0:end=109.9,setpts=(PTS-STARTPTS)/12,fps=20[s0];[i1]trim=start=109.9:end=110.6,setpts=(PTS-STARTPTS)/0.5,fps=20[s1];[i2]trim=start=110.6:end=278.7,setpts=(PTS-STARTPTS)/12,fps=20[s2];[s0][s1][s2]concat=n=3:v=1:a=0,eq=gamma=1.08,setsar=1,tpad=stop_mode=clone:stop_duration=1.2[v]",
       "preview": "docs/static/videos/recovery-room-train.mp4",
-      "duration_seconds": 13.2,
+      "duration_seconds": 25.75,
       "domain_name": "Cluttered Room",
       "scenario": "Clear the box\u2019s placement goal",
       "case": "1_g",
@@ -354,7 +357,7 @@
         "episode": 0,
         "reset_seed": 0,
         "success": true,
-        "steps": 5568,
+        "steps": 5569,
         "operators": [
           "GoToPickBox",
           "PickBox",
@@ -377,73 +380,65 @@
         "seed": 0
       },
       "torch": "2.11.0+cu130",
-      "source_commit": "f36b1b0f6ab88b955e8df389d7ddccaac9eb2319",
-      "source_report": "results/gallery/room-close-train/report.json",
+      "source_commit": "4a8bc956bbee9f02dc7cf7ee4f4c689cc3bfc20e",
+      "source_report": "results/gallery/room-full-train/report.json",
       "gif": "docs/static/images/recovery/recovery-room-train.gif",
       "poster": "docs/static/images/recovery/recovery-room-train.jpg",
       "published_sha256": {
-        "preview": "7e4516f991f8b8220395c7a8ec8827e9094e459a13cac6c9fbfedda05c4ee2fd",
-        "gif": "a7833d696bf6763cee413607ff74bf4db1585358285253006bc784d2b222ea10",
-        "poster": "8a3492b7dc7f4a52f67d0eedc03fcce67e49a6f3cd1d9e05a6601f092e937c66"
+        "preview": "b8cbec543544d4f11014823fc9bea0a8cfe9f5beeacd7a92b4c42c2726f26f5e",
+        "gif": "bf2090a2f1c59567be640372a4509addb663e023e7cafe0df6361eb2293bd6c6",
+        "poster": "54a653f23b9d0d640331e01d5d1081c10f01bbdcb4b255a7dd41638d35948dde"
       },
-      "excerpt": "Hand-camera recovery excerpt from a successful complete rollout; the push is shown at 0.5x source speed.",
       "camera": {
-        "kind": "new simulator render; world-aligned camera follows gripper",
+        "kind": "wide episode view; goal-centered close-up only during the RL Push operator",
         "resolution": [
           640,
           480
         ],
-        "vertical_fov_radians": 0.75,
-        "tracking_target": "gripper_link local [-0.055, 0, 0]",
-        "view_direction_from_target": [
-          0.35,
-          -0.6,
-          0.5
-        ],
-        "adaptive_distance_m": [
-          0.43938705135993456,
-          0.5
-        ],
+        "vertical_fov_radians": 1.0,
+        "closeup_target": "obstructed rearrange_obj1_goal or rearrange_obj2_goal, selected from scenario settings",
         "hand_links": [
           "gripper_link",
           "l_gripper_finger_link",
           "r_gripper_finger_link"
         ],
-        "measurement": "visible hand segmentation pixels / (640*480), excluding forearm and held object",
-        "minimum_visible_hand_pixel_fraction": 0.074912109375,
-        "maximum_visible_hand_pixel_fraction": 0.1045703125,
-        "minimum_push_hand_pixel_fraction": 0.074912109375,
-        "checked_source_frames": 121,
-        "required_minimum": 0.0625,
-        "metrics_source": "results/gallery/room-close-train/camera_metrics.json",
+        "measurement": "visible hand segmentation pixels / (640*480), excluding forearm and held object; applies only to RL close-up frames",
+        "minimum_push_hand_pixel_fraction": 0.05065104166666667,
+        "checked_rl_source_frames": 7,
+        "required_minimum": 0.05,
+        "metrics_source": "results/gallery/room-full-train/camera_metrics.json",
         "physics_change": false
-      }
+      },
+      "coverage": "Complete successful episode from reset to task completion. Planned motions at 12x; RL push at 0.5x. No source time intervals omitted."
     },
     {
       "domain": "room",
       "role": "test",
-      "source": "results/gallery/room-close-test/1_b_0.mp4",
-      "source_sha256": "efa879cb2b9044419eec48975e1b0d982cefe039202893083f903363de50c570",
+      "source": "results/gallery/room-full-test/1_b_0.mp4",
+      "source_sha256": "d2a050c87afe1833fdde560396100f24a31bfde964fa1166144980f933037b49",
       "segments": [
         {
-          "start_seconds": 103,
-          "end_seconds": 108,
-          "playback_speed": 2
+          "start_seconds": 0,
+          "end_seconds": 110.0,
+          "playback_speed": 12,
+          "view": "wide"
         },
         {
-          "start_seconds": 108,
-          "end_seconds": 112,
-          "playback_speed": 0.5
+          "start_seconds": 110.0,
+          "end_seconds": 110.7,
+          "playback_speed": 0.5,
+          "view": "goal_closeup"
         },
         {
-          "start_seconds": 112,
-          "end_seconds": 115,
-          "playback_speed": 2
+          "start_seconds": 110.7,
+          "end_seconds": 278.7,
+          "playback_speed": 12,
+          "view": "wide"
         }
       ],
-      "filter": "[0:v]split=3[i0][i1][i2];[i0]trim=start=103:end=108,setpts=(PTS-STARTPTS)/2,fps=20[s0];[i1]trim=start=108:end=112,setpts=(PTS-STARTPTS)/0.5,fps=20[s1];[i2]trim=start=112:end=115,setpts=(PTS-STARTPTS)/2,fps=20[s2];[s0][s1][s2]concat=n=3:v=1:a=0,eq=gamma=1.08,setsar=1,tpad=stop_mode=clone:stop_duration=1.2[v]",
+      "filter": "[0:v]split=3[i0][i1][i2];[i0]trim=start=0:end=110.0,setpts=(PTS-STARTPTS)/12,fps=20[s0];[i1]trim=start=110.0:end=110.7,setpts=(PTS-STARTPTS)/0.5,fps=20[s1];[i2]trim=start=110.7:end=278.7,setpts=(PTS-STARTPTS)/12,fps=20[s2];[s0][s1][s2]concat=n=3:v=1:a=0,eq=gamma=1.08,setsar=1,tpad=stop_mode=clone:stop_duration=1.2[v]",
       "preview": "docs/static/videos/recovery-room-test.mp4",
-      "duration_seconds": 13.2,
+      "duration_seconds": 25.75,
       "domain_name": "Cluttered Room",
       "scenario": "Reuse Push at the bowl\u2019s placement goal",
       "case": "1_b",
@@ -451,7 +446,7 @@
         "episode": 0,
         "reset_seed": 0,
         "success": true,
-        "steps": 5570,
+        "steps": 5569,
         "operators": [
           "GoToPickBox",
           "PickBox",
@@ -474,47 +469,36 @@
         "seed": 0
       },
       "torch": "2.11.0+cu130",
-      "source_commit": "f36b1b0f6ab88b955e8df389d7ddccaac9eb2319",
-      "source_report": "results/gallery/room-close-test/report.json",
+      "source_commit": "4a8bc956bbee9f02dc7cf7ee4f4c689cc3bfc20e",
+      "source_report": "results/gallery/room-full-test/report.json",
       "gif": "docs/static/images/recovery/recovery-room-test.gif",
       "poster": "docs/static/images/recovery/recovery-room-test.jpg",
       "published_sha256": {
-        "preview": "2a0a0eb8261ce506fd3250e0d6314b126d3286402bcb272e34e6da00134dcdaf",
-        "gif": "acaa36762be6e1393cbc5b738b3d61a016719ced6d0a23b24563f9d20a64e090",
-        "poster": "a4dd710131e30273beaf8638041b34debac58d3a4c762b923ff7a361ade23b5d"
+        "preview": "51ea373ded03c3f385da7c41435591b02cc4bc0d5915fb1d272d8393e2d35220",
+        "gif": "34b79c640bb23b2998597c1fe49cf0b5013a6ffa6515c66030098b51c0bc354c",
+        "poster": "2fa134c41ea3860894aad2fddc2e100b698403b4eaec36d101a60f8e721debda"
       },
-      "excerpt": "Hand-camera recovery excerpt from a successful complete rollout; the push is shown at 0.5x source speed.",
       "camera": {
-        "kind": "new simulator render; world-aligned camera follows gripper",
+        "kind": "wide episode view; goal-centered close-up only during the RL Push operator",
         "resolution": [
           640,
           480
         ],
-        "vertical_fov_radians": 0.75,
-        "tracking_target": "gripper_link local [-0.055, 0, 0]",
-        "view_direction_from_target": [
-          0.35,
-          -0.6,
-          0.5
-        ],
-        "adaptive_distance_m": [
-          0.5,
-          0.5
-        ],
+        "vertical_fov_radians": 1.0,
+        "closeup_target": "obstructed rearrange_obj1_goal or rearrange_obj2_goal, selected from scenario settings",
         "hand_links": [
           "gripper_link",
           "l_gripper_finger_link",
           "r_gripper_finger_link"
         ],
-        "measurement": "visible hand segmentation pixels / (640*480), excluding forearm and held object",
-        "minimum_visible_hand_pixel_fraction": 0.07155924479166667,
-        "maximum_visible_hand_pixel_fraction": 0.08250325520833333,
-        "minimum_push_hand_pixel_fraction": 0.07155924479166667,
-        "checked_source_frames": 121,
-        "required_minimum": 0.0625,
-        "metrics_source": "results/gallery/room-close-test/camera_metrics.json",
+        "measurement": "visible hand segmentation pixels / (640*480), excluding forearm and held object; applies only to RL close-up frames",
+        "minimum_push_hand_pixel_fraction": 0.0528125,
+        "checked_rl_source_frames": 7,
+        "required_minimum": 0.05,
+        "metrics_source": "results/gallery/room-full-test/camera_metrics.json",
         "physics_change": false
-      }
+      },
+      "coverage": "Complete successful episode from reset to task completion. Planned motions at 12x; RL push at 0.5x. No source time intervals omitted."
     },
     {
       "domain": "flipped",

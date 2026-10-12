@@ -12,7 +12,7 @@ Intelligent robots should not only recover from failures, but also acquire the a
 
 ## Recovery Gallery
 
-Six domains, two representative scenarios each. **Train** shows inference in a recovery-training setup; **Test** shows the skill reused at a different target or in a longer composition. These are selected successful demonstrations, not aggregate evaluation results. GIFs loop automatically; click a preview for its larger MP4. IsaacLab recovery skills play at original speed; only the surrounding planned motions are accelerated. Cluttered Room shows a slow-motion push from a close hand-tracking camera; the other previews use accelerated playback.
+Six domains, two representative scenarios each. **Train** shows inference in a recovery-training setup; **Test** shows the skill reused at a different target or in a longer composition. These are selected successful demonstrations, not aggregate evaluation results. GIFs loop automatically; click a preview for its larger MP4. IsaacLab recovery skills play at original speed; only the surrounding planned motions are accelerated. Cluttered Room shows complete episodes with accelerated planned motions and a goal-centered close-up during the slow-motion RL push; the other previews use accelerated playback.
 
 | Domain name | Recovery skill(s) description | Train scenario(s) | Test scenario(s) |
 | --- | --- | --- | --- |
@@ -269,11 +269,13 @@ Both commands write an MP4 with the skill sequence, an `episodes.json` execution
 
 ## Citation
 
+If you find our inspiring or used our code, please cite us at:
+
 ```bibtex
 @inproceedings{li2026recover,
   title={Recover, Discover, Plan: Learning Skills and Concepts from Robot Failures},
   author={Li, Bowen and Mishra, Mayank and Liu, Y. Isabel and Tao, Stone and Kumar, Nishanth and Gray, Alexander and Wickramarachchi, Ruwan and Francis, Jonathan and Scherer, Sebastian and Silver, Tom},
-  booktitle={Conference on Robot Learning (CoRL)},
+  booktitle={Proceedings of the Conference on Robot Learning (CoRL)},
   year={2026}
 }
 ```
