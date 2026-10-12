@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const domainRows = [...document.querySelectorAll('[data-domain-row]')];
+  const hoverPointer = window.matchMedia('(hover: hover) and (pointer: fine)');
   const stopDomain = (row, reset = true) => {
     row.classList.remove('is-playing');
     row.querySelectorAll('video').forEach((video) => {
@@ -104,8 +105,9 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   domainRows.forEach((row) => {
-    row.addEventListener('mouseenter', () => playDomain(row));
-    row.addEventListener('mouseleave', () => stopDomain(row));
+    // Touch taps can synthesize a mouseleave immediately after click.
+    row.addEventListener('mouseenter', () => { if (hoverPointer.matches) playDomain(row); });
+    row.addEventListener('mouseleave', () => { if (hoverPointer.matches) stopDomain(row); });
     row.addEventListener('focusin', () => playDomain(row));
     row.addEventListener('focusout', (event) => {
       if (!row.contains(event.relatedTarget)) stopDomain(row);

@@ -1,0 +1,833 @@
+{
+  "description": "Two selected successful inference rollouts per domain: recovery-training setup and transfer/composition setup. Not training footage or an aggregate evaluation.",
+  "scope": "Documentation media only. Experiment source, configurations, policies, predicates and reproduction entry points are unchanged.",
+  "recording": "The four benchmark pairs use release-runner inference semantics with rendering added. Room footage is re-recorded with a visualization-only hand-tracking camera; physics, skills, predicates and experiment configurations are unchanged. Icy demos use the main PyTorch 2.11 environment, separately from the PyTorch 2.9.1 reproduction environment. Isaac demos use existing successful recordings.",
+  "preview_edits": "IsaacLab RL recovery segments play at original 1x source speed; only planned motions are accelerated. Other per-clip timing, camera views, crops and encoding settings are recorded below. GIFs loop indefinitely.",
+  "clips": [
+    {
+      "domain": "icy",
+      "role": "train",
+      "source": "results/gallery/icy/1_g1_1.mp4",
+      "source_sha256": "c0a028d8e3e1f5e0d60fe675703ae230a38447fcf115a4de8617ceef52d7d2e1",
+      "segments": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 15,
+          "playback_speed": 2,
+          "crop": ""
+        },
+        {
+          "start_seconds": 15,
+          "end_seconds": null,
+          "playback_speed": 16,
+          "crop": ""
+        }
+      ],
+      "filter": "[0:v]split=2[i0][i1];[i0]trim=start=0:end=15,setpts=(PTS-STARTPTS)/2,scale=640:480:force_original_aspect_ratio=decrease:flags=lanczos,pad=640:480:(ow-iw)/2:(oh-ih)/2:white,setsar=1,fps=20[s0];[i1]trim=start=15,setpts=(PTS-STARTPTS)/16,scale=640:480:force_original_aspect_ratio=decrease:flags=lanczos,pad=640:480:(ow-iw)/2:(oh-ih)/2:white,setsar=1,fps=20[s1];[s0][s1]concat=n=2:v=1:a=0,tpad=stop_mode=clone:stop_duration=1.2[v]",
+      "preview": "docs/static/videos/recovery-icy-train.mp4",
+      "duration_seconds": 15.35,
+      "domain_name": "Icy Transport",
+      "scenario": "Ice on the way to an object",
+      "case": "1_g1",
+      "selected_rollout": {
+        "episode": 1,
+        "reset_seed": 10,
+        "success": true,
+        "steps": 2421,
+        "operators": [
+          "GoToPickObject_IcyDrive",
+          "IcyDrive",
+          "GoToPickObject",
+          "GoToPlaceObject",
+          "GoToPickObject",
+          "GoToPlaceObject"
+        ],
+        "planning_failure": null
+      },
+      "evaluation_config": "config/inference/icy_transport_stage1.yaml",
+      "config_overrides": {
+        "device": "cpu",
+        "icy_legacy_plan_order": true,
+        "icy_reset_collision_history": false,
+        "icy_inhand_fy_penalty": 0.0,
+        "env": "icy_transport",
+        "approach": "default approach placeholder",
+        "seed": 0
+      },
+      "torch": "2.11.0+cu130",
+      "source_commit": "f36b1b0f6ab88b955e8df389d7ddccaac9eb2319",
+      "source_report": "results/gallery/icy/report.json",
+      "gif": "docs/static/images/recovery/recovery-icy-train.gif",
+      "poster": "docs/static/images/recovery/recovery-icy-train.jpg",
+      "published_sha256": {
+        "preview": "f30b95bb083d6be7961875267ec94be779817f169f7434b16a260ac3c4e0985d",
+        "gif": "b981622074cc29fb647fcb9fc492281d0271affda6b27b8d70b5126354cfb1e9",
+        "poster": "f4ea0691d3b3416a170bc18e38c532bc1b9f8297b8508dfa9b4917231de4115d"
+      }
+    },
+    {
+      "domain": "icy",
+      "role": "test",
+      "source": "results/gallery/icy/1_b_0.mp4",
+      "source_sha256": "9ba14839659fed27a1279beb5f562f3e65382c4d203a4aeb4ca6a13c9614d121",
+      "segments": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 15,
+          "playback_speed": 2,
+          "crop": ""
+        },
+        {
+          "start_seconds": 15,
+          "end_seconds": null,
+          "playback_speed": 24,
+          "crop": ""
+        }
+      ],
+      "filter": "[0:v]split=2[i0][i1];[i0]trim=start=0:end=15,setpts=(PTS-STARTPTS)/2,scale=640:480:force_original_aspect_ratio=decrease:flags=lanczos,pad=640:480:(ow-iw)/2:(oh-ih)/2:white,setsar=1,fps=20[s0];[i1]trim=start=15,setpts=(PTS-STARTPTS)/24,scale=640:480:force_original_aspect_ratio=decrease:flags=lanczos,pad=640:480:(ow-iw)/2:(oh-ih)/2:white,setsar=1,fps=20[s1];[s0][s1]concat=n=2:v=1:a=0,tpad=stop_mode=clone:stop_duration=1.2[v]",
+      "preview": "docs/static/videos/recovery-icy-test.mp4",
+      "duration_seconds": 15.5,
+      "domain_name": "Icy Transport",
+      "scenario": "Ice on the way to the delivery goal",
+      "case": "1_b",
+      "selected_rollout": {
+        "episode": 0,
+        "reset_seed": 0,
+        "success": true,
+        "steps": 3552,
+        "operators": [
+          "GoToPickObject_IcyDrive",
+          "IcyDrive",
+          "GoToPickObject",
+          "GoToPlaceObject",
+          "GoToPickObject",
+          "GoToPlaceObject"
+        ],
+        "planning_failure": null
+      },
+      "evaluation_config": "config/inference/icy_transport_stage1.yaml",
+      "config_overrides": {
+        "device": "cpu",
+        "icy_legacy_plan_order": true,
+        "icy_reset_collision_history": false,
+        "icy_inhand_fy_penalty": 0.0,
+        "env": "icy_transport",
+        "approach": "default approach placeholder",
+        "seed": 0
+      },
+      "torch": "2.11.0+cu130",
+      "source_commit": "f36b1b0f6ab88b955e8df389d7ddccaac9eb2319",
+      "source_report": "results/gallery/icy/report.json",
+      "gif": "docs/static/images/recovery/recovery-icy-test.gif",
+      "poster": "docs/static/images/recovery/recovery-icy-test.jpg",
+      "published_sha256": {
+        "preview": "ae9f3575ddd8c3c338503f4464c1e64a662720849bc5edaf5396fb0f21710c1d",
+        "gif": "587907717a81ec9017a54975aa6033597d64306639c63700d44faa49fe5a7332",
+        "poster": "4e8dedcd78307a9b6e1b91b51557111ff10f2df41f1dce550d1b1a0a3161e858"
+      }
+    },
+    {
+      "domain": "blocked",
+      "role": "train",
+      "source": "results/gallery/blocked/1_g_0.mp4",
+      "source_sha256": "26405d61cbddb400042e5529be7afebfd8e094ed8fc8f3bebd2790b92775e821",
+      "start_seconds": 0,
+      "source_playback_speed": 1,
+      "filter": "setpts=(PTS-STARTPTS)/1,scale=640:480:force_original_aspect_ratio=decrease:flags=lanczos,pad=640:480:(ow-iw)/2:(oh-ih)/2:white,setsar=1,fps=20,tpad=stop_mode=clone:stop_duration=1.2",
+      "preview": "docs/static/videos/recovery-blocked-train.mp4",
+      "duration_seconds": 8.4,
+      "domain_name": "Blocked Stacking",
+      "scenario": "Clear the block to be grasped",
+      "case": "1_g",
+      "selected_rollout": {
+        "episode": 0,
+        "reset_seed": 0,
+        "success": true,
+        "steps": 141,
+        "operators": [
+          "ReachToGrasp_Punch",
+          "Punch",
+          "ReachToGrasp",
+          "Grasp",
+          "ReachToPlace",
+          "Place"
+        ],
+        "planning_failure": null
+      },
+      "evaluation_config": "config/inference/blocked_stacking_stage1.yaml",
+      "config_overrides": {
+        "device": "cpu",
+        "blocked_stacking_legacy_skill_timing": true,
+        "env": "blocked_stacking",
+        "approach": "default approach placeholder",
+        "seed": 0
+      },
+      "torch": "2.11.0+cu130",
+      "source_commit": "f36b1b0f6ab88b955e8df389d7ddccaac9eb2319",
+      "source_report": "results/gallery/blocked/report.json",
+      "gif": "docs/static/images/recovery/recovery-blocked-train.gif",
+      "poster": "docs/static/images/recovery/recovery-blocked-train.jpg",
+      "published_sha256": {
+        "preview": "18f2c6be9233f71c0a9d5491cd275ffd19b3137aef3af34501e07c9f99e341a9",
+        "gif": "3e44ff3b559511e3903c3403784fa64c58d05c4f67a247e1a67436a9e9680d31",
+        "poster": "07e350fe36ea0232544dc4ef94dc7101c8d8b6e28f9358b3e7be763c9265e35b"
+      }
+    },
+    {
+      "domain": "blocked",
+      "role": "test",
+      "source": "results/gallery/blocked/1_b_0.mp4",
+      "source_sha256": "ec77728e42334253ce7db0be7a1cea0aac97a547470a2c9fae6641d280df3cbd",
+      "start_seconds": 0,
+      "source_playback_speed": 1.25,
+      "filter": "setpts=(PTS-STARTPTS)/1.25,scale=640:480:force_original_aspect_ratio=decrease:flags=lanczos,pad=640:480:(ow-iw)/2:(oh-ih)/2:white,setsar=1,fps=20,tpad=stop_mode=clone:stop_duration=1.2",
+      "preview": "docs/static/videos/recovery-blocked-test.mp4",
+      "duration_seconds": 10.65,
+      "domain_name": "Blocked Stacking",
+      "scenario": "Clear the stacking target",
+      "case": "1_b",
+      "selected_rollout": {
+        "episode": 0,
+        "reset_seed": 0,
+        "success": true,
+        "steps": 234,
+        "operators": [
+          "ReachToGrasp_Punch",
+          "Punch",
+          "ReachToGrasp",
+          "Grasp",
+          "ReachToPlace",
+          "Place"
+        ],
+        "planning_failure": null
+      },
+      "evaluation_config": "config/inference/blocked_stacking_stage1.yaml",
+      "config_overrides": {
+        "device": "cpu",
+        "blocked_stacking_legacy_skill_timing": true,
+        "env": "blocked_stacking",
+        "approach": "default approach placeholder",
+        "seed": 0
+      },
+      "torch": "2.11.0+cu130",
+      "source_commit": "f36b1b0f6ab88b955e8df389d7ddccaac9eb2319",
+      "source_report": "results/gallery/blocked/report.json",
+      "gif": "docs/static/images/recovery/recovery-blocked-test.gif",
+      "poster": "docs/static/images/recovery/recovery-blocked-test.jpg",
+      "published_sha256": {
+        "preview": "49a55f1317183400835adf802452259dab65b586ca1ff3c04e33a4ff2bc6580a",
+        "gif": "0f3c5a7b6e7cd95da94d61e12eae6cc712a19b0ce9481057c4431fcbec14b652",
+        "poster": "e70de491a1fa2aa2d2514ee49b54e688727f72f24cde35323f17596027bc42cc"
+      }
+    },
+    {
+      "domain": "drawer",
+      "role": "train",
+      "source": "results/gallery/drawer/1_g_0.mp4",
+      "source_sha256": "05da8368d347da572465102cf9fafec411648f2c18afba65be0b56707fa85092",
+      "start_seconds": 0,
+      "source_playback_speed": 1.5,
+      "filter": "crop=448:336:40:176,eq=gamma=1.05,setpts=(PTS-STARTPTS)/1.5,scale=640:480:force_original_aspect_ratio=decrease:flags=lanczos,pad=640:480:(ow-iw)/2:(oh-ih)/2:white,setsar=1,fps=20,tpad=stop_mode=clone:stop_duration=1.2",
+      "preview": "docs/static/videos/recovery-drawer-train.mp4",
+      "duration_seconds": 15.8,
+      "domain_name": "Cluttered Drawer",
+      "scenario": "Open the drawer to retrieve the hammer",
+      "case": "1_g",
+      "selected_rollout": {
+        "episode": 0,
+        "reset_seed": 0,
+        "success": true,
+        "steps": 434,
+        "operators": [
+          "BodyReachToGrasp",
+          "HandReachToGrasp_Pull",
+          "Pull",
+          "BodyReachToGrasp",
+          "HandReachToGrasp",
+          "Grasp",
+          "BodyReachToPlace",
+          "HandReachToPlace",
+          "Place"
+        ],
+        "planning_failure": null
+      },
+      "evaluation_config": "config/inference/cluttered_drawer_stage1.yaml",
+      "config_overrides": {
+        "c_drawer_legacy_physics": true,
+        "c_drawer_place_height_tol": 0.09,
+        "c_drawer_block_dz": 0.04,
+        "env": "cluttered_drawer",
+        "approach": "default approach placeholder",
+        "seed": 0
+      },
+      "torch": "2.11.0+cu130",
+      "source_commit": "f36b1b0f6ab88b955e8df389d7ddccaac9eb2319",
+      "source_report": "results/gallery/drawer/report.json",
+      "gif": "docs/static/images/recovery/recovery-drawer-train.gif",
+      "poster": "docs/static/images/recovery/recovery-drawer-train.jpg",
+      "published_sha256": {
+        "preview": "794f5700e1cb2a0f075d1699a7fb02bb7a11d8187b8fba0330de00da3af78cee",
+        "gif": "eb94faedea76855fd18aa637af041b184487fc6fa34f56580dae1b2f301f469a",
+        "poster": "23b2508f65c8397d2c583bc23b6575e954de06164ab7fbd49953d496f4021b60"
+      }
+    },
+    {
+      "domain": "drawer",
+      "role": "test",
+      "source": "results/gallery/drawer/1_b_0.mp4",
+      "source_sha256": "f1c4c440a438303d4a96a9b153586550c0b346980e67d2abbccecda0ec6f4952",
+      "start_seconds": 0,
+      "source_playback_speed": 1.5,
+      "filter": "crop=448:336:40:176,eq=gamma=1.05,setpts=(PTS-STARTPTS)/1.5,scale=640:480:force_original_aspect_ratio=decrease:flags=lanczos,pad=640:480:(ow-iw)/2:(oh-ih)/2:white,setsar=1,fps=20,tpad=stop_mode=clone:stop_duration=1.2",
+      "preview": "docs/static/videos/recovery-drawer-test.mp4",
+      "duration_seconds": 18.65,
+      "domain_name": "Cluttered Drawer",
+      "scenario": "Open the drawer to reach the placement target",
+      "case": "1_b",
+      "selected_rollout": {
+        "episode": 0,
+        "reset_seed": 0,
+        "success": true,
+        "steps": 519,
+        "operators": [
+          "BodyReachToGrasp",
+          "HandReachToGrasp_Pull",
+          "Pull",
+          "BodyReachToGrasp",
+          "HandReachToGrasp",
+          "Grasp",
+          "BodyReachToPlace",
+          "HandReachToPlace",
+          "Place"
+        ],
+        "planning_failure": null
+      },
+      "evaluation_config": "config/inference/cluttered_drawer_stage1.yaml",
+      "config_overrides": {
+        "c_drawer_legacy_physics": true,
+        "c_drawer_place_height_tol": 0.09,
+        "c_drawer_block_dz": 0.04,
+        "env": "cluttered_drawer",
+        "approach": "default approach placeholder",
+        "seed": 0
+      },
+      "torch": "2.11.0+cu130",
+      "source_commit": "f36b1b0f6ab88b955e8df389d7ddccaac9eb2319",
+      "source_report": "results/gallery/drawer/report.json",
+      "gif": "docs/static/images/recovery/recovery-drawer-test.gif",
+      "poster": "docs/static/images/recovery/recovery-drawer-test.jpg",
+      "published_sha256": {
+        "preview": "211f7f13ffbb29afe4e8e6a6bce01eb2cb6f8deee32c24b02e113bc02caa1599",
+        "gif": "e40c33d357e2e5c3ed4e3da2ea244e3284a55965d9607788193e84abc49d4f84",
+        "poster": "240a7ad73bdab7390bcfacd7e4a4a2753c24666c5c1861ea34e249fc6589813c"
+      }
+    },
+    {
+      "domain": "room",
+      "role": "train",
+      "source": "results/gallery/room-close-train/1_g_0.mp4",
+      "source_sha256": "88a0f1d42243603347f047beb272cf69fa7d67d63ca23b7af301eff882df8027",
+      "segments": [
+        {
+          "start_seconds": 103,
+          "end_seconds": 108,
+          "playback_speed": 2
+        },
+        {
+          "start_seconds": 108,
+          "end_seconds": 112,
+          "playback_speed": 0.5
+        },
+        {
+          "start_seconds": 112,
+          "end_seconds": 115,
+          "playback_speed": 2
+        }
+      ],
+      "filter": "[0:v]split=3[i0][i1][i2];[i0]trim=start=103:end=108,setpts=(PTS-STARTPTS)/2,fps=20[s0];[i1]trim=start=108:end=112,setpts=(PTS-STARTPTS)/0.5,fps=20[s1];[i2]trim=start=112:end=115,setpts=(PTS-STARTPTS)/2,fps=20[s2];[s0][s1][s2]concat=n=3:v=1:a=0,eq=gamma=1.08,setsar=1,tpad=stop_mode=clone:stop_duration=1.2[v]",
+      "preview": "docs/static/videos/recovery-room-train.mp4",
+      "duration_seconds": 13.2,
+      "domain_name": "Cluttered Room",
+      "scenario": "Clear the box\u2019s placement goal",
+      "case": "1_g",
+      "selected_rollout": {
+        "episode": 0,
+        "reset_seed": 0,
+        "success": true,
+        "steps": 5568,
+        "operators": [
+          "GoToPickBox",
+          "PickBox",
+          "GoToPlaceBox",
+          "PlaceBox_Push",
+          "Push",
+          "GoToPlaceBox",
+          "PlaceBox",
+          "GoToPickBowl",
+          "PickBowl",
+          "GoToPlaceBowl",
+          "PlaceBowl"
+        ],
+        "planning_failure": null
+      },
+      "evaluation_config": "config/inference/cluttered_room_stage1.yaml",
+      "config_overrides": {
+        "env": "cluttered_room",
+        "approach": "default approach placeholder",
+        "seed": 0
+      },
+      "torch": "2.11.0+cu130",
+      "source_commit": "f36b1b0f6ab88b955e8df389d7ddccaac9eb2319",
+      "source_report": "results/gallery/room-close-train/report.json",
+      "gif": "docs/static/images/recovery/recovery-room-train.gif",
+      "poster": "docs/static/images/recovery/recovery-room-train.jpg",
+      "published_sha256": {
+        "preview": "7e4516f991f8b8220395c7a8ec8827e9094e459a13cac6c9fbfedda05c4ee2fd",
+        "gif": "a7833d696bf6763cee413607ff74bf4db1585358285253006bc784d2b222ea10",
+        "poster": "8a3492b7dc7f4a52f67d0eedc03fcce67e49a6f3cd1d9e05a6601f092e937c66"
+      },
+      "excerpt": "Hand-camera recovery excerpt from a successful complete rollout; the push is shown at 0.5x source speed.",
+      "camera": {
+        "kind": "new simulator render; world-aligned camera follows gripper",
+        "resolution": [
+          640,
+          480
+        ],
+        "vertical_fov_radians": 0.75,
+        "tracking_target": "gripper_link local [-0.055, 0, 0]",
+        "view_direction_from_target": [
+          0.35,
+          -0.6,
+          0.5
+        ],
+        "adaptive_distance_m": [
+          0.43938705135993456,
+          0.5
+        ],
+        "hand_links": [
+          "gripper_link",
+          "l_gripper_finger_link",
+          "r_gripper_finger_link"
+        ],
+        "measurement": "visible hand segmentation pixels / (640*480), excluding forearm and held object",
+        "minimum_visible_hand_pixel_fraction": 0.074912109375,
+        "maximum_visible_hand_pixel_fraction": 0.1045703125,
+        "minimum_push_hand_pixel_fraction": 0.074912109375,
+        "checked_source_frames": 121,
+        "required_minimum": 0.0625,
+        "metrics_source": "results/gallery/room-close-train/camera_metrics.json",
+        "physics_change": false
+      }
+    },
+    {
+      "domain": "room",
+      "role": "test",
+      "source": "results/gallery/room-close-test/1_b_0.mp4",
+      "source_sha256": "efa879cb2b9044419eec48975e1b0d982cefe039202893083f903363de50c570",
+      "segments": [
+        {
+          "start_seconds": 103,
+          "end_seconds": 108,
+          "playback_speed": 2
+        },
+        {
+          "start_seconds": 108,
+          "end_seconds": 112,
+          "playback_speed": 0.5
+        },
+        {
+          "start_seconds": 112,
+          "end_seconds": 115,
+          "playback_speed": 2
+        }
+      ],
+      "filter": "[0:v]split=3[i0][i1][i2];[i0]trim=start=103:end=108,setpts=(PTS-STARTPTS)/2,fps=20[s0];[i1]trim=start=108:end=112,setpts=(PTS-STARTPTS)/0.5,fps=20[s1];[i2]trim=start=112:end=115,setpts=(PTS-STARTPTS)/2,fps=20[s2];[s0][s1][s2]concat=n=3:v=1:a=0,eq=gamma=1.08,setsar=1,tpad=stop_mode=clone:stop_duration=1.2[v]",
+      "preview": "docs/static/videos/recovery-room-test.mp4",
+      "duration_seconds": 13.2,
+      "domain_name": "Cluttered Room",
+      "scenario": "Reuse Push at the bowl\u2019s placement goal",
+      "case": "1_b",
+      "selected_rollout": {
+        "episode": 0,
+        "reset_seed": 0,
+        "success": true,
+        "steps": 5570,
+        "operators": [
+          "GoToPickBox",
+          "PickBox",
+          "GoToPlaceBox",
+          "PlaceBox_Push",
+          "Push",
+          "GoToPlaceBox",
+          "PlaceBox",
+          "GoToPickBowl",
+          "PickBowl",
+          "GoToPlaceBowl",
+          "PlaceBowl"
+        ],
+        "planning_failure": null
+      },
+      "evaluation_config": "config/inference/cluttered_room_stage1.yaml",
+      "config_overrides": {
+        "env": "cluttered_room",
+        "approach": "default approach placeholder",
+        "seed": 0
+      },
+      "torch": "2.11.0+cu130",
+      "source_commit": "f36b1b0f6ab88b955e8df389d7ddccaac9eb2319",
+      "source_report": "results/gallery/room-close-test/report.json",
+      "gif": "docs/static/images/recovery/recovery-room-test.gif",
+      "poster": "docs/static/images/recovery/recovery-room-test.jpg",
+      "published_sha256": {
+        "preview": "2a0a0eb8261ce506fd3250e0d6314b126d3286402bcb272e34e6da00134dcdaf",
+        "gif": "acaa36762be6e1393cbc5b738b3d61a016719ced6d0a23b24563f9d20a64e090",
+        "poster": "a4dd710131e30273beaf8638041b34debac58d3a4c762b923ff7a361ade23b5d"
+      },
+      "excerpt": "Hand-camera recovery excerpt from a successful complete rollout; the push is shown at 0.5x source speed.",
+      "camera": {
+        "kind": "new simulator render; world-aligned camera follows gripper",
+        "resolution": [
+          640,
+          480
+        ],
+        "vertical_fov_radians": 0.75,
+        "tracking_target": "gripper_link local [-0.055, 0, 0]",
+        "view_direction_from_target": [
+          0.35,
+          -0.6,
+          0.5
+        ],
+        "adaptive_distance_m": [
+          0.5,
+          0.5
+        ],
+        "hand_links": [
+          "gripper_link",
+          "l_gripper_finger_link",
+          "r_gripper_finger_link"
+        ],
+        "measurement": "visible hand segmentation pixels / (640*480), excluding forearm and held object",
+        "minimum_visible_hand_pixel_fraction": 0.07155924479166667,
+        "maximum_visible_hand_pixel_fraction": 0.08250325520833333,
+        "minimum_push_hand_pixel_fraction": 0.07155924479166667,
+        "checked_source_frames": 121,
+        "required_minimum": 0.0625,
+        "metrics_source": "results/gallery/room-close-test/camera_metrics.json",
+        "physics_change": false
+      }
+    },
+    {
+      "domain": "flipped",
+      "role": "train",
+      "source": "../isaac_sim2real/logs/0807_learned_predicates/top_episode_000.mp4",
+      "source_sha256": "2dc12c25c62b9149943f8393a4a5ede4a20e9bac3a301f6a5cffb4db6bdb338c",
+      "filter": "[0:v]split=5[i0][i1][i2][i3][i4];[i0]trim=start=0.3:end=1.2,setpts=(PTS-STARTPTS)/2.5,fps=20[s0];[i1]trim=start=1.2:end=4.7,setpts=(PTS-STARTPTS)/1,fps=20[s1];[i2]trim=start=4.7:end=9.0,setpts=(PTS-STARTPTS)/2.5,fps=20[s2];[i3]trim=start=9.0:end=10.7,setpts=(PTS-STARTPTS)/2.5,fps=20[s3];[i4]trim=start=10.7:end=11.9,setpts=(PTS-STARTPTS)/1,fps=20[s4];[s0][s1][s2][s3][s4]concat=n=5:v=1:a=0,crop=1000:720:140:112,eq=gamma=1.3:saturation=1.08,scale=640:480:force_original_aspect_ratio=decrease:flags=lanczos,pad=640:480:(ow-iw)/2:(oh-ih)/2:white,setsar=1[v]",
+      "preview": "docs/static/videos/recovery-flipped-train.mp4",
+      "duration_seconds": 7.45,
+      "domain_name": "Flipped Stacking",
+      "scenario": "Flip one block, then stack two",
+      "case": "top",
+      "source_report": "../isaac_sim2real/logs/0807_learned_predicates/manifest.json",
+      "selected_rollout": {
+        "episode": 0,
+        "role": "top",
+        "steps": 213,
+        "success": true
+      },
+      "gif": "docs/static/images/recovery/recovery-flipped-train.gif",
+      "poster": "docs/static/images/recovery/recovery-flipped-train.jpg",
+      "published_sha256": {
+        "preview": "0e9783cf0a2d959a11ce951218d03aba705350c13f9989dda3f022a6a8183b8f",
+        "gif": "b6647e50b5ec19af58afaba6b85e4fe97f127800a320ef74e0a52b2db2265193",
+        "poster": "b16ef8fe83d01a0f2a622f6ef51bc87c6b45917080264ff77f030ff0a6b1a023"
+      },
+      "segments": [
+        {
+          "start_seconds": 0.3,
+          "end_seconds": 1.2,
+          "playback_speed": 2.5,
+          "skill": "MoveToFlip",
+          "is_rl": false
+        },
+        {
+          "start_seconds": 1.2,
+          "end_seconds": 4.7,
+          "playback_speed": 1,
+          "skill": "Flip",
+          "is_rl": true
+        },
+        {
+          "start_seconds": 4.7,
+          "end_seconds": 9.0,
+          "playback_speed": 2.5,
+          "skill": "Pick",
+          "is_rl": false
+        },
+        {
+          "start_seconds": 9.0,
+          "end_seconds": 10.7,
+          "playback_speed": 2.5,
+          "skill": "Place",
+          "is_rl": false
+        },
+        {
+          "start_seconds": 10.7,
+          "end_seconds": 11.9,
+          "playback_speed": 1,
+          "skill": "complete",
+          "is_rl": false
+        }
+      ],
+      "timing_basis": "RL boundaries identified from the active-skill overlay in the source recording. Flip and RL run at source 1x; MoveToFlip, Pick and Place are accelerated. Final hold stays at 1x."
+    },
+    {
+      "domain": "flipped",
+      "role": "test",
+      "source": "results/isaac_demos/flipped/flipped_000.mp4",
+      "source_sha256": "48106c62af66436d5d66a78dd0cc90500865cca4e7ab894ef348ad38ad80407b",
+      "filter": "[0:v]split=11[i0][i1][i2][i3][i4][i5][i6][i7][i8][i9][i10];[i0]trim=start=0.1:end=1.5,setpts=(PTS-STARTPTS)/5,fps=20[s0];[i1]trim=start=1.5:end=12.0,setpts=(PTS-STARTPTS)/1,fps=20[s1];[i2]trim=start=12.0:end=14.9,setpts=(PTS-STARTPTS)/5,fps=20[s2];[i3]trim=start=14.9:end=23.3,setpts=(PTS-STARTPTS)/1,fps=20[s3];[i4]trim=start=23.3:end=34.4,setpts=(PTS-STARTPTS)/5,fps=20[s4];[i5]trim=start=34.4:end=48.8,setpts=(PTS-STARTPTS)/5,fps=20[s5];[i6]trim=start=48.8:end=56.6,setpts=(PTS-STARTPTS)/5,fps=20[s6];[i7]trim=start=56.6:end=69.1,setpts=(PTS-STARTPTS)/5,fps=20[s7];[i8]trim=start=69.1:end=76.9,setpts=(PTS-STARTPTS)/5,fps=20[s8];[i9]trim=start=76.9:end=84.0,setpts=(PTS-STARTPTS)/5,fps=20[s9];[i10]trim=start=84.0:end=85.2,setpts=(PTS-STARTPTS)/1,fps=20[s10];[s0][s1][s2][s3][s4][s5][s6][s7][s8][s9][s10]concat=n=11:v=1:a=0,crop=640:480:0:192,eq=gamma=1.3:saturation=1.08,scale=640:480:force_original_aspect_ratio=decrease:flags=lanczos,pad=640:480:(ow-iw)/2:(oh-ih)/2:white,setsar=1[v]",
+      "preview": "docs/static/videos/recovery-flipped-test.mp4",
+      "duration_seconds": 33.1,
+      "domain_name": "Flipped Stacking",
+      "scenario": "Flip two blocks, then build a four-block tower",
+      "case": "top + mid1",
+      "source_report": "results/isaac_demos/flipped/episodes.json",
+      "selected_rollout": {
+        "role": "random_pair",
+        "episode": 0,
+        "success": true,
+        "steps": 839,
+        "operator_trace": [
+          "MoveToFlip",
+          "Flip",
+          "MoveToFlip",
+          "Flip",
+          "Pick",
+          "Place",
+          "Pick",
+          "Place",
+          "Pick",
+          "Place"
+        ],
+        "initially_upright_blocks": {
+          "top": false,
+          "mid1": false,
+          "mid2": true,
+          "bottom": true
+        }
+      },
+      "execution": "learned plan with composition repairs and termination-only execution",
+      "gif": "docs/static/images/recovery/recovery-flipped-test.gif",
+      "poster": "docs/static/images/recovery/recovery-flipped-test.jpg",
+      "published_sha256": {
+        "preview": "eb8c8cdbff8e4f612d75be608a419046498f529fea15a72d5262d2e0d05c365b",
+        "gif": "02537bf0cee7201f239cff7e455edcd13c7fe6f49eb4a97b1c9529f66e8608ae",
+        "poster": "0a3a706ab1a24a11f7911b444f711321623fb491dda8b4cc5358cf23afdb59eb"
+      },
+      "segments": [
+        {
+          "start_seconds": 0.1,
+          "end_seconds": 1.5,
+          "playback_speed": 5,
+          "skill": "MoveToFlip",
+          "is_rl": false
+        },
+        {
+          "start_seconds": 1.5,
+          "end_seconds": 12.0,
+          "playback_speed": 1,
+          "skill": "Flip",
+          "is_rl": true
+        },
+        {
+          "start_seconds": 12.0,
+          "end_seconds": 14.9,
+          "playback_speed": 5,
+          "skill": "MoveToFlip",
+          "is_rl": false
+        },
+        {
+          "start_seconds": 14.9,
+          "end_seconds": 23.3,
+          "playback_speed": 1,
+          "skill": "Flip",
+          "is_rl": true
+        },
+        {
+          "start_seconds": 23.3,
+          "end_seconds": 34.4,
+          "playback_speed": 5,
+          "skill": "Pick",
+          "is_rl": false
+        },
+        {
+          "start_seconds": 34.4,
+          "end_seconds": 48.8,
+          "playback_speed": 5,
+          "skill": "Place",
+          "is_rl": false
+        },
+        {
+          "start_seconds": 48.8,
+          "end_seconds": 56.6,
+          "playback_speed": 5,
+          "skill": "Pick",
+          "is_rl": false
+        },
+        {
+          "start_seconds": 56.6,
+          "end_seconds": 69.1,
+          "playback_speed": 5,
+          "skill": "Place",
+          "is_rl": false
+        },
+        {
+          "start_seconds": 69.1,
+          "end_seconds": 76.9,
+          "playback_speed": 5,
+          "skill": "Pick",
+          "is_rl": false
+        },
+        {
+          "start_seconds": 76.9,
+          "end_seconds": 84.0,
+          "playback_speed": 5,
+          "skill": "Place",
+          "is_rl": false
+        },
+        {
+          "start_seconds": 84.0,
+          "end_seconds": 85.2,
+          "playback_speed": 1,
+          "skill": "complete",
+          "is_rl": false
+        }
+      ],
+      "timing_basis": "RL boundaries identified from the active-skill overlay in the source recording. Flip and RL run at source 1x; MoveToFlip, Pick and Place are accelerated. Final hold stays at 1x."
+    },
+    {
+      "domain": "corner",
+      "role": "train",
+      "source": "results/isaac_demos/corner_1_g/corner_1_g_000.mp4",
+      "source_sha256": "9bf806280e5165d494104ef70701f720592b82a4eb99ef17ef2fc51ea1f029e0",
+      "filter": "[0:v]split=4[i0][i1][i2][i3];[i0]trim=start=0.1:end=10.3,setpts=(PTS-STARTPTS)/1,fps=20[s0];[i1]trim=start=10.3:end=19.5,setpts=(PTS-STARTPTS)/3,fps=20[s1];[i2]trim=start=19.5:end=34.7,setpts=(PTS-STARTPTS)/3,fps=20[s2];[i3]trim=start=34.7:end=35.9,setpts=(PTS-STARTPTS)/1,fps=20[s3];[s0][s1][s2][s3]concat=n=4:v=1:a=0,crop=640:480:0:112,eq=gamma=1.3:saturation=1.08,scale=640:480:force_original_aspect_ratio=decrease:flags=lanczos,pad=640:480:(ow-iw)/2:(oh-ih)/2:white,setsar=1[v]",
+      "preview": "docs/static/videos/recovery-corner-train.mp4",
+      "duration_seconds": 19.5,
+      "domain_name": "Cornered Stacking",
+      "scenario": "Recover the block to be picked up",
+      "case": "1_g",
+      "source_report": "results/isaac_demos/corner_1_g/episodes.json",
+      "selected_rollout": {
+        "episode": 0,
+        "case": "1_g",
+        "goal": [
+          "block0",
+          "block1"
+        ],
+        "success": true,
+        "steps": 346
+      },
+      "execution": "native recovery with learned predicates/operators",
+      "gif": "docs/static/images/recovery/recovery-corner-train.gif",
+      "poster": "docs/static/images/recovery/recovery-corner-train.jpg",
+      "published_sha256": {
+        "preview": "5efce12dd7f5d0123dc91a56b7168eeae559814459efd6774658241a9aca0dd0",
+        "gif": "96ff29f4c89776e261cb8262a5e6a99f0d969af730594d90f0eddf20c15a2455",
+        "poster": "2346c27f22cd94d309714ebb67dffebea9fe1e5f94b0940dac71a4ab8382ca95"
+      },
+      "segments": [
+        {
+          "start_seconds": 0.1,
+          "end_seconds": 10.3,
+          "playback_speed": 1,
+          "skill": "RL",
+          "is_rl": true
+        },
+        {
+          "start_seconds": 10.3,
+          "end_seconds": 19.5,
+          "playback_speed": 3,
+          "skill": "Pick",
+          "is_rl": false
+        },
+        {
+          "start_seconds": 19.5,
+          "end_seconds": 34.7,
+          "playback_speed": 3,
+          "skill": "Place",
+          "is_rl": false
+        },
+        {
+          "start_seconds": 34.7,
+          "end_seconds": 35.9,
+          "playback_speed": 1,
+          "skill": "complete",
+          "is_rl": false
+        }
+      ],
+      "timing_basis": "RL boundaries identified from the active-skill overlay in the source recording. Flip and RL run at source 1x; MoveToFlip, Pick and Place are accelerated. Final hold stays at 1x."
+    },
+    {
+      "domain": "corner",
+      "role": "test",
+      "source": "results/isaac_demos/corner_1_b/corner_1_b_000.mp4",
+      "source_sha256": "0cd796d712974e41e0cf3962f05dd1ef7776f14a9e5c189534e5e5023c4aace3",
+      "filter": "[0:v]split=4[i0][i1][i2][i3];[i0]trim=start=0.1:end=10.3,setpts=(PTS-STARTPTS)/1,fps=20[s0];[i1]trim=start=10.3:end=24.3,setpts=(PTS-STARTPTS)/3,fps=20[s1];[i2]trim=start=24.3:end=41.8,setpts=(PTS-STARTPTS)/3,fps=20[s2];[i3]trim=start=41.8:end=43.0,setpts=(PTS-STARTPTS)/1,fps=20[s3];[s0][s1][s2][s3]concat=n=4:v=1:a=0,crop=640:480:0:112,eq=gamma=1.3:saturation=1.08,scale=640:480:force_original_aspect_ratio=decrease:flags=lanczos,pad=640:480:(ow-iw)/2:(oh-ih)/2:white,setsar=1[v]",
+      "preview": "docs/static/videos/recovery-corner-test.mp4",
+      "duration_seconds": 21.9,
+      "domain_name": "Cornered Stacking",
+      "scenario": "Recover the block used as the stacking support",
+      "case": "1_b",
+      "source_report": "results/isaac_demos/corner_1_b/episodes.json",
+      "selected_rollout": {
+        "episode": 0,
+        "case": "1_b",
+        "goal": [
+          "block1",
+          "block0"
+        ],
+        "success": true,
+        "steps": 417
+      },
+      "execution": "native recovery with learned predicates/operators",
+      "gif": "docs/static/images/recovery/recovery-corner-test.gif",
+      "poster": "docs/static/images/recovery/recovery-corner-test.jpg",
+      "published_sha256": {
+        "preview": "62526bfb99d3d1b40926763e9ddb23f1ad4877780f18ae7764f9c262ea5faeb6",
+        "gif": "c9c8a7ddd158fb6074f494b4742fbb617509a40b2dd9c4aed1874d7546e7fad1",
+        "poster": "af57a0b1bba7b784da7e862746a040ce9dff56cd0a2068e1b6bd7fbc514c7809"
+      },
+      "segments": [
+        {
+          "start_seconds": 0.1,
+          "end_seconds": 10.3,
+          "playback_speed": 1,
+          "skill": "RL",
+          "is_rl": true
+        },
+        {
+          "start_seconds": 10.3,
+          "end_seconds": 24.3,
+          "playback_speed": 3,
+          "skill": "Pick",
+          "is_rl": false
+        },
+        {
+          "start_seconds": 24.3,
+          "end_seconds": 41.8,
+          "playback_speed": 3,
+          "skill": "Place",
+          "is_rl": false
+        },
+        {
+          "start_seconds": 41.8,
+          "end_seconds": 43.0,
+          "playback_speed": 1,
+          "skill": "complete",
+          "is_rl": false
+        }
+      ],
+      "timing_basis": "RL boundaries identified from the active-skill overlay in the source recording. Flip and RL run at source 1x; MoveToFlip, Pick and Place are accelerated. Final hold stays at 1x."
+    }
+  ]
+}
